@@ -1,0 +1,33 @@
+{
+  "index_version": 2,
+  "source_url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000.html",
+  "html_sha256": "daad5dd0a5a9f51f5b5d0c23a5185796a285554c75b26a29d38b0af2b15943ee",
+  "topic_links": [
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/bgp-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/bgp-flowspec-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/bidirectional-forwarding-detection-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/eigrp-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/is-is-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/lisp-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/ospf-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/ospfv3-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/rcmd-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/rib-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/rip-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/routing-policy-language-commands.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000/static-routing-commands.html"
+  ],
+  "health": {
+    "source_url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000.html",
+    "source_role": "command_reference",
+    "source_version": "7.7.1",
+    "is_target_version": true,
+    "status": "complete",
+    "discovered_topics": 13,
+    "indexed_topics": 13,
+    "message": "",
+    "retry_count": 0,
+    "failed_urls": [],
+    "unparsed_urls": []
+  }
+}

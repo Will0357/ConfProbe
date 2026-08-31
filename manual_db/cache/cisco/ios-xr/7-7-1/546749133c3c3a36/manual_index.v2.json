@@ -1,0 +1,25 @@
+{
+  "index_version": 2,
+  "source_url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k.html",
+  "html_sha256": "c3ad4a127a658c958093ccd19174bfe85bca0ecd79286d19a0d2ccff36d1b8f5",
+  "topic_links": [
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k/m-preface-cr-seg-routing.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k/m-segment-routing-command-reference.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k/segment-routing-traffic-engineering-commands.html"
+  ],
+  "health": {
+    "source_url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k.html",
+    "source_role": "command_reference",
+    "source_version": "7.7.1",
+    "is_target_version": true,
+    "status": "incomplete",
+    "discovered_topics": 3,
+    "indexed_topics": 2,
+    "message": "1 command-reference topics could not be parsed",
+    "retry_count": 0,
+    "failed_urls": [],
+    "unparsed_urls": [
+      "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k/m-preface-cr-seg-routing.html"
+    ]
+  }
+}

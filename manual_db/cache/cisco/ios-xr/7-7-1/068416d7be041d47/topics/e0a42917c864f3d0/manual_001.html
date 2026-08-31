@@ -1,0 +1,2951 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221678794742130404\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x - Implementing UCMP [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Implementing UCMP"  />
+    <meta name="title" content="Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x - Implementing UCMP [Cisco ASR 9000 Series Aggregation Services Routers]"  />
+    <meta name="documentId" content="1669830516333694"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco ASR 9000 Series Aggregation Services Routers"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Routers#Service Provider Edge Routers#Cisco ASR 9000 Series Aggregation Services Routers"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001772"  />
+    <meta name="date" content="Tue Jul 14 22:34:09 PDT 2026"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x - Implementing UCMP [Cisco ASR 9000 Series Aggregation Services Routers]"  />
+    <meta property="og:description" content="Implementing UCMP"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/routers\/asr9000\/software\/asr9k\u002Dr7\u002D8\/routing\/configuration\/guide\/b\u002Drouting\u002Dcg\u002Dasr9000\u002D79x\/implementing\u002Ducmp");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Implementing UCMP",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html",
+          "description": "Implementing UCMP",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eqhanmbqaeaiyjqacqlyiaaxvbvhgnkt-f-aebea4e1d-clienttons-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":43,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"5d444da","ak.r":52144,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.cport":61138,"ak.gh":"23.203.53.44","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1785935187","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Hsy8H5HePB7SLnz1XnN81q7oTbz5h8KN4MHgZgOvUjuxu8ODlHge5lcOIWT92L2rfS5j5UCLfU1jG0w29ijIyUYVEeadewBaWMUla6gh94XyYE8JvyVINONqxV6941ZAyf0F5BBathF3BBcw/nTBM3Vj3NkJBMi7kmDA7ZWFoG7olCOvAtihKRFjxzVKZoYePkqMccAbyiOSitMt4eKpdaLOCshcC8H5A78MdeylWP1WLQw/n+hOFyhycHNLqkVsfFG5+bVoACiKc85p0FP5J8yQ0D1bPLIyBILHbmalkYXZG/p/P90k5C/phyV1Fv8Ghu8FBnZ5d2emS/w3J0Dada154D1J/CRtwPMmpQ3R09eTOMOUoSplWCyBoDREmi+pH2Ft6IpXV/NQI8EFwa2qUDs0+C+MTknA6Q6M5pm/kGU=","ak.pv":"550","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/site/us/en/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/site/us/en/learn/index.html">Learn</a></li>
+            <li><a tabindex="-1" href="/site/us/en/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/site/us/en/buy/index.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html">Partners Home</a></li>                
+            <li><a tabindex="-1" href="/site/us/en/partners/360-partner-program/partner-program/index.html">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/site/us/en/partners/360-partner-program/tools-training/index.html">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/routers/category.html'><span itemprop='name'>Routers</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/routers/asr-9000-series-aggregation-services-routers/series.html'><span itemprop='name'>Cisco ASR 9000 Series Aggregation Services Routers</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/routers/asr-9000-series-aggregation-services-routers/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html" aria-label="Learn more about Bias Free Language">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+      <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger" aria-haspopup="dialog"> <!--US140575-->
+            Book Contents
+        </button>
+         <div class="bookToc simpleOverlay-content">
+            <div role="heading" aria-level="2" class="title" id="book-toc-region-title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content" role="region" aria-labelledby="book-toc-region-title">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/preface.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bgp.html">Implementing
+	 BGP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bgp-flowspec.html">Implementing BGP
+	 Flowspec</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bfd.html">Implementing BFD</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-eigrp.html">Implementing
+	 EIGRP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-is-is.html">Implementing IS-IS</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ospf.html">Implementing
+	 OSPF</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/ipv4-ipv6-loop-free-alternate-fast-reroute.html"> Implementing IP
+	 Fast Reroute Loop-Free Alternate </a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-and-monitoring-rib.html">Implementing and
+	 Monitoring RIB</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rip.html">Implementing
+	 RIP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-routing-policy.html">Implementing Routing
+	 Policy</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-static-routes.html">Implementing Static
+	 Routes</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html">Implementing RCMD</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html">Implementing UCMP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-data-plane-security.html">Implementing Data
+	 Plane Security</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/enabling-flexible-algorithm-ip-networks.html">Enabling Flexible Algorithm in IP Networks</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/b-routing-cg-asr9000-79x_index.html">Index</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="versionlist" aria-label="Version/Release"><label></label></button>
+                <ul id="versionlist" class="versionlist" role="listbox" aria-label="Version/Release options">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+                            isSelected = urlm.toLowerCase() == pageUrl ? "true" : "false";
+%>
+                    <li role="option" aria-selected="${isSelected}"><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger" aria-haspopup="dialog">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="translation-dialog-title" aria-modal="true">
+            <!-- Intentionally adding tabindex="0" to heading for dialog focus management per requirements -->
+            <div role="heading" class="title" id="translation-dialog-title" tabindex="0">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html, x-default=https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-haspopup="dialog" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content default_dialog" role="dialog" id="dialogd" aria-labelledby="dialog-title" aria-modal="true">
+            <!-- Intentionally adding tabindex="0" to heading for dialog focus management per requirements -->
+            <div role="heading" class="title" id="dialog-title" tabindex="0">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</h3>
+                    <p>Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Implementing UCMP</h3>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(11.43 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.pdf" class="chapter">PDF - This Chapter <span>(1.3 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close search results panel" aria-label="Close search results panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Scroll to previous matched word" aria-label="Scroll to previous matched word"><span></span></button>
+      <button class="up off" title="Previous Match Not Available" aria-label="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Scroll to next matched word" aria-label="Scroll to next matched word"><span></span></button>
+      <button class="down off" title="Next Match Not Available" aria-label="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul tabindex="-1">
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter" aria-label="Close Find Matches in This Book"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> March 31, 2023</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Implementing UCMP </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#concept_qhd_qpw_4db">Implementing UCMP</a></li>
+<li><a href="#concept_lxr_dxw_4db">ECMP vs. UCMP Load Balancing</a></li>
+<li><a href="#managing-traffic-with-ecmp-fec-in-network-environments">Managing Traffic with ECMP FEC in Network Environments</a></li>
+<li><a href="#concept_q2k_ftw_4db">UCMP Minimum Integer Ratio</a></li>
+<li><a href="#Cisco_Concept.dita_1f591dad-3f91-4143-a671-ea51ba1d7d9b">Configuring OSPF UCMP with Cost</a></li>
+<li><a href="#Cisco_Concept.dita_aa5bae3a-5827-4704-8c2b-9faa522a83d7">Configuring OSPF UCMP with Cost Only for Certain Prefixes</a></li>
+<li><a href="#concept_t1q_qhx_4db">Configuring IS-IS With Weight</a></li>
+<li><a href="#concept_u2d_ck1_pdb">Configuring IS-IS With Metric</a></li>
+<li><a href="#concept_xsj_2q1_pdb">Configuring BGP With Weights</a></li>
+<li><a href="#concept_kfl_ht1_pdb">Configuring TE Tunnel With Weights</a></li>
+<li><a href="#concept_x5p_yfc_pdb">Policy-Based Tunnel Selection</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="concept_qhd_qpw_4db__title_fdy_ppw_4db">Implementing UCMP</h1>
+                  <section class="body conbody">
+                     <p class="p">The unequal cost multipath (UCMP) load-balancing provides the capability to load balance traffic proportionally across multiple
+                        paths, with different cost. Generally, higher bandwidth paths have lower Interior Gateway Protocol (IGP) metrics configured,
+                        so that they form the shortest IGP paths. 
+                     </p>
+                     <p class="p">With the UCMP load-balancing enabled, protocols can use even lower bandwidth paths or higher cost paths for traffic, and can
+                        install these paths to the forwarding information base (FIB). These protocols still install multiple paths to the same destination
+                        in FIB, but each path will have a 'load metric/weight' associated with it. FIB uses this load metric/weight to decide the
+                        amount of traffic that needs to be sent on a higher bandwidth path and the amount of traffic that needs to be sent on a lower
+                        bandwidth path.
+                     </p>
+                     <p class="p">In the following example, there are 3 paths to get to Network X as follows:</p>
+                     <figure class="fig fignone">
+                        <figcaption><span class="fig--title-label">Figure 1. </span>Topology for UCMP
+                        </figcaption><img class="image" src="/c/dam/en/us/td/i/300001-400000/360001-370000/367001-368000/367321.jpg"></figure>
+                     <table width="100%" border="1" class="table frame-all">
+                        <caption></caption>
+                        <colgroup>
+                           <col style="width:50%">
+                           <col style="width:50%">
+                        </colgroup>
+                        <thead class="thead">
+                           <tr>
+                              <th font-weight="bold" class="entry colsep-1 rowsep-1" id="concept_qhd_qpw_4db__entry__1">
+                                 
+                                 <p class="p">Paths</p>
+                                 
+                              </th>
+                              <th font-weight="bold" class="entry colsep-1 rowsep-1" id="concept_qhd_qpw_4db__entry__2">
+                                 
+                                 <p class="p">Cost from Router E to Net -X</p>
+                                 
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody class="tbody">
+                           <tr>
+                              <td class="entry colsep-1 rowsep-1" headers="concept_qhd_qpw_4db__entry__1 ">
+                                 
+                                 <p class="p">E-B-A</p>
+                                 
+                              </td>
+                              <td class="entry colsep-1 rowsep-1" headers="concept_qhd_qpw_4db__entry__2 ">
+                                 
+                                 <p class="p">40</p>
+                                 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="entry colsep-1 rowsep-1" headers="concept_qhd_qpw_4db__entry__1 ">
+                                 
+                                 <p class="p">E-C-A</p>
+                                 
+                              </td>
+                              <td class="entry colsep-1 rowsep-1" headers="concept_qhd_qpw_4db__entry__2 ">
+                                 
+                                 <p class="p">50</p>
+                                 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="entry colsep-1 rowsep-1" headers="concept_qhd_qpw_4db__entry__1 ">
+                                 
+                                 <p class="p">E-D-A</p>
+                                 
+                              </td>
+                              <td class="entry colsep-1 rowsep-1" headers="concept_qhd_qpw_4db__entry__2 ">
+                                 
+                                 <p class="p">40</p>
+                                 
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <p class="p">IGP selects the lowest path links, i.e E-B-A and E-D-A. The path E-C-A is not considered for load balancing because of higher
+                        cost. The lowest path link E-D (5) is not a tie breaker, as the end to end cost to the Network X is considered.
+                     </p>
+                     
+                     <p class="p">More than 32 ECMP and UCMP paths are not supported for these features:</p>
+                     
+                     <ul class="ul">
+                        
+                        <li class="li">
+                           
+                           <p class="p">LI</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">GRE</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">BVI</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">NetFlow</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">Satellite</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">MCAST</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">SPAN</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">PWHE</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">ABF</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">P2MP</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">MVPN</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">VPLS</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">L2TPv3</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">LISP</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">VIDMON</p>
+                           
+                        </li>
+                        
+                        <li class="li">
+                           
+                           <p class="p">PBR</p>
+                           
+                        </li>
+                        
+                     </ul>
+                  </section>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_lxr_dxw_4db">ECMP vs. UCMP Load Balancing</a></li>
+                        <li class="link ulchildlink"><a href="#managing-traffic-with-ecmp-fec-in-network-environments">Managing Traffic with ECMP FEC in Network Environments</a></li>
+                        <li class="link ulchildlink"><a href="#concept_q2k_ftw_4db">UCMP Minimum Integer Ratio</a></li>
+                        <li class="link ulchildlink"><a href="#Cisco_Concept.dita_1f591dad-3f91-4143-a671-ea51ba1d7d9b">Configuring OSPF UCMP with Cost</a></li>
+                        <li class="link ulchildlink"><a href="#Cisco_Concept.dita_aa5bae3a-5827-4704-8c2b-9faa522a83d7">Configuring OSPF UCMP with Cost Only for Certain Prefixes</a></li>
+                        <li class="link ulchildlink"><a href="#concept_t1q_qhx_4db">Configuring IS-IS With Weight</a></li>
+                        <li class="link ulchildlink"><a href="#concept_u2d_ck1_pdb">Configuring IS-IS With Metric</a></li>
+                        <li class="link ulchildlink"><a href="#concept_xsj_2q1_pdb">Configuring BGP With Weights</a></li>
+                        <li class="link ulchildlink"><a href="#concept_kfl_ht1_pdb">Configuring TE Tunnel With Weights</a></li>
+                        <li class="link ulchildlink"><a href="#concept_x5p_yfc_pdb">Policy-Based Tunnel Selection</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_lxr_dxw_4db">
+                     <h2 class="title topictitle2" id="ariaid-title2">ECMP vs. UCMP Load Balancing</h2>
+                     <section class="body conbody">
+                        <p class="p">Load balancing is a forwarding mechanism that distributes traffic over multiple links based on certain parameters. Equal Cost
+                           Multi Path (ECMP) is a forwarding mechanism for routing packets along multiple paths of equal cost with the goal to achieve
+                           almost equally distributed link load sharing. This significantly impacts a router's next-hop (path) decision.
+                        </p>
+                        <p class="p">In ECMP, it is assumed that all links available are of similar speed which inherently means that the hash values that are
+                           computed are equally shared over the multiple paths available.
+                        </p>
+                        <p class="p">For instance, if we have two paths available, the buckets (which in the end identify the links to be chosen) will be assigned
+                           in a 50% / 50% loadsharing. This can be problematic when one path is say a 10G link and the other link is a 1G link. In this
+                           case, you probably want to assign a (near) 90/10 type deviation, but considering that BGP is not bandwidth aware, the 10G
+                           path is still chosen 50% of the time as much as the 1G link. In this scenario, not all paths are of equal cost path. 
+                        </p>
+                        <p class="p">What UCMP does in this case is apply a <em class="ph i">weight</em> to a path which means that we are giving more hash buckets to one path that has a higher weight. The weight applied is <em class="ph i">static</em> in the sense that it is derived by the DMZ bandwidth extended community either assigned to a peer or as configured via the
+                           Route Policy Language (RPL) route manipulation functionality.
+                        </p>
+                        <p class="p">In general, a routing protocol decides a best path to a destination based on a metric. This metric is generally driven by
+                           the bandwidth of the circuit. When we have 3 paths available, say 1G/10G/100G, routing protocols generally discard the 1G/10G
+                           paths available. In defined cases, one may want to spread the load over the circuits based on the load they can carry. In
+                           this example, one may want to distribute traffic in a 1%/10%/89% fashion over the 1G/10G/100G paths available. 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title3" lang="en-US" id="managing-traffic-with-ecmp-fec-in-network-environments">
+                     <h2 class="title topictitle2" id="ariaid-title3">Managing Traffic with ECMP FEC in Network Environments</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">In a network environment that uses multiple paths, the ECMP Forwarding Equivalence Class (FEC) helps balance traffic across
+                           paths that have the same cost. However, when the ECMP FEC reaches the Red threshold, it indicates that resources are depleted.
+                           At this point, new ECMP FEC will not be allocated to any newly advertised prefixes. Instead, it assigns a regular FEC, provided
+                           it is not in an Out of Resources (OOR) state.
+                        </p>
+                        
+                        
+                        <p class="p">A notable limitation you may encounter is that after the ECMP FEC reaches the Red threshold, and despite stopping the allocation
+                           of new ECMP FEC, some in-transit ECMP FEC processes might still get programmed. These processes can run into resource unavailability,
+                           resulting in no resource errors, which can ultimately lead to traffic being dropped.
+                        </p>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title4" lang="en-US" id="concept_q2k_ftw_4db">
+                     <h2 class="title topictitle2" id="ariaid-title4">UCMP Minimum Integer Ratio</h2>
+                     <section class="body conbody">
+                        <p class="p">The UCMP Minimum Integer Ratio feature saves hardware resources when programming UCMP, by using optimized number of buckets.</p>
+                        <p class="p">To calculate the UCMP minimum integer ratio, find the greatest common divisor (GCD) and divide all the calculated normalized
+                           weights.
+                        </p>
+                        <p class="p">In the following Figure, we have three configured weights 40, 50, and 40, with GCD as 10. To calculate the normalized weight,
+                           divide the configured weight by GCD. In this example, we need to divide 40 by 10, 50 by 10, and 40 by 10, which is 4, 5, and
+                           4 respectively. Therefore 4, 5, and 4 are the new normalized weights. 
+                        </p><img class="image" src="/c/dam/en/us/td/i/300001-400000/360001-370000/367001-368000/367324.jpg"><p class="p">New normalized weights are: 40/10 = 4, 50/10 = 5, and 40/10 = 4</p>
+                        <p class="p">If GCD is 1, then Normalized Weight = (Path weight/Total weight) * Maximum bucket size </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title5" lang="en-US" id="Cisco_Concept.dita_1f591dad-3f91-4143-a671-ea51ba1d7d9b">
+                     <h2 class="title topictitle2" id="ariaid-title5">Configuring OSPF UCMP with Cost</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">The following example shows how to configure UCMP under OSPF default vrf with IPv4. The same can be done with IPv6.</p>
+                        
+                        <p class="p">R5 is advertising its two loopbacks with IP addresses 10.0.0.1 and 192.168.0.1 into OSPF. R1 learns these loopbacks through
+                           three directly connected next hops, R2, R3, and R4.
+                        </p>
+                        
+                        <p class="p">The metrics are as follows:</p>
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">Total link metric between R1 and R5 via R2 is 40.</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Total link metric between R1 and R5 via R3 is 50</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Total link metric between R1 and R5 via R4 is 40</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                        <section class="section" id="Cisco_Concept.dita_1f591dad-3f91-4143-a671-ea51ba1d7d9b__d141597e434">
+                           <h3 class="title sectiontitle"><strong class="ph b">Before</strong></h3>
+                           
+                           
+                           <p class="p">Based on the metrics, R1 installs two ECMP paths via R2 and R4 only. Path via R5 is not installed due to higher cost.</p>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 10.0.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 10.0.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 19:09:21.399 for 03:57:18
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41
+  No advertising protos.
+</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 192.168.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 192.168.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 23:06:05.258 for 00:00:41
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41</code></pre>
+                           </section>
+                        
+                        <section class="section" id="Cisco_Concept.dita_1f591dad-3f91-4143-a671-ea51ba1d7d9b__d141597e462">
+                           <h3 class="title sectiontitle"><strong class="ph b">Configuration</strong></h3>
+                           
+                           <pre class="pre codeblock"><code><strong class="ph b">router ospf</strong> <cite class="cite">Proc1</cite>
+<strong class="ph b">ucmp</strong></code></pre>
+                           </section>
+                        
+                        <section class="section" id="Cisco_Concept.dita_1f591dad-3f91-4143-a671-ea51ba1d7d9b__d141597e479">
+                           <h3 class="title sectiontitle"><strong class="ph b">Example</strong></h3>
+                           
+                           <pre class="pre codeblock"><code>Router (config)#<kbd class="userinput"><b class="ph userinput">router ospf 0</b></kbd>
+Router (config-ospf)#<kbd class="userinput"><b class="ph userinput">ucmp</b></kbd> 
+Router (config-ospf)#<kbd class="userinput"><b class="ph userinput">commit</b></kbd></code></pre>
+                           </section>
+                        
+                        <section class="section" id="Cisco_Concept.dita_1f591dad-3f91-4143-a671-ea51ba1d7d9b__d141597e497">
+                           <h3 class="title sectiontitle"><strong class="ph b">Verification</strong></h3>
+                           
+                           
+                           <p class="p">Verify the installation of three paths by  R1, to reach each of the R5 loopback IP addresses.</p>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 10.0.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 10.0.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 23:15:13.495 for 00:02:01
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41, Wt is 4294967295
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41, Wt is 4294967295
+    10.1.3.2, from 10.0.0.1, via GigabitEthernet0/0/0/1
+      Route metric is 41, Wt is 3452816845
+  No advertising protos.</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show ospf routes 10.0.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Topology Table for ospf 0 with ID 172.16.0.1:
+
+Codes: O - Intra area, O IA - Inter area
+      O E1 - External type 1, O E2 - External type 2
+       O N1 - NSSA external type 1, O N2 - NSSA external type 2
+
+O    10.0.0.1/32, metric 41
+       10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2, ifIndex 8, path-id 1
+       10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0, ifIndex 6, path-id 2
+       10.1.3.2, from 10.0.0.1, via GigabitEthernet0/0/0/1, path-id 3, (UCMP, metric 51)</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 192.168.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 192.168.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 23:15:13.495 for 00:02:06
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41, Wt is 4294967295
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41, Wt is 4294967295
+    10.1.3.2, from 10.0.0.1, via GigabitEthernet0/0/0/1
+      Route metric is 41, Wt is 3452816845
+  No advertising protos.</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show ospf routes 192.168.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Topology Table for ospf 0 with ID 172.16.0.1:
+
+Codes: O - Intra area, O IA - Inter area
+       O E1 - External type 1, O E2 - External type 2
+       O N1 - NSSA external type 1, O N2 - NSSA external type 2
+
+O    192.168.0.1/32, metric 41
+       10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2, ifIndex 8, path-id 1
+       10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0, ifIndex 6, path-id 2
+       10.1.3.2, from 10.0.0.1, via GigabitEthernet0/0/0/1, path-id 3, (UCMP, metric 51)</code></pre>
+                           </section>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title6" lang="en-US" id="Cisco_Concept.dita_aa5bae3a-5827-4704-8c2b-9faa522a83d7">
+                     <h2 class="title topictitle2" id="ariaid-title6">Configuring OSPF UCMP with Cost Only for Certain Prefixes</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">The following example shows how to configure UCMP under OSPF default VRF with IPv4 only for prefixes that match an access
+                           list. Ensure to follow the same procedure with IPv6.
+                        </p>
+                        
+                        <p class="p">R5 is advertising its two loopbacks with IP addresses 10.0.0.1 and 192.168.0.1 into OSPF. R1 learns these loopbacks via three
+                           directly connected next hops, R2, R3, and R4.
+                        </p>
+                        
+                        <p class="p">The metrics are as follows:</p>
+                        
+                        <ul class="ul">
+                           
+                           <li class="li">
+                              
+                              <p class="p">Total link metric between R1 and R5 via R2 is 40</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Total link metric between R1 and R5 via R3 is 50</p>
+                              
+                           </li>
+                           
+                           <li class="li">
+                              
+                              <p class="p">Total link metric between R1 and R5 via R4 is 40</p>
+                              
+                           </li>
+                           
+                        </ul>
+                        
+                        <section class="section" id="Cisco_Concept.dita_aa5bae3a-5827-4704-8c2b-9faa522a83d7__d141597e601">
+                           <h3 class="title sectiontitle"><strong class="ph b">Before</strong></h3>
+                           
+                           
+                           <p class="p">Based on the metrics, R1 installs two ECMP paths via R2 and R4 only. Path via R5 is not installed due to higher cost.</p>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 10.0.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 10.0.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 19:09:21.399 for 03:57:18
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41
+  No advertising protos.</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 192.168.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 192.168.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 23:06:05.258 for 00:00:41
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41</code></pre>
+                           </section>
+                        
+                        <section class="section" id="Cisco_Concept.dita_aa5bae3a-5827-4704-8c2b-9faa522a83d7__d141597e629">
+                           <h3 class="title sectiontitle"><strong class="ph b">Configuration</strong></h3>
+                           
+                           <pre class="pre codeblock"><code><strong class="ph b">router ospf</strong> <cite class="cite">Proc1</cite><strong class="ph b">
+ucmp prefix-list</strong> <cite class="cite">Acl1</cite></code></pre>
+                           <table class="olh_note" border="0" role="note">
+                              <tr>
+                                 <td width="1%" class="olh_note" role="heading" border="0"><img src="https://www.cisco.com/content/dam/en/us/td/i/templates/new_note.svg"><br><p><b>Note</b></p>
+                                 </td>
+                                 <td border="0" class="olh_note">
+                                    <section class="note__content">
+                                       <hr>
+                                       
+                                       <p class="p">OSPF UCMP prefix-list configuration should refer to an access list, not a prefix-set.</p>
+                                       
+                                       <hr>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </table>
+                           
+                        </section>
+                        
+                        <section class="section" id="Cisco_Concept.dita_aa5bae3a-5827-4704-8c2b-9faa522a83d7__d141597e654">
+                           <h3 class="title sectiontitle"><strong class="ph b">Example</strong></h3>
+                           
+                           
+                           <p class="p">Install UCMP only for prefix 192.168.0.1/32. Other prefixes will not be affected by the UCMP change.</p>
+                           <pre class="pre codeblock"><code>Router (config)#<kbd class="userinput"><b class="ph userinput">ipv4 access-list foo</b></kbd>
+Router (config-ipv4-acl)#<kbd class="userinput"><b class="ph userinput">10 permit ipv4 host 192.168.0.1 any</b></kbd>
+ 
+Router (config)#<kbd class="userinput"><b class="ph userinput">router ospf 0</b></kbd>
+Router (config-ospf)#<kbd class="userinput"><b class="ph userinput">ucmp prefix-list foo</b></kbd>
+Router (config-ospf)#<kbd class="userinput"><b class="ph userinput">commit</b></kbd>
+</code></pre>
+                           </section>
+                        
+                        <section class="section" id="Cisco_Concept.dita_aa5bae3a-5827-4704-8c2b-9faa522a83d7__d141597e682">
+                           <h3 class="title sectiontitle"><strong class="ph b">Verification</strong></h3>
+                           
+                           
+                           <p class="p">Verify that R1 installs three paths to reach R5 loopback IP address 192.168.0.1/32. </p>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 192.168.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 192.168.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 23:25:11.997 for 00:15:56
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41, Wt is 4294967295
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41, Wt is 4294967295
+    10.1.3.2, from 10.0.0.1, via GigabitEthernet0/0/0/1
+      Route metric is 41, Wt is 3452816845
+  No advertising protos.</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show ospf routes 192.168.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Topology Table for ospf 0 with ID 172.16.0.1:
+
+Codes: O - Intra area, O IA - Inter area
+       O E1 - External type 1, O E2 - External type 2
+       O N1 - NSSA external type 1, O N2 - NSSA external type 2
+
+O    192.168.0.1/32, metric 41
+       10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2, ifIndex 8, path-id 1
+       10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0, ifIndex 6, path-id 2
+       10.1.3.2, from 10.0.0.1, via GigabitEthernet0/0/0/1, path-id 3, (UCMP, metric 51)</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show cef 192.168.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>192.168.0.1/32, version 186, internal 0x1000001 0x10 (ptr 0xe2ecc50) [1], 0x400 (0xe489c30), 0x0 (0x0)
+Updated Aug  3 23:43:10.261 
+ remote adjacency to GigabitEthernet0/0/0/0
+Prefix Len 32, traffic index 0, precedence n/a, priority 1
+  gateway array (0xe2f2060) reference count 2, flags 0x0, source rib (7), 0 backups
+                [3 type 3 flags 0x8401 (0xe3a2ca8) ext 0x0 (0x0)]
+  LW-LDI[type=3, refc=1, ptr=0xe489c30, sh-ldi=0xe3a2ca8]
+  gateway array update type-time 1 Aug  3 23:43:10.261
+LDI Update time Aug  3 23:43:10.261
+LW-LDI-TS Aug  3 23:43:10.261
+   via 10.1.2.2/32, GigabitEthernet0/0/0/0, 6 dependencies, weight 4294967295, class 0 [flags 0x0]
+    path-idx 0 NHID 0x0 [0xf4270b0 0x0]
+    next hop 10.1.2.2/32
+    remote adjacency
+   via 10.1.4.2/32, GigabitEthernet0/0/0/2, 6 dependencies, weight 4294967295, class 0 [flags 0x0]
+    path-idx 1 NHID 0x0 [0xf4271e0 0x0]
+    next hop 10.1.4.2/32
+    remote adjacency
+   via 10.1.3.2/32, GigabitEthernet0/0/0/1, 6 dependencies, weight 3452816845, class 0 [flags 0x0]
+    path-idx 2 NHID 0x0 [0xf427148 0x0]
+    next hop 10.1.3.2/32
+    remote adjacency
+ 
+    Weight distribution:
+    slot 0, weight 4294967295, normalized_weight 11, class 0
+    slot 1, weight 4294967295, normalized_weight 11, class 0
+    slot 2, weight 3452816845, normalized_weight 9, class 0
+    Load distribution: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 (refcount 3)
+ 
+    Hash  OK  Interface                 Address
+    0     Y   GigabitEthernet0/0/0/0    remote         
+    1     Y   GigabitEthernet0/0/0/0    remote         
+    2     Y   GigabitEthernet0/0/0/0    remote         
+    3     Y   GigabitEthernet0/0/0/0    remote         
+    4     Y   GigabitEthernet0/0/0/0    remote         
+    5     Y   GigabitEthernet0/0/0/0    remote         
+    6     Y   GigabitEthernet0/0/0/0    remote         
+    7     Y   GigabitEthernet0/0/0/0    remote         
+    8     Y   GigabitEthernet0/0/0/0    remote         
+    9     Y   GigabitEthernet0/0/0/0    remote         
+    10    Y   GigabitEthernet0/0/0/0    remote         
+    11    Y   GigabitEthernet0/0/0/2    remote         
+    12    Y   GigabitEthernet0/0/0/2    remote         
+    13    Y   GigabitEthernet0/0/0/2    remote         
+    14    Y   GigabitEthernet0/0/0/2    remote         
+    15    Y   GigabitEthernet0/0/0/2    remote         
+    16    Y   GigabitEthernet0/0/0/2    remote         
+    17    Y   GigabitEthernet0/0/0/2    remote         
+    18    Y   GigabitEthernet0/0/0/2    remote         
+    19    Y   GigabitEthernet0/0/0/2    remote         
+    20    Y   GigabitEthernet0/0/0/2    remote         
+    21    Y   GigabitEthernet0/0/0/2    remote         
+    22    Y   GigabitEthernet0/0/0/1    remote         
+    23    Y   GigabitEthernet0/0/0/1    remote         
+    24    Y   GigabitEthernet0/0/0/1    remote         
+    25    Y   GigabitEthernet0/0/0/1    remote         
+    26    Y   GigabitEthernet0/0/0/1    remote         
+    27    Y   GigabitEthernet0/0/0/1    remote         
+    28    Y   GigabitEthernet0/0/0/1    remote         
+    29    Y   GigabitEthernet0/0/0/1    remote         
+    30    Y   GigabitEthernet0/0/0/1    remote</code></pre>
+                           <p class="p">Verify the installation of only two paths by R1, to reach R5 loopback IP address 10.0.0.1/32.</p>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show route 10.0.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Routing entry for 10.0.0.1/32
+  Known via "ospf 0", distance 110, metric 41, type intra area
+  Installed Aug  3 23:25:11.897 for 00:16:11
+  Routing Descriptor Blocks
+    10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0
+      Route metric is 41, Wt is 4294967295
+    10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2
+      Route metric is 41, Wt is 4294967295
+  No advertising protos.</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show ospf routes 10.0.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>Topology Table for ospf 0 with ID 172.16.0.1:
+
+Codes: O - Intra area, O IA - Inter area
+       O E1 - External type 1, O E2 - External type 2
+       O N1 - NSSA external type 1, O N2 - NSSA external type 2
+
+O    10.0.0.1/32, metric 41
+       10.1.4.2, from 10.0.0.1, via GigabitEthernet0/0/0/2, ifIndex 8, path-id 1
+       10.1.2.2, from 10.0.0.1, via GigabitEthernet0/0/0/0, ifIndex 6, path-id 2
+</code></pre>
+                           <pre class="pre codeblock"><code>Router #<kbd class="userinput"><b class="ph userinput">show cef 10.0.0.1/32</b></kbd></code></pre>
+                           <pre class="pre codeblock"><code>10.0.0.1/32, version 199, internal 0x1000001 0x10 (ptr 0xe2ed3e8) [1], 0x400 (0xe4899f0), 0x0 (0x0)
+Updated Aug  3 23:46:12.770 
+ remote adjacency to GigabitEthernet0/0/0/0
+Prefix Len 32, traffic index 0, precedence n/a, priority 1
+  gateway array (0xe2f1838) reference count 1, flags 0x0, source rib (7), 0 backups
+                [2 type 3 flags 0x8401 (0xe3a2948) ext 0x0 (0x0)]
+  LW-LDI[type=3, refc=1, ptr=0xe4899f0, sh-ldi=0xe3a2948]
+  gateway array update type-time 1 Aug  3 23:46:12.770
+LDI Update time Aug  3 23:46:12.779
+LW-LDI-TS Aug  3 23:46:12.779
+   via 10.1.2.2/32, GigabitEthernet0/0/0/0, 8 dependencies, weight 4294967295, class 0 [flags 0x0]
+    path-idx 0 NHID 0x0 [0xf4270b0 0x0]
+    next hop 10.1.2.2/32
+    remote adjacency
+   via 10.1.4.2/32, GigabitEthernet0/0/0/2, 8 dependencies, weight 4294967295, class 0 [flags 0x0]
+    path-idx 1 NHID 0x0 [0xf4271e0 0x0]
+    next hop 10.1.4.2/32
+    remote adjacency
+ 
+    Weight distribution:
+    slot 0, weight 4294967295, normalized_weight 1, class 0
+    slot 1, weight 4294967295, normalized_weight 1, class 0
+    Load distribution: 0 1 (refcount 2)
+ 
+    Hash  OK  Interface                 Address
+    0     Y   GigabitEthernet0/0/0/0    remote         
+    1     Y   GigabitEthernet0/0/0/2    remote</code></pre>
+                           </section>
+                        
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title7" lang="en-US" id="concept_t1q_qhx_4db">
+                     <h2 class="title topictitle2" id="ariaid-title7">Configuring IS-IS With Weight</h2>
+                     <section class="body conbody">
+                        <p class="p">The following example shows the IS-IS weight configuration with IPv4. The same can be done for IPv6, with or without SR.</p><pre class="pre codeblock"><code>CPU0:router(config)# router isis 1 
+RP/0/RSP0/CPU0:router(config-isis)# interface GigabitEthernet0/3/0/8 
+RP/0/RSP0/CPU0:router(config-isis-if)# address-family ipv4 unicast 
+RP/0/RSP0/CPU0:router(config-isis-if-af)# weight 200
+RP/0/RSP0/CPU0:router(config-isis)# interface GigabitEthernet0/3/0/9 
+RP/0/RSP0/CPU0:router(config-isis-if)# address-family ipv4 unicast 
+RP/0/RSP0/CPU0:router(config-isis-if-af)# weight 300
+
+</code></pre><section class="section" id="concept_t1q_qhx_4db__d141597e778">
+                           <h3 class="title sectiontitle"><strong class="ph b">Verification</strong></h3>
+                           
+                           
+                           <p class="p">The following example verifies CEF entry. Then, for two paths with weights of 200 and 300 respectively, and GCD of 100; the
+                              expected normalized weights are 2 and 3.
+                           </p>
+                           <pre class="pre codeblock"><code>Router# <strong class="ph b">show cef ipv4 97.0.0.0 detail</strong>
+
+97.0.0.0/24, version 537, internal 0x1000001 0x0 (ptr 0x71bcaee0) [1], 0x0 (0x71b98870), 0x0 (0x0)
+&nbsp;Updated Oct 16 06:34:46.197&nbsp;
+&nbsp;remote adjacency to GigabitEthernet0/3/0/8
+&nbsp;Prefix Len 24, traffic index 0, precedence n/a, priority 2
+&nbsp; gateway array (0x71a6de10) reference count 13, flags 0x0, source rib (7), 0 backups
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [14 type 3 flags 0x8401 (0x71b02d90) ext 0x0 (0x0)]
+&nbsp; LW-LDI[type=3, refc=1, ptr=0x71b98870, sh-ldi=0x71b02d90]
+&nbsp; gateway array update type-time 1 Oct 16 06:34:46.196
+&nbsp;LDI Update time Oct 16 06:34:46.197
+&nbsp;LW-LDI-TS Oct 16 06:34:46.197
+&nbsp;&nbsp; via 1.0.0.2/32, GigabitEthernet0/3/0/8, 4 dependencies, weight 200, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 0 NHID 0x0 [0x7244d2a4 0x0]
+&nbsp; &nbsp; next hop 1.0.0.2/32
+&nbsp; &nbsp; remote adjacency
+&nbsp;&nbsp; via 2.0.0.2/32, GigabitEthernet0/3/0/9, 4 dependencies, weight 300, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 1 NHID 0x0 [0x7244d2f8 0x0]
+&nbsp; &nbsp; next hop 2.0.0.2/32
+&nbsp; &nbsp; remote adjacency
+
+&nbsp; &nbsp; Weight distribution:
+&nbsp; &nbsp; slot 0, weight 200, <strong class="ph b">normalized_weight 2</strong>, class 0
+&nbsp; &nbsp; slot 1, weight 300, <strong class="ph b">normalized_weight 3</strong>, class 0
+
+&nbsp; &nbsp; Load distribution: 0 1 0 1 1 (refcount 14)
+
+&nbsp; &nbsp; Hash&nbsp; OK&nbsp; Interface &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Address
+&nbsp; &nbsp; 0 &nbsp; &nbsp; Y &nbsp; GigabitEthernet0/3/0/8&nbsp; &nbsp; remote&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; 1 &nbsp; &nbsp; Y &nbsp; GigabitEthernet0/3/0/9&nbsp; &nbsp; remote&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; 2 &nbsp; &nbsp; Y &nbsp; GigabitEthernet0/3/0/8&nbsp; &nbsp; remote&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; 3 &nbsp; &nbsp; Y &nbsp; GigabitEthernet0/3/0/9&nbsp; &nbsp; remote&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; 4 &nbsp; &nbsp; Y &nbsp; GigabitEthernet0/3/0/9&nbsp; &nbsp; remote&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</code></pre>
+                           </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title8" lang="en-US" id="concept_u2d_ck1_pdb">
+                     <h2 class="title topictitle2" id="ariaid-title8">Configuring IS-IS With Metric</h2>
+                     <section class="body conbody">
+                        <p class="p">The following example shows IS-IS metric configuration with IPv4. The same can be done with IPv6.</p><pre class="pre codeblock"><code>Router# enable
+RP/0/RSP0/CPU0:router(config)# router isis 1 
+RP/0/RSP0/CPU0:router(config-isis)# interface GigabitEthernet0/3/0/8 
+RP/0/RSP0/CPU0:router(config-isis-if)# address-family ipv4 unicast 
+RP/0/RSP0/CPU0:router(config-isis-if-af)# metric 1
+RP/0/RSP0/CPU0:router(config-isis)# interface GigabitEthernet0/3/0/9 
+RP/0/RSP0/CPU0:router(config-isis-if)# address-family ipv4 unicast 
+RP/0/RSP0/CPU0:router(config-isis-if-af)# metric 100
+
+</code></pre><section class="section" id="concept_u2d_ck1_pdb__d141597e832">
+                           <h3 class="title sectiontitle"><strong class="ph b">Verification</strong></h3>
+                           
+                           
+                           <p class="p">The following example verifies CEF entry, and checks for the two paths with metric values of 1 and 100, respectively. In this
+                              example, the best path route metric is 21 and the UCMP path route metric is 120. Therefore, the calculation is as follows:
+                           </p>
+                           
+                           
+                           <p class="p">The best path route metric, 21 = (1 configured + 20 added by IS-IS), weight 0xFFFFFFFF (4294967295)</p>
+                           
+                           <p class="p">The UCMP path route metric, 120 = (100 + 20), weight = (21/120) * 4294967295 = 751619276</p>
+                           
+                           <p class="p">GCD is one. So Normalized Weight is:</p>
+                           
+                           <p class="p">(4294967295 * 64) / (4294967295 + 751619276) = 54</p>
+                           
+                           <p class="p">(751619276 * 64) / (4294967295 + 751619276) = 9</p>
+                           <pre class="pre codeblock"><code>Router# <strong class="ph b">show cef ipv4 97.0.0.0 detail</strong>
+
+
+97.0.0.0/24, version 773, internal 0x1000001 0x0 (ptr 0x71bcaee0) [1], 0x0 (0x71b98870), 0x0 (0x0)
+&nbsp;Updated Oct 16 06:36:08.632&nbsp;
+&nbsp;remote adjacency to GigabitEthernet0/3/0/8
+&nbsp;Prefix Len 24, traffic index 0, precedence n/a, priority 2
+&nbsp; gateway array (0x71a6d9d0) reference count 2, flags 0x0, source rib (7), 0 backups
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [3 type 3 flags 0x8401 (0x71b02b90) ext 0x0 (0x0)]
+&nbsp; LW-LDI [type=3, refc=1, ptr=0x71b98870, sh-ldi=0x71b02b90]
+&nbsp; gateway array update type-time 1 Oct 16 06:36:08.632
+&nbsp;LDI Update time Oct 16 06:36:08.632
+&nbsp;LW-LDI-TS Oct 16 06:36:08.632
+&nbsp;&nbsp; via 1.0.0.2/32, GigabitEthernet0/3/0/8, 14 dependencies, weight 4294967295, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 0 NHID 0x0 [0x7244d2a4 0x0]
+&nbsp; &nbsp; next hop 1.0.0.2/32
+&nbsp; &nbsp; remote adjacency
+&nbsp;&nbsp; via 2.0.0.2/32, GigabitEthernet0/3/0/9, 14 dependencies, weight 751619276, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 1 NHID 0x0 [0x7244d2f8 0x0]
+&nbsp; &nbsp; next hop 2.0.0.2/32
+&nbsp; &nbsp; remote adjacency
+
+
+&nbsp; &nbsp; Weight distribution:
+&nbsp; &nbsp; slot 0, weight 4294967295, <strong class="ph b">normalized_weight 54</strong>, class 0
+&nbsp; &nbsp; slot 1, weight 751619276, <strong class="ph b">normalized_weight 9</strong>, class 0
+</code></pre>
+                           </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title9" lang="en-US" id="concept_xsj_2q1_pdb">
+                     <h2 class="title topictitle2" id="ariaid-title9">Configuring BGP With Weights</h2>
+                     <section class="body conbody">
+                        <p class="p">The following example shows BGP configuration with weights.</p><pre class="pre codeblock"><code>RP/0/RSP0/CPU0:router(config)# route-policy BW1
+RP/0/RSP0/CPU0:router(config-rpl)# set extcommunity bandwidth (2906:45750000)
+RP/0/RSP0/CPU0:router(config-rpl)# end-policy
+RP/0/RSP0/CPU0:router(config)# !
+RP/0/RSP0/CPU0:router(config)# route-policy BW2
+RP/0/RSP0/CPU0:router(config-rpl)# set extcommunity bandwidth (2906:47250000)
+RP/0/RSP0/CPU0:router(config-rpl)# end-policy
+RP/0/RSP0/CPU0:router(config)# !
+RP/0/RSP0/CPU0:router(config)# route-policy pass-all
+RP/0/RSP0/CPU0:router(config-rpl)# pass
+RP/0/RSP0/CPU0:router(config-rpl)# end-policy
+RP/0/RSP0/CPU0:router(config)# !
+RP/0/RSP0/CPU0:router(config)# router bgp 1
+RP/0/RSP0/CPU0:router(config-bgp)# bgp bestpath as-path multipath-relax
+RP/0/RSP0/CPU0:router(config-bgp)# address-family ipv4 unicast
+RP/0/RSP0/CPU0:router(config-bgp-af)# maximum-paths eibgp 64
+RP/0/RSP0/CPU0:router(config-bgp-af)# !
+RP/0/RSP0/CPU0:router(config-bgp-af)# neighbor 1.0.0.2
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# remote-as 2
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# ebgp-multihop 255
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# dmz-link-bandwidth
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# address-family ipv4 unicast
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# multipath
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# route-policy BW1 in
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# route-policy pass-all out
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# !
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# neighbor 2.0.0.2
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# remote-as 2
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# ebgp-multihop 255
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# dmz-link-bandwidth
+RP/0/RSP0/CPU0:router(config-bgp-nbr)# address-family ipv4 unicast
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# multipath
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# route-policy BW2 in
+RP/0/RSP0/CPU0:router(config-bgp-nbr-af)# route-policy pass-all out
+</code></pre><section class="section" id="concept_xsj_2q1_pdb__d141597e902">
+                           <h3 class="title sectiontitle"><strong class="ph b">Verification</strong></h3>
+                           
+                           
+                           <p class="p"><strong class="ph b">Step 1:</strong> Verify CEF entry:
+                           </p>
+                           
+                           <p class="p">Via 1.0.0.2: set extcommunity bandwidth (2906:45750000) – Weight = 45750000/125=366000 (125 ratio because baud)</p>
+                           
+                           <p class="p">Via 2.0.0.2: set extcommunity bandwidth (2906:47250000) – Weight = 47250000/125=378000</p>
+                           
+                           <p class="p">GCD is 6, so norm_weight = 61 and 63. Though 61 + 63 &gt; 64.</p>
+                           
+                           <p class="p"><strong class="ph b">Step 2:</strong> GCD of weights 61 and 63 is 1. Therefore, Normalised Weight = (Path weight/Total weight) * Maximum bucket size. The maximum
+                              bucket size value is 64. Total weight = 61+63 = 124.
+                           </p>
+                           
+                           <p class="p">norm_weight1 = (61/124) * 64 = 31, norm_weight2 = (63/124) * 64 = 32</p>
+                           
+                           <p class="p">You can verify the weight distribution in BGP, using the following command:</p>
+                           <pre class="pre codeblock"><code>Router # <strong class="ph b">show cef vrf default ipv4 97.0.0.0 detail</strong>
+
+
+97.0.0.0/24, version 1965, internal 0x5000001 0x0 (ptr 0x71bcb620) [1], 0x0 (0x0), 0x0 (0x0)
+&nbsp;Updated Oct 16 08:15:02.958
+&nbsp;Prefix Len 24, traffic index 0, precedence n/a, priority 4
+&nbsp; gateway array (0x72a5e2f8) reference count 10, flags 0x2010, source rib (7), 0 backups
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [1 type 3 flags 0x48441 (0x71b02cd0) ext 0x0 (0x0)]
+&nbsp; LW-LDI[type=0, refc=0, ptr=0x0, sh-ldi=0x0]
+&nbsp; gateway array update type-time 1 Oct 16 08:15:02.958
+&nbsp;LDI Update time Oct 16 08:15:02.959
+
+
+&nbsp; &nbsp; Weight distribution:
+&nbsp; &nbsp; slot 0, weight 366000, <strong class="ph b">normalized_weight 31</strong>
+&nbsp; &nbsp; slot 1, weight 378000, <strong class="ph b">normalized_weight 32</strong>
+
+
+&nbsp; Level 1 - Load distribution: 0 1 0 1 0 1 0
+
+1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 1
+&nbsp; [0] via 1.0.0.2/32, recursive
+&nbsp; [1] via 2.0.0.2/32, recursive
+</code></pre>
+                           </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title10" lang="en-US" id="concept_kfl_ht1_pdb">
+                     <h2 class="title topictitle2" id="ariaid-title10">Configuring TE Tunnel With Weights</h2>
+                     <section class="body conbody">
+                        <p class="p">Use the <strong class="ph b">load-share</strong> command on <strong class="ph b">tunnel-te</strong> config to set weight.
+                        </p><pre class="pre codeblock"><code>RP/0/RSP0/CPU0:router(config)# interface tunnel-te1
+RP/0/RSP0/CPU0:router(config-if)# load-share 8
+</code></pre><section class="section" id="concept_kfl_ht1_pdb__d141597e985">
+                           <h3 class="title sectiontitle"><strong class="ph b">Verification</strong></h3>
+                           
+                           
+                           <p class="p">In the following example, the weight is distributed among the five TE tunnels.</p>
+                           <pre class="pre codeblock"><code>Router# <strong class="ph b">show cef ipv4 97.0.0.0 detail</strong>
+(…)
+&nbsp;&nbsp; via 200.0.0.1/32, tunnel-te1, 3 dependencies, weight 8, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 0 NHID 0x0 [0x7244d2f8 0x0]
+&nbsp; &nbsp; next hop 200.0.0.1/32
+&nbsp; &nbsp; local adjacency
+&nbsp;&nbsp; via 200.0.0.1/32, tunnel-te2, 3 dependencies, weight 4, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 1 NHID 0x0 [0x7244e948 0x0]
+&nbsp; &nbsp; next hop 200.0.0.1/32
+&nbsp; &nbsp; local adjacency
+&nbsp;&nbsp; via 200.0.0.1/32, tunnel-te3, 3 dependencies, weight 1, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 2 NHID 0x0 [0x7244d544 0x0]
+&nbsp; &nbsp; next hop 200.0.0.1/32
+&nbsp; &nbsp; local adjacency
+&nbsp;&nbsp; via 200.0.0.1/32, tunnel-te4, 3 dependencies, weight 1, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 3 NHID 0x0 [0x7244d694 0x0]
+&nbsp; &nbsp; next hop 200.0.0.1/32
+&nbsp; &nbsp; local adjacency
+&nbsp;&nbsp; via 200.0.0.1/32, tunnel-te5, 3 dependencies, weight 1, class 0 [flags 0x0]
+&nbsp; &nbsp; path-idx 4 NHID 0x0 [0x7244d7e4 0x0]
+&nbsp; &nbsp; next hop 200.0.0.1/32
+&nbsp; &nbsp; local adjacency
+
+&nbsp; &nbsp; Weight distribution:
+&nbsp; &nbsp; slot 0, weight 8, <strong class="ph b">normalized_weight 8</strong>, class 0
+&nbsp; &nbsp; slot 1, weight 4, <strong class="ph b">normalized_weight 4</strong>, class 0
+&nbsp; &nbsp; slot 2, weight 1, <strong class="ph b">normalized_weight 1</strong>, class 0
+&nbsp; &nbsp; slot 3, weight 1, <strong class="ph b">normalized_weight 1</strong>, class 0
+&nbsp; &nbsp; slot 4, weight 1, <strong class="ph b">normalized_weight 1</strong>, class 0
+
+
+</code></pre>
+                           </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title11" lang="en-US" id="concept_x5p_yfc_pdb">
+                     <h2 class="title topictitle2" id="ariaid-title11">Policy-Based Tunnel Selection</h2>
+                     <section class="body conbody">
+                        
+                        <p class="p">Policy-Based Tunnel Selection (PBTS) provides a mechanism that lets you direct traffic into specific TE tunnels based on different
+                           criteria.
+                        </p>
+                        
+                        <p class="p">PBTS is a special case in UCMP calculation. It uses load share command to configure weight. The UCMP algorithm normalizes
+                           each class independently and it uses max_path from PD specific max_tunnels_per_class<span class="ph">, which is 64 for ASR9K</span>. UCMP with PBTS can have more total_paths (buckets) than the supported number of paths (buckets) for all Forwarding Classes
+                           (FCs)<span class="ph">, which is 64 for ASR9K</span>.
+                        </p>
+                        
+                        <p class="p">All other XR platform sets 8 buckets per FC and 64 buckets for all 8 (0-7) FCs. After normalization, the total number buckets
+                           do not exceed platform limit.
+                        </p>
+                        
+                        <p class="p"><strong class="ph b">Example</strong></p>
+                        
+                        <p class="p">The <strong class="ph b">show cef ipv6</strong> command displays the PBTS class information in the following output.
+                        </p>
+                        <pre class="pre codeblock"><code>Router# <strong class="ph b">show cef ipv6 97:: detail</strong>
+
+97::/64, version 88177, internal 0x1000001 0x0 (ptr 0x980eef7c) [1], 0x0 (0x974366b8), 0xa28 (0x988842c0)
+ Updated Mar  7 05:44:46.875
+
+ Prefix Len 64, traffic index 0, precedence n/a, priority 2
+  gateway array (0x97e54770) reference count 11, flags 0x28, source rib (7), 0 backups
+                [12 type 1 flags 0x200401 (0x9799a3f8) ext 0x0 (0x0)]
+  LW-LDI[type=1, refc=1, ptr=0x974366b8, sh-ldi=0x9799a3f8]
+  gateway array update type-time 4 Mar  7 05:46:11.118
+ LDI Update time Mar  7 05:46:11.118
+ LW-LDI-TS Mar  7 05:46:11.118
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te45, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 0 NHID 0x0 [0x97b51978 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te46, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 1 NHID 0x0 [0x97b51648 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te47, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 2 NHID 0x0 [0x97b51c20 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te48, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 3 NHID 0x0 [0x97b52308 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te49, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 4 NHID 0x0 [0x97b518f0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te1, 3 dependencies, weight 3, forward class 1 [flags 0x0]
+
+    path-idx 5 NHID 0x0 [0x97b4f338 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te2, 3 dependencies, weight 500, forward class 1 [flags 0x0]
+
+    path-idx 6 NHID 0x0 [0x97b50328 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te3, 3 dependencies, weight 1, forward class 1 [flags 0x0]
+
+    path-idx 7 NHID 0x0 [0x97b4ede8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te4, 3 dependencies, weight 1, forward class 1 [flags 0x0]
+
+    path-idx 8 NHID 0x0 [0x97b4eb40 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te5, 3 dependencies, weight 1, forward class 1 [flags 0x0]
+
+    path-idx 9 NHID 0x0 [0x97b4fff8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te6, 3 dependencies, weight 1, forward class 1 [flags 0x0]
+
+    path-idx 10 NHID 0x0 [0x97b4f778 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te7, 3 dependencies, weight 1, forward class 1 [flags 0x0]
+
+    path-idx 11 NHID 0x0 [0x97b4f118 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te8, 3 dependencies, weight 1, forward class 1 [flags 0x0]
+
+    path-idx 12 NHID 0x0 [0x97b4ee70 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te9, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 13 NHID 0x0 [0x97b4f090 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te10, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 14 NHID 0x0 [0x97b4f448 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te11, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 15 NHID 0x0 [0x97b4faa8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te12, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 16 NHID 0x0 [0x97b4f008 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te13, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 17 NHID 0x0 [0x97b50218 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te14, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 18 NHID 0x0 [0x97b4fbb8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te15, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 19 NHID 0x0 [0x97b4ed60 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te16, 3 dependencies, weight 1, forward class 2 [flags 0x0]
+
+    path-idx 20 NHID 0x0 [0x97b4fcc8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te17, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+
+    path-idx 21 NHID 0x0 [0x97b50190 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te18, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+
+    path-idx 22 NHID 0x0 [0x97b4f998 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te19, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+
+    path-idx 23 NHID 0x0 [0x97b4fee8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te20, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+    path-idx 24 NHID 0x0 [0x97b505d0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te21, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+    path-idx 25 NHID 0x0 [0x97b4fc40 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te22, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+    path-idx 26 NHID 0x0 [0x97b50988 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te23, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+    path-idx 27 NHID 0x0 [0x97b50080 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te24, 3 dependencies, weight 1, forward class 3 [flags 0x0]
+
+    path-idx 28 NHID 0x0 [0x97b4fd50 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te25, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+
+    path-idx 29 NHID 0x0 [0x97b503b0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te26, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+
+    path-idx 30 NHID 0x0 [0x97b507f0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te27, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+    path-idx 31 NHID 0x0 [0x97b4ff70 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te28, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+
+    path-idx 32 NHID 0x0 [0x97b50548 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te29, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+    path-idx 33 NHID 0x0 [0x97b4fb30 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te30, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+    path-idx 34 NHID 0x0 [0x97b506e0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te31, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+    path-idx 35 NHID 0x0 [0x97b51208 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te32, 3 dependencies, weight 1, forward class 4 [flags 0x0]
+
+    path-idx 36 NHID 0x0 [0x97b502a0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te33, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+    path-idx 37 NHID 0x0 [0x97b514b0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te34, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+    path-idx 38 NHID 0x0 [0x97b50c30 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te35, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+    path-idx 39 NHID 0x0 [0x97b50b20 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te36, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+    path-idx 40 NHID 0x0 [0x97b50cb8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te37, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+
+    path-idx 41 NHID 0x0 [0x97b51180 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te38, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+    path-idx 42 NHID 0x0 [0x97b51428 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te39, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+
+    path-idx 43 NHID 0x0 [0x97b51758 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te40, 3 dependencies, weight 1, forward class 5 [flags 0x0]
+
+    path-idx 44 NHID 0x0 [0x97b520e8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te41, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 45 NHID 0x0 [0x97b51538 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te42, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 46 NHID 0x0 [0x97b50dc8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te43, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 47 NHID 0x0 [0x97b51b10 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te44, 3 dependencies, weight 1, forward class 6 [flags 0x0]
+
+    path-idx 48 NHID 0x0 [0x97b516d0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te50, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 49 NHID 0x0 [0x97b525b0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te51, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 50 NHID 0x0 [0x97b52638 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te52, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 51 NHID 0x0 [0x97b51f50 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te53, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 52 NHID 0x0 [0x97b52060 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te54, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 53 NHID 0x0 [0x97b527d0 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te55, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 54 NHID 0x0 [0x97b52280 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te56, 3 dependencies, weight 1, forward class 7 [flags 0x0]
+
+    path-idx 55 NHID 0x0 [0x97b52d20 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te57, 3 dependencies, weight 1, class 0 [flags 0x0]
+
+    path-idx 56 NHID 0x0 [0x97b51ca8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te58, 3 dependencies, weight 1, class 0 [flags 0x0]
+
+    path-idx 57 NHID 0x0 [0x97b52858 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te59, 3 dependencies, weight 1, class 0 [flags 0x0]
+
+    path-idx 58 NHID 0x0 [0x97b52390 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te60, 3 dependencies, weight 1, class 0 [flags 0x0]
+
+    path-idx 59 NHID 0x0 [0x97b52a78 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te61, 3 dependencies, weight 1, class 0 [flags 0x0]
+
+    path-idx 60 NHID 0x0 [0x97b52c10 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+   via ::ffff:200.0.0.1/128, tunnel-te62, 3 dependencies, weight 1, class 0 [flags 0x0]
+
+    path-idx 61 NHID 0x0 [0x97b52da8 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+   via ::ffff:200.0.0.1/128, tunnel-te63, 3 dependencies, weight 1, class 0 [flags 0x0]
+
+    path-idx 62 NHID 0x0 [0x97b52c98 0x0]
+    next hop VRF - 'default', table - 0xe0000000
+    next hop ::ffff:200.0.0.1/128
+    local adjacency
+     labels imposed {ExpNullv6}
+
+
+    Weight distribution:
+
+    slot 0, weight 1, normalized_weight 1, class 0
+    slot 1, weight 1, normalized_weight 1, class 0
+    slot 2, weight 1, normalized_weight 1, class 0
+    slot 3, weight 1, normalized_weight 1, class 0
+    slot 4, weight 1, normalized_weight 1, class 0
+    slot 5, weight 1, normalized_weight 1, class 0
+    slot 6, weight 1, normalized_weight 1, class 0
+    slot 7, weight 1, normalized_weight 1, forward class 1
+    slot 8, weight 3, normalized_weight 1, forward class 1
+    slot 9, weight 500, normalized_weight 1, forward class 1
+    slot 10, weight 1, normalized_weight 1, forward class 1
+    slot 11, weight 1, normalized_weight 1, forward class 1
+    slot 12, weight 1, normalized_weight 1, forward class 1
+    slot 13, weight 1, normalized_weight 1, forward class 1
+    slot 14, weight 1, normalized_weight 1, forward class 1
+    slot 15, weight 1, normalized_weight 1, forward class 2
+    slot 16, weight 1, normalized_weight 1, forward class 2
+    slot 17, weight 1, normalized_weight 1, forward class 2
+    slot 18, weight 1, normalized_weight 1, forward class 2
+    slot 19, weight 1, normalized_weight 1, forward class 2
+    slot 20, weight 1, normalized_weight 1, forward class 2
+    slot 21, weight 1, normalized_weight 1, forward class 2
+    slot 22, weight 1, normalized_weight 1, forward class 2
+    slot 23, weight 1, normalized_weight 1, forward class 3
+    slot 24, weight 1, normalized_weight 1, forward class 3
+    slot 25, weight 1, normalized_weight 1, forward class 3
+    slot 26, weight 1, normalized_weight 1, forward class 3
+    slot 27, weight 1, normalized_weight 1, forward class 3
+    slot 28, weight 1, normalized_weight 1, forward class 3
+    slot 29, weight 1, normalized_weight 1, forward class 3
+    slot 30, weight 1, normalized_weight 1, forward class 3
+    slot 31, weight 1, normalized_weight 1, forward class 4
+    slot 32, weight 1, normalized_weight 1, forward class 4
+    slot 33, weight 1, normalized_weight 1, forward class 4
+    slot 34, weight 1, normalized_weight 1, forward class 4
+    slot 35, weight 1, normalized_weight 1, forward class 4
+    slot 36, weight 1, normalized_weight 1, forward class 4
+    slot 37, weight 1, normalized_weight 1, forward class 4
+    slot 38, weight 1, normalized_weight 1, forward class 4
+    slot 39, weight 1, normalized_weight 1, forward class 5
+    slot 40, weight 1, normalized_weight 1, forward class 5
+    slot 41, weight 1, normalized_weight 1, forward class 5
+    slot 42, weight 1, normalized_weight 1, forward class 5
+    slot 43, weight 1, normalized_weight 1, forward class 5
+    slot 44, weight 1, normalized_weight 1, forward class 5
+    slot 45, weight 1, normalized_weight 1, forward class 5
+    slot 46, weight 1, normalized_weight 1, forward class 5
+    slot 47, weight 1, normalized_weight 1, forward class 6
+    slot 48, weight 1, normalized_weight 1, forward class 6
+    slot 49, weight 1, normalized_weight 1, forward class 6
+    slot 50, weight 1, normalized_weight 1, forward class 6
+    slot 51, weight 1, normalized_weight 1, forward class 6
+    slot 52, weight 1, normalized_weight 1, forward class 6
+    slot 53, weight 1, normalized_weight 1, forward class 6
+    slot 54, weight 1, normalized_weight 1, forward class 6
+    slot 55, weight 1, normalized_weight 1, forward class 7
+    slot 56, weight 1, normalized_weight 1, forward class 7
+    slot 57, weight 1, normalized_weight 1, forward class 7
+    slot 58, weight 1, normalized_weight 1, forward class 7
+    slot 59, weight 1, normalized_weight 1, forward class 7
+    slot 60, weight 1, normalized_weight 1, forward class 7
+    slot 61, weight 1, normalized_weight 1, forward class 7
+    slot 62, weight 1, normalized_weight 1, forward class 7
+
+    PBTS class information:
+
+      class 0: 7 paths, offset 0
+
+      forward class 1: 8 paths, offset 7
+      forward class 2: 8 paths, offset 15
+      forward class 3: 8 paths, offset 23
+      forward class 4: 8 paths, offset 31
+      forward class 5: 8 paths, offset 39
+      forward class 6: 8 paths, offset 47
+      forward class 7: 8 paths, offset 55
+
+    Load distribution: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 (refcount 12)
+
+
+    Hash  OK  Interface                 Address
+
+    0     Y   tunnel-te57               point2point    
+    1     Y   tunnel-te58               point2point    
+    2     Y   tunnel-te59               point2point    
+    3     Y   tunnel-te60               point2point    
+    4     Y   tunnel-te61               point2point    
+    5     Y   tunnel-te62               point2point    
+    6     Y   tunnel-te63               point2point    
+    7     Y   tunnel-te8                point2point    
+    8     Y   tunnel-te1                point2point    
+    9     Y   tunnel-te2                point2point    
+    10    Y   tunnel-te3                point2point    
+
+
+    11    Y   tunnel-te4                point2point    
+    12    Y   tunnel-te5                point2point    
+    13    Y   tunnel-te6                point2point    
+    14    Y   tunnel-te7                point2point    
+    15    Y   tunnel-te16               point2point    
+    16    Y   tunnel-te9                point2point    
+    17    Y   tunnel-te10               point2point    
+    18    Y   tunnel-te11               point2point    
+    19    Y   tunnel-te12               point2point    
+    20    Y   tunnel-te13               point2point    
+    21    Y   tunnel-te14               point2point    
+    22    Y   tunnel-te15               point2point    
+    23    Y   tunnel-te24               point2point    
+    24    Y   tunnel-te17               point2point    
+    25    Y   tunnel-te18               point2point    
+    26    Y   tunnel-te19               point2point    
+    27    Y   tunnel-te20               point2point    
+    28    Y   tunnel-te21               point2point    
+    29    Y   tunnel-te22               point2point    
+    30    Y   tunnel-te23               point2point    
+    31    Y   tunnel-te32               point2point    
+    32    Y   tunnel-te25               point2point    
+    33    Y   tunnel-te26               point2point    
+    34    Y   tunnel-te27               point2point    
+    35    Y   tunnel-te28               point2point    
+    36    Y   tunnel-te29               point2point    
+    37    Y   tunnel-te30               point2point    
+    38    Y   tunnel-te31               point2point    
+    39    Y   tunnel-te40               point2point    
+    40    Y   tunnel-te33               point2point    
+    41    Y   tunnel-te34               point2point    
+    42    Y   tunnel-te35               point2point    
+    43    Y   tunnel-te36               point2point    
+    44    Y   tunnel-te37               point2point    
+    45    Y   tunnel-te38               point2point    
+    46    Y   tunnel-te39               point2point    
+    47    Y   tunnel-te44               point2point    
+    48    Y   tunnel-te45               point2point    
+    49    Y   tunnel-te46               point2point    
+    50    Y   tunnel-te47               point2point    
+    51    Y   tunnel-te48               point2point    
+    52    Y   tunnel-te41               point2point    
+    53    Y   tunnel-te42               point2point    
+    54    Y   tunnel-te43               point2point    
+    55    Y   tunnel-te56               point2point    
+    56    Y   tunnel-te49               point2point    
+    57    Y   tunnel-te50               point2point    
+    58    Y   tunnel-te51               point2point    
+    59    Y   tunnel-te52               point2point    
+    60    Y   tunnel-te53               point2point    
+    61    Y   tunnel-te54               point2point    
+    62    Y   tunnel-te55               point2point    
+
+
+</code></pre>
+                        </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+      <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case <img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></a></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

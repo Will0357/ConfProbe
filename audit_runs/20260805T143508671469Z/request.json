@@ -1,0 +1,14 @@
+{
+  "probe_path": "graphs\\xrv9k\\config\\router_ospf\\router_ospf_DSL.json",
+  "vendor": "Cisco",
+  "device_model": "xrv9k",
+  "version": "7.7.1",
+  "scope": "router ospf",
+  "manual_library": "manual_db/sources.json",
+  "output_root": "audit_runs",
+  "llm_model": "gpt-5.6-Luna",
+  "llm_base_url": "https://api.430123.xyz/v1/",
+  "llm_timeout": 180.0,
+  "review_batch_size": 4,
+  "max_manual_bytes": 8388608
+}

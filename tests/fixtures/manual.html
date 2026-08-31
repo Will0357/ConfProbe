@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>IOS XR 6.3.1 OSPF Command Reference</title>
+    <meta name="product-version" content="IOS XR 6.3.1">
+  </head>
+  <body>
+    <article class="topic reference" id="network">
+      <h2 class="title topictitle2">network (OSPF)</h2>
+      <section class="refsyn">
+        <div class="synblk">network { point-to-point | broadcast }</div>
+      </section>
+      <section class="command_modes"><p>Command Modes Router OSPF configuration</p></section>
+      <section class="command_default"><p>Broadcast</p></section>
+      <section class="usage_guidelines"><p>Select one network type.</p></section>
+      <section class="command_examples"><kbd class="userinput">network point-to-point</kbd></section>
+      <table class="command_history"><tr><td>Release 6.3.1</td><td>Introduced</td></tr></table>
+    </article>
+
+    <article class="topic reference" id="cost">
+      <h2 class="title topictitle2">cost (OSPF)</h2>
+      <section class="refsyn"><div class="synblk">cost <var>cost</var></div></section>
+      <table class="syntax"><tr><td>cost</td><td>Range is 1 to 65535.</td></tr></table>
+      <section class="command_modes"><p>Command Modes OSPF area configuration</p></section>
+      <section class="command_default"><p>No default behavior.</p></section>
+      <section class="usage_guidelines"><p>Sets the link-state metric.</p></section>
+      <section class="command_examples"><kbd class="userinput">cost 65</kbd></section>
+      <table class="command_history"><tr><td>Release 6.3.1</td><td>Introduced</td></tr></table>
+    </article>
+
+    <article class="topic reference" id="priority">
+      <h2 class="title topictitle2">priority (OSPF)</h2>
+      <section class="refsyn"><div class="synblk">priority <var>priority</var></div></section>
+      <table class="syntax"><tr><td>priority</td><td>Unsigned integer.</td></tr></table>
+      <section class="command_modes"><p>Command Modes Router OSPF configuration</p></section>
+      <section class="command_examples"><kbd class="userinput">priority 5</kbd></section>
+    </article>
+
+    <article class="topic reference" id="timer">
+      <h2 class="title topictitle2">timer (OSPF)</h2>
+      <section class="refsyn"><div class="synblk">timer <var>seconds</var></div></section>
+      <table class="syntax"><tr><td>seconds</td><td>Range is 1 to 20.</td></tr></table>
+      <section class="command_modes"><p>Command Modes Router OSPF configuration</p></section>
+      <section class="command_examples"><kbd class="userinput">timer 30</kbd></section>
+    </article>
+
+    <article class="topic reference" id="broken">
+      <h2 class="title topictitle2">broken (OSPF)</h2>
+      <section class="refsyn"><div class="synblk">broken { enable | disable</div></section>
+      <section class="command_modes"><p>Command Modes Router OSPF configuration</p></section>
+    </article>
+
+    <article class="topic reference" id="legacy">
+      <h2 class="title topictitle2">legacy (OSPF)</h2>
+      <section class="body refbody"><section class="section"><p>Legacy command description.</p></section></section>
+      <section class="command_modes"><p>Command Modes Router OSPF configuration</p></section>
+      <section class="command_examples"><kbd class="userinput">legacy enable</kbd></section>
+    </article>
+  </body>
+</html>

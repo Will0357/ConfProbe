@@ -1,0 +1,36 @@
+{
+  "index_version": 2,
+  "source_url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x.html",
+  "html_sha256": "59dbe71d18a6e51553810419a624725f9725ebbcdb64612dd047e323892de5b5",
+  "topic_links": [
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/b-routing-cg-asr9000-79x_index.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/enabling-flexible-algorithm-ip-networks.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-and-monitoring-rib.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bfd.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bgp-flowspec.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bgp.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-data-plane-security.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-eigrp.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-is-is.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ospf.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rip.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-routing-policy.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-static-routes.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html",
+    "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/ipv4-ipv6-loop-free-alternate-fast-reroute.html"
+  ],
+  "health": {
+    "source_url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x.html",
+    "source_role": "config_guide",
+    "source_version": "7.9",
+    "is_target_version": false,
+    "status": "complete",
+    "discovered_topics": 16,
+    "indexed_topics": 16,
+    "message": "",
+    "retry_count": 0,
+    "failed_urls": [],
+    "unparsed_urls": []
+  }
+}

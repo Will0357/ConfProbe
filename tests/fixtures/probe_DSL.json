@@ -1,0 +1,38 @@
+{
+  "node_id": 0,
+  "node_type": "ROOT",
+  "children": [
+    {
+      "node_id": 1,
+      "node_type": "view_node",
+      "view_name": "[config-ospf]",
+      "cmd_aggregatedTemplate": "router ospf <WORD>",
+      "cmd_templates": ["router ospf <WORD>"],
+      "children": [
+        {
+          "node_id": 2,
+          "node_type": "terminal_node",
+          "cmd_aggregatedTemplate": "network point-to-point",
+          "cmd_templates": ["network point-to-point"],
+          "children": []
+        },
+        {
+          "node_id": 3,
+          "node_type": "view_node",
+          "view_name": "[config-ospf-area]",
+          "cmd_aggregatedTemplate": "area <0-4294967295>",
+          "cmd_templates": ["area <0-4294967295>"],
+          "children": [
+            {
+              "node_id": 4,
+              "node_type": "terminal_node",
+              "cmd_aggregatedTemplate": "cost <1-65535>",
+              "cmd_templates": ["cost <1-65535>"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

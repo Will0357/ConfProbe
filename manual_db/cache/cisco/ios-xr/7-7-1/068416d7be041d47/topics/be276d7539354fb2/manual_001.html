@@ -1,0 +1,2790 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:fb="//www.facebook.com/2008/fbml" xmlns:og="//opengraphprotocol.org/schema/" lang="en" xml:lang="en"  class="no-touch no-js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="rei" content="3/2/2022 10.39am est" />
+
+    
+        <script tyle="text/javascript" src="/content/dam/cdc/j/cdcrSwitch.js"></script>
+        <script type="text/javascript"> 
+            if (typeof cdc === "undefined"){
+                cdc = {};
+            }
+            cdc.localizedLang="en/us";
+
+            if (window.cdcext === undefined) { window.cdcext = {}; }
+            cdcext.customEnvironment = "prod";
+            if (window.cdclocale === undefined) { window.cdclocale = {}; }
+            cdclocale.locale = cdc.localizedLang=="en/us"?"en_us":cdc.localizedLang;
+
+        </script> 
+         
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/c/dam/cdc/t/ctm-core.js"></script>
+<script>
+    window['adrum-start-time'] = new Date().getTime();
+    window.environ = "prod" ;
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    if (window.cpe === undefined) {
+        window.cpe = {};
+    }
+
+    cpe.accountName = "prod";
+    cpe.config = ["cinf","dsc","pps"];
+    cpe.hideMethod = "elements";
+
+    window.targetGlobalSettings = JSON.parse('{\x22timeout\x22:4000}');
+    window.targetPageParamsAll = () => JSON.parse('{\x22entity\x22:\x22{\\\x22id\\\x22:\\\x221678794752990408\\\x22,\\\x22categoryId\\\x22:\\\x22\\\x22}\x22}');
+
+    
+    const bullseyeLibrary = `/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/external/bullseye.js`;
+
+    import(bullseyeLibrary);
+</script>
+<script src="/etc.clientlibs/cisco-cdc/clientlibs/clientlib-external/resources/regional-mbox/regional-mbox.js"></script>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        <title>Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x - Implementing RCMD [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco</title>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"  />
+    <meta name="description" content="Implementing RCMD"  />
+    <meta name="title" content="Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x - Implementing RCMD [Cisco ASR 9000 Series Aggregation Services Routers]"  />
+    <meta name="documentId" content="1669830517820696"  />
+    <meta name="templateName" content="book"  />
+    <meta property="fb:app_id" content="156494687694418"  />
+    <meta name="ioContentSource" content="WEM"  />
+    <meta name="docType" content="TSD Products Configuration Guide Chapter"  />
+    <meta name="concept" content="Cisco ASR 9000 Series Aggregation Services Routers"  />
+    <meta name="iaPath" content="cisco.com#Products#Cisco Products#Routers#Service Provider Edge Routers#Cisco ASR 9000 Series Aggregation Services Routers"  />
+    <meta name="contentType" content="cisco.com#US#preSales"  />
+    <meta name="locale" content="US"  />
+    <meta name="language" content="en"  />
+    <meta name="country" content="US"  />
+    <meta name="CCID_Page" content="cc001772"  />
+    <meta name="date" content="Tue Jul 14 22:34:09 PDT 2026"  />
+    <meta name="accessLevel" content="Customer"  />
+    <meta name="accessLevel" content="Guest"  />
+    <meta name="accessLevel" content="Partner"  />
+    <meta name="entitlementExpression" content="contains( &quot;0,1,2,3,4,7&quot; , $profileField[3] )"  />
+    <meta property="og:site_name" content="Cisco"  />
+    <meta property="og:type" content="website"  />
+    <meta property="og:title" content="Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x - Implementing RCMD [Cisco ASR 9000 Series Aggregation Services Routers]"  />
+    <meta property="og:description" content="Implementing RCMD"  />
+    <meta property="og:url" content="https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html"  />
+    <link rel="canonical" href="https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html"/>
+	
+
+    
+ 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/c\/dnc\/etc\/clientcontext\/default", "\/content\/en\/us\/td\/docs\/routers\/asr9000\/software\/asr9k\u002Dr7\u002D8\/routing\/configuration\/guide\/b\u002Drouting\u002Dcg\u002Dasr9000\u002D79x\/implementing\u002Drcmd");
+
+        
+    });
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/cisco-sans.min.css" type="text/css">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/etc/designs/cdc/clientlibs/responsive/js/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/books.min.css" type="text/css">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+    <script>
+        sessionStorage.setItem("logOutIntermediateMessage", 'You are being logged out.');
+    </script>
+    
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom JSON LD For Products Type -->
+
+    
+    <script type="application/ld+json">
+        [
+           
+            {
+          "@context": "http://www.schema.org",                                                                        
+          "@type": "WebPage",
+          "name": "Implementing RCMD",  		  
+          "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html",
+          "description": "Implementing RCMD",
+          "publisher": {
+              "@type": "Corporation",
+                 "name": "Cisco"
+            }
+        }]
+    </script>
+<!-- End Custom JSON LD For Products Type -->
+
+<!-- Video JSON LD -->
+
+
+
+
+<!-- End Video JSON LD -->
+
+    
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="GKZXC-NS3SU-A7VFH-HKBHM-U7LKH",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"GKZXC-NS3SU-A7VFH-HKBHM-U7LKH";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eqhanmbqaeaiyjqacqlyiaaxvbvhgnko-f-1b7c82491-clienttons-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"61004","ak.ai":parseInt("271834",10),"ak.ol":"0","ak.cr":49,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"5d440ac","ak.r":52144,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.cport":52725,"ak.gh":"23.203.53.44","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1785935182","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==URUIjRD4PhA61jtBe4Zq0MdHaHB0EJm+Qoc56oTWZX9/c5F+Q1OuJ9rW3OgIwybkhmkBYb1oS3m5XkBICjUmBSC2tQze/3Kv8o58pmgHd00I0M2c1xZ2WgosPV4yQcUnoio9UEBKJ2tqqU88cKhXOviurbniEOvryRE4bsbPK3lyzrGYm/OwsdA+owto9a1v8LCHWijt3/dz01thr84eI7i+9IjGo35xP4vz2rUV79VGvbgLM6TUDA6e96crOMM1RqFhZvrBYgbuKuZm8oEWyAL0//ykUFaiQ2DrJYZJ74GFOjnXPwreqAXApDH6xMg5zqAVB4hQczcDVYTbGS2xw6C9MlHdTCB0R1bmyokaU+BcHdKpNPGkNNxkynEB0JIGpK/yaxedTs4scUahwUl9x8Hg1AzekOqt4Nh/pQnYLHQ=","ak.pv":"550","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body id="wcq" class="fw-res cdc-support cdc-books cdc-high-density cdc-full-width cdc-transform
+">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-skiplinks">
+    <ul class="container">
+        <li><a id="skiplink-content" href="#fw-content">Skip to content</a></li>
+        <li><a id="skiplink-search" href="#">Skip to search</a></li>
+        <li><a id="skiplink-footer" href="#fw-footer-v2" class="last">Skip to footer</a></li>
+    </ul>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="/site/web-components/us/en/cdc-header.js"></script>
+    <cdc-header></cdc-header>
+    <nav class="fw-c-header__seo-links" aria-hidden="true" style="display:none">
+        <ul>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/index.html">Cisco.com Worldwide</a></li>
+            <li><a tabindex="-1" href="/site/us/en/products/index.html">Products and Services</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/solutions/index.html">Solutions</a></li>
+            <li><a tabindex="-1" href="/c/en/us/support/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/site/us/en/learn/index.html">Learn</a></li>
+            <li><a tabindex="-1" href="/site/us/en/about/sitemap.html">Explore Cisco</a></li>
+            <li><a tabindex="-1" href="/site/us/en/buy/index.html">How to Buy</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html">Partners Home</a></li>                
+            <li><a tabindex="-1" href="/site/us/en/partners/360-partner-program/partner-program/index.html">Partner Program</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/support-help/index.html">Support</a></li>
+            <li><a tabindex="-1" href="/site/us/en/partners/360-partner-program/tools-training/index.html">Tools</a></li>
+            <li><a tabindex="-1" href="https://locatr.cloudapps.cisco.com/WWChannels/LOCATR/pf/index.jsp#/">Find a Cisco Partner</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/connect-with-a-partner/index.html">Meet our Partners</a></li>
+            <li><a tabindex="-1" href="https://www.cisco.com/site/us/en/partners/index.html">Become a Cisco Partner</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-content" class="container grid">
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+<div class="row full blowout" data-owner="ID">
+	<div class="col full ">
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav id="fw-breadcrumb" class="data-based user-driven-nav" aria-label="breadcrumbs" data-owner="ID">
+
+   
+    <ul itemscope itemtype="//schema.org/BreadcrumbList">
+        <li aria-hidden="true"><a href='#' class="skip"><span></span></a></li>
+        <li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/index.html'><span itemprop='name'>Home</span><meta itemprop='position' content='1' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/index.html'><span itemprop='name'>Support</span><meta itemprop='position' content='2' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/all-products.html'><span itemprop='name'>Product Support</span><meta itemprop='position' content='3' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/routers/category.html'><span itemprop='name'>Routers</span><meta itemprop='position' content='4' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/routers/asr-9000-series-aggregation-services-routers/series.html'><span itemprop='name'>Cisco ASR 9000 Series Aggregation Services Routers</span><meta itemprop='position' content='5' /></a><span class='caret'></span></li><li itemprop='itemListElement' itemscope itemtype='//schema.org/ListItem'><a itemprop='item' href='/c/en/us/support/routers/asr-9000-series-aggregation-services-routers/products-installation-and-configuration-guides-list.html'><span itemprop='name'>Configuration Guides</span><meta itemprop='position' content='6' /></a><span class='caret'></span></li>
+    </ul>
+</nav>
+<script>
+    if (window.cdc === undefined) { window.cdc = {}; }
+    if (cdc.breadcrumb === undefined) {
+        cdc.breadcrumb = (function () {
+            let clone = document.querySelector('#fw-breadcrumb').cloneNode(true);
+
+            let appendClone = function () {
+                let hasBreadcrumb = document.querySelector('#fw-breadcrumb') !== null,
+                    firstMarquee = document.querySelectorAll('.dmc-mq')[0];
+
+                if (!hasBreadcrumb && firstMarquee !== undefined) {
+                    firstMarquee.querySelector('.frame .inset').insertBefore(this.clone, firstMarquee.querySelector('.frame .inset').firstElementChild);
+                }
+            };
+
+            return {
+                clone: clone,
+                appendClone: appendClone
+            }
+        }());
+    }
+    //DE380224
+    var anchorChild = document.getElementsByTagName("a");
+    for(var i=0; i<anchorChild.length; i++){ 
+        if(anchorChild[i].getAttribute("itemprop")=="item")  {  
+            if ( anchorChild[i].href.includes("%3Clocale%3E") ){
+                let anchorChildHREF = anchorChild[i].href;
+                let docLocale = document.querySelector('meta[name="locale"]').getAttribute('content');
+                let docLanguage = document.querySelector('meta[name="language"]').getAttribute('content');
+                
+                var docSeparator;
+                
+                if ((docLocale.toLowerCase() == "us") && (docLanguage.toLowerCase() == "en")) {
+                    docSeparator="/";
+                } else {
+                    docSeparator="_";
+                }
+                
+                let anchorURLReplace = docLanguage.toLowerCase() + docSeparator + docLocale.toLowerCase();
+                anchorChildHREF = anchorChildHREF.replace("%3Clocale%3E", anchorURLReplace);
+                anchorChild[i].setAttribute('href', anchorChildHREF);
+            }
+        }
+    }
+</script>
+
+        
+		        <h1 id="fw-pagetitle" class="" data-owner="ID">Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x</h1>
+		
+	</div>
+</div>
+     <!--googleon: index--><!--googleon: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   <!-- have to do this for _g.I18n to be defined in preview and publish modes -->
+  
+  <script type="text/javascript">
+      // initialize dictionary for i18n
+      cdc.util.ensureNamespace("cdc.rc");
+    cdc.rc.eotkeys = {
+        showOnly5Products : "Show Only 5 Products",       
+        showAllRowsProducts : "Show All nRows Products",
+        supportCommunityUrl : "https://community.cisco.com/t5/technology-and-support/ct-p/technology-support",
+        supportCommunity : "Cisco Community",
+        thankYou : "Thank You",
+        viewersAlso : "Customers Also Viewed", 
+        show : "Show", 
+        more : "More", 
+        showOnly3Documents: "Show Only 3 Documents"
+      };
+  </script>
+
+
+
+<div class="row blowout full visitedlinks">
+    <div class="col full">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="disclaimers techdocs">
+        
+        <div class="disclaimerButtons">
+        <div class="aboutBias">
+            <button aria-expanded="false" >Bias-Free Language</button>
+        </div>
+        
+        </div>
+        
+        <div class="biasfreeContent panel">
+            <h3>Bias-Free Language</h3>
+            <p>The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. <a href="https://www.cisco.com/site/us/en/about/purpose/social-impact/inclusive-language-policy.html" aria-label="Learn more about Bias Free Language">Learn more</a> about how Cisco is using Inclusive Language.</p>
+        </div>
+        
+    </div><!-- disclaimers -->
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* this is needed for the translation selector */
+    if (typeof(cdc) == "undefined") cdc={};
+    if (typeof(cdc.translations) == "undefined") cdc.translations={};
+    var bookTitle = 'Book Title Page';
+</script>
+
+<span id="actionBar-top"></span>
+<section id="actionBar" class="noprint base-blowout">
+    <span class="icons">
+        
+      <button class="bookToc simpleOverlay-trigger" id="onlyforTrigger" aria-haspopup="dialog"> <!--US140575-->
+            Book Contents
+        </button>
+         <div class="bookToc simpleOverlay-content">
+            <div role="heading" aria-level="2" class="title" id="book-toc-region-title">Book Contents</div>
+               <!--googleoff: index--><!--googleoff: snippet-->  
+               <div class="content" role="region" aria-labelledby="book-toc-region-title">
+                  
+
+
+
+<ul id="bookToc">
+    <li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/preface.html">Preface</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bgp.html">Implementing
+	 BGP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bgp-flowspec.html">Implementing BGP
+	 Flowspec</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-bfd.html">Implementing BFD</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-eigrp.html">Implementing
+	 EIGRP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-is-is.html">Implementing IS-IS</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ospf.html">Implementing
+	 OSPF</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/ipv4-ipv6-loop-free-alternate-fast-reroute.html"> Implementing IP
+	 Fast Reroute Loop-Free Alternate </a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-and-monitoring-rib.html">Implementing and
+	 Monitoring RIB</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rip.html">Implementing
+	 RIP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-routing-policy.html">Implementing Routing
+	 Policy</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-static-routes.html">Implementing Static
+	 Routes</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html">Implementing RCMD</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-ucmp.html">Implementing UCMP</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-data-plane-security.html">Implementing Data
+	 Plane Security</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/enabling-flexible-algorithm-ip-networks.html">Enabling Flexible Algorithm in IP Networks</a></li>
+<li><a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/b-routing-cg-asr9000-79x_index.html">Index</a></li>
+
+</ul>
+
+
+               </div>
+               <!--googleon: index--><!--googleon: snippet-->               
+            </div>
+
+        
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='versionddcontainer chapter'></div>
+<script type="text/html" class="versionstemp">
+            <div class="versionsdd">
+                <button class="versionbutton" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="versionlist" aria-label="Version/Release"><label></label></button>
+                <ul id="versionlist" class="versionlist" role="listbox" aria-label="Version/Release options">
+                <%
+                    let pageUrl = window.location.pathname.replace("/content/","/c/").toLowerCase();
+                    if (true) pageUrl = pageUrl.substring(0,pageUrl.lastIndexOf("/"))+".html";
+                    for(let i=0; i< data.length; i++) {
+                        let item = data[i],
+                            myurl = item.linkUrl,
+                            urlm = myurl.replace("/content/","/c/");;
+                            mytitle = item.linkTitle;
+                            myclass= urlm.toLowerCase() == pageUrl ? "class=\"selected\"":""; 
+                            isSelected = urlm.toLowerCase() == pageUrl ? "true" : "false";
+%>
+                    <li role="option" aria-selected="${isSelected}"><a href="${myurl}" ${myclass}>${mytitle}</a></li>
+<%
+                  }   %>
+                </ul>
+             </div>
+</script>
+    
+        <span class="utilities">
+          <button title="Search in this Book" class="mobileSearch simpleOverlay-trigger" aria-haspopup="dialog">
+            Search
+          </button>
+          <div class="mobileSearch simpleOverlay-content">
+            <div class="title">Find Matches in This Book</div>
+              <!--googleoff: index--><!--googleoff: snippet-->  
+              <div class="content">
+                <form id="mobileBooksearch" class="chapter">
+                   <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+                   <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+                </form>
+                <div id="overlayResults" role="region" aria-live="polite" >
+                   <!-- important, keep this results div begin end on same line in here -->
+                   <div class="results"></div>
+                </div>
+              </div>
+              <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="noprint" id="saveModule">
+
+<script type="text/javascript">
+    cdc.util.ensureNamespace("cdc.rc.savedoc");
+    cdc.rc.savedoc.isLoggedIn = false;
+    cdc.rc.savedoc.save = "Save";
+    cdc.rc.savedoc.saved = "Saved";
+</script>
+
+    <button class="save" aria-expanded="false" aria-label="Save">
+        <label>Save</label>
+    </button>    
+
+</div> 
+    <div class="saveDocumentMessage login cdc-expandPanel"  role="region" aria-live="polite">
+        <a href="/c/login/index.html?referer=/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html">Log in</a> to Save Content
+    </div>
+
+
+          <!-- Translation Selctor -->
+          <!-- Translation Selector is used on EOT and Books pages. if a page has a locale of en_US then it will provide a list of avaible translations, if its a translated page (non english locale) then provide the link to the english locale. -->
+
+
+ 
+
+
+ 
+          <div class="translations simpleOverlay-content" role="dialog" id="dialogt" aria-labelledby="translation-dialog-title" aria-modal="true">
+            <!-- Intentionally adding tabindex="0" to heading for dialog focus management per requirements -->
+            <div role="heading" class="title" id="translation-dialog-title" tabindex="0">Available Languages</div>
+               <!--googleoff: index--><!--googleoff: snippet--> 
+            <script language="javascript">                    
+                cdc.translations.map = "{en-us=https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html, x-default=https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.html}";//storing the map for use in the JS
+                cdc.translations.locale="en_us";
+            </script>
+            <div class="content">
+              <div class="availableLanguagesList">
+                  <ul id="translationsList">
+                  </ul> 
+              </div>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+          </div>
+          
+          
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // stored value for overlay label to use in js
+    var downloadOPtionLabel = 'Download Options',
+    	bookSearchlabel = 'Find Matches in This Book',
+    	translationsLabel = 'Translations',
+    	bookConentLabel= 'Book Contents';
+</script>
+
+
+        
+
+
+
+        <button title="Document Download Options" id="dwnld-button" class="downloadOptions simpleOverlay-trigger" aria-haspopup="dialog" aria-expanded="false">
+            Download
+        </button>
+        <div class="downloadOptions simpleOverlay-content default_dialog" role="dialog" id="dialogd" aria-labelledby="dialog-title" aria-modal="true">
+            <!-- Intentionally adding tabindex="0" to heading for dialog focus management per requirements -->
+            <div role="heading" class="title" id="dialog-title" tabindex="0">Download Options</div>
+            <!--googleoff: index--><!--googleoff: snippet-->  
+            <div class="content">
+                <header>
+
+                    <h3 class="h4"> Book Title</h3>
+                    <p>Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x</p>
+                    <p class="h4"> Chapter Title</p>
+                    <h3>Implementing RCMD</h3>
+
+                </header>
+                <ul>
+
+                        <li >    
+                            <a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x.pdf" class="pdfIcon">PDF - Complete Book 
+                            <span>(11.43 MB)</span></a>
+
+                                   <a href="/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x/implementing-rcmd.pdf" class="chapter">PDF - This Chapter <span>(1.07 MB)</span></a>
+                                                            
+                            <p>View with Adobe Reader on a variety of devices</p>
+                        </li>                                  
+              </ul>
+            </div>
+            <!--googleon: index--><!--googleon: snippet-->
+        </div>
+
+          <button title="Print Friendly Page" class="print simpleOverlay-trigger">
+              Print
+          </button>
+        </span> 
+    </span>
+    <form id="booksearch" tabindex="0" class="chapter">
+       <input type="search" name="booksearchPhrase" placeholder='Find Matches in This Book'/><button class="submit" aria-label="Search"></button>
+       <button class="clear"><img src="/etc/designs/cdc/fw/i/ic_clear_gray.png" alt="Clear Contents of Search"/></button>
+    </form>
+      <div id="searchresult" role="region" aria-live="polite"><button class="close" title="Close search results panel" aria-label="Close search results panel"><span></span><span></span></button>
+         <span class="headArrow"></span>
+         <h2>Results</h2>
+         <div class="matches">
+         </div>
+         <div class="results">
+         </div>
+      </div>
+      <div id="searchResultChapterTitle"></div>
+</section>
+<script type="text/html" id="navigateMatchesTemplate">
+   <div>
+      <button class="up on" title="Scroll to previous matched word" aria-label="Scroll to previous matched word"><span></span></button>
+      <button class="up off" title="Previous Match Not Available" aria-label="Previous Match Not Available"><span></span></button>
+      <span class="matchlabel">Matches</span>
+      <button class="down on" title="Scroll to next matched word" aria-label="Scroll to next matched word"><span></span></button>
+      <button class="down off" title="Next Match Not Available" aria-label="Next Match Not Available"><span></span></button>
+   </div>
+</script>
+<script type="text/html" id="noChapterMatchTemplate">
+   <p>There are no Matches in this chapter.</p>
+</script>
+<script type="text/html" id="searchResultsListTemplate">
+   <p class="h3">Chapters with Matches</p>
+   <ul tabindex="-1">
+<% var i = 0;
+    while ( modelData.links[i] ) {  %>
+      <li>
+<%     curpage = (window.location.pathname.indexOf(modelData.links[i].href) > -1 )?true:false;
+        if ( i === modelData.curpage ) {
+            if ( ! jQuery('.mobileSearch').css("display") == "block") { %>
+               <span class="currentIndicator"></span>${modelData.links[i].title}
+<%         } else {                %>
+               <span class="currentIndicator"></span><button class="curpage" data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%         }
+        } else {  %>
+            <button data-href="${modelData.links[i].url}?bookSearch=true${modelData.wcm}">${modelData.links[i].title}</button>
+<%     }  %>            
+      </li> 
+<% i++;
+    } %>
+   </ul> 
+</script>      
+<script type="text/html" id="noBookMatchTemplate">
+   <p class="head">No matches found in this book</p>
+   <p>This feature looks for an exact match of what you entered in the box.</p>
+   <p>If you entered several words, try reducing the entry to one or two and search again.</p>
+</script>
+<script type="text/html" id="errorTemplate">
+   <p>Search is currently unavailable due to technical issues. We are working to resolve the problem as quickly as possible.</p>
+</script>
+<script type="text/html" id="mobileSearchFooterTemplate">
+   <div id="mobileSearchFooter">
+      <button class="mobileSearch" title="Search in this Book"></button>
+      <button class="closeFooter" aria-label="Close Find Matches in This Book"><span></span><span></span></button>
+      <div class="matches"> 
+      </div>
+   </div>   
+</script>
+ 
+    </div>
+</div>
+<div class="row blowout narrow-wide-v2 flip visitedlinks">
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="documentInfo">
+                  <dl>
+                     
+                      <dt>Updated:</dt><dd> March 31, 2023</dd>
+                     
+                  </dl>
+                    
+              </div>
+
+ 
+    </div>
+    <div id="chapterTitleDiv" class="col wide-v2 indent-at-xlarge">
+        <!-- this will be chapter title for chapters or header for TOC for books -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="chapter-title">Chapter: Implementing RCMD </h2>  
+    
+
+    </div>
+</div>
+<div class="row blowout wide-narrow-v2 visitedlinks">
+    <div id="pageContentDiv" class="col wide-v2 indent-at-xlarge" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+    
+ 
+ 
+
+<div id="chapterToc" class="base-blowout">
+    <button><span></span>Chapter Contents</button>
+    <div>
+    
+<ul>
+<li><a href="#concept_DD7982A2C50A43978C76AF25076A90C1">Implementing RCMD</a></li>
+<li><a href="#concept_B475330101904631B14C625066A033C3">Route Convergence                              	 Monitoring and Diagnostics</a></li>
+<li><a href="#task_5F66712D96DE4A5E9D4C0B68B97F81C8">Configuring Route Convergence Monitoring and Diagnostics</a></li>
+<li><a href="#concept_01B51180524647FFA833F650CF0EDD5B">Route Convergence                              	 Monitoring and Diagnostics Prefix Monitoring</a></li>
+<li><a href="#concept_FBAED7DF4976474F9E95805D41EC3058">Route Convergence                              	 Monitoring and Diagnostics OSPF Type 3/5/7 Link-state Advertisements                              	 Monitoring</a></li>
+<li><a href="#task_A593559ABCBB4C328A6EAEC53E022B50">Enabling RCMD                              	 Monitoring for IS-IS Prefixes</a></li>
+<li><a href="#task_D7C2965B917B4C1D9F372CE3559DE0AF">Enable RCMD                              	 Monitoring for OSPF Prefixes</a></li>
+<li><a href="#task_C844A64B0DF249C9B98A17708CBE525D">Enabling RCMD Monitoring for Type 3/5/7 OSPF LSAs</a></li>
+<li><a href="#reference_7164E0C33C914FEE9F83F4108928ECAA">Enabling RCMD Monitoring for IS-IS Prefixes: Example</a></li>
+<li><a href="#reference_3C0A8A6E960D431080F31B7280EE1593">Enabling RCMD Monitoring for OSPF Prefixes: Example</a></li>
+<li><a href="#reference_9BF71CF686774C40AE0B24177F90504D">Enabling RCMD Monitoring for Type 3/5/7 OSPF LSAs: Example</a></li></ul>
+    <button id="chapterToc-close">Close<span></span></button>
+    </div>
+</div>
+
+ 
+    <div id="chapterContent">
+    
+                  <h1 class="title topictitle1" id="ariaid-title1">Implementing RCMD</h1>
+                  <section class="body conbody">
+                     <p class="p">This module describes
+                        		how to implement RCMD. 
+                        	 
+                     </p>
+                     <section class="section" id="concept_DD7982A2C50A43978C76AF25076A90C1__section_FB71D4BA50CB45589E1A53B4BC85F66F">
+                        <h2 class="title sectiontitle">Feature History
+                           		  for Implementing RCMD
+                        </h2> 
+                        		 
+                        		
+                        <table width="100%" border="1" class="table feature_info" id="concept_DD7982A2C50A43978C76AF25076A90C1__table_DC109B0F63234BA1BF32120A8001F593">
+                           <caption></caption>
+                           <colgroup>
+                              <col style="width:50%">
+                              <col style="width:50%">
+                           </colgroup>
+                           <thead class="thead">
+                              <tr>
+                                 <th font-weight="bold" class="entry" id="concept_DD7982A2C50A43978C76AF25076A90C1__table_DC109B0F63234BA1BF32120A8001F593__entry__1"> 
+                                    					 
+                                    <p class="p">Release 
+                                       					 
+                                    </p> 
+                                    				  
+                                 </th>
+                                 <th font-weight="bold" class="entry" id="concept_DD7982A2C50A43978C76AF25076A90C1__table_DC109B0F63234BA1BF32120A8001F593__entry__2"> 
+                                    					 
+                                    <p class="p">Modification 
+                                       					 
+                                    </p> 
+                                    				  
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                              <tr>
+                                 <td class="entry" headers="concept_DD7982A2C50A43978C76AF25076A90C1__table_DC109B0F63234BA1BF32120A8001F593__entry__1 "> 
+                                    					 
+                                    <p class="p"><span class="ph">Release 4.2.0</span> 
+                                       					 
+                                    </p> 
+                                    				  
+                                 </td>
+                                 <td class="entry" headers="concept_DD7982A2C50A43978C76AF25076A90C1__table_DC109B0F63234BA1BF32120A8001F593__entry__2 "> 
+                                    					 
+                                    <p class="p">This
+                                       						feature was introduced. 
+                                       					 
+                                    </p> 
+                                    				  
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table> 
+                        		 
+                        	 
+                     </section>
+                  </section>
+                  <!-- minitoc start -->
+                  <nav role="navigation" class="related-links">
+                     <ul class="ullinks">
+                        <li class="link ulchildlink"><a href="#concept_B475330101904631B14C625066A033C3">Route Convergence Monitoring and Diagnostics</a></li>
+                        <li class="link ulchildlink"><a href="#task_5F66712D96DE4A5E9D4C0B68B97F81C8">Configuring Route Convergence Monitoring and Diagnostics</a></li>
+                        <li class="link ulchildlink"><a href="#concept_01B51180524647FFA833F650CF0EDD5B">Route Convergence Monitoring and Diagnostics Prefix Monitoring</a></li>
+                        <li class="link ulchildlink"><a href="#concept_FBAED7DF4976474F9E95805D41EC3058">Route Convergence Monitoring and Diagnostics OSPF Type 3/5/7 Link-state Advertisements Monitoring</a></li>
+                        <li class="link ulchildlink"><a href="#task_A593559ABCBB4C328A6EAEC53E022B50">Enabling RCMD Monitoring for IS-IS Prefixes</a></li>
+                        <li class="link ulchildlink"><a href="#task_D7C2965B917B4C1D9F372CE3559DE0AF">Enable RCMD Monitoring for OSPF Prefixes</a></li>
+                        <li class="link ulchildlink"><a href="#task_C844A64B0DF249C9B98A17708CBE525D">Enabling RCMD Monitoring for Type 3/5/7 OSPF LSAs</a></li>
+                        <li class="link ulchildlink"><a href="#reference_7164E0C33C914FEE9F83F4108928ECAA">Enabling RCMD Monitoring for IS-IS Prefixes: Example</a></li>
+                        <li class="link ulchildlink"><a href="#reference_3C0A8A6E960D431080F31B7280EE1593">Enabling RCMD Monitoring for OSPF Prefixes: Example</a></li>
+                        <li class="link ulchildlink"><a href="#reference_9BF71CF686774C40AE0B24177F90504D">Enabling RCMD Monitoring for Type 3/5/7 OSPF LSAs: Example</a></li>
+                     </ul>
+                  </nav>
+                  <!-- minitoc end -->
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title2" lang="en-US" id="concept_B475330101904631B14C625066A033C3">
+                     <h2 class="title topictitle2" id="ariaid-title2">Route Convergence
+                        	 Monitoring and Diagnostics
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p">Route Convergence
+                           		Monitoring and Diagnostics (RCMD) is a mechanism to monitor OSPF and ISIS
+                           		convergence events, gather details about the SPF runs and time taken to
+                           		provision routes and LDP labels across all LCs on the router.
+                           	 
+                        </p>
+                        <p class="p">RCMD is a tool that
+                           		collects and reports data related to routing convergence. Highlights of the
+                           		RCMD mechanism are:
+                           	 
+                        </p>
+                        <ul class="ul">
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_BAA9235E606E432CBF06938999FCBEB7">
+                              		  
+                              <p class="p"> Lightweight and
+                                 			 always-on using route flow markers across routing components (all nodes &amp;
+                                 			 MC).
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_4221806A76184337ABF9FA63CC8A6ECD">
+                              		  
+                              <p class="p">Tracks most
+                                 			 convergence events and all routes affected by them.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_9F16F678FCD34587BE8675BC22BEEFE6">
+                              		  
+                              <p class="p">Provides
+                                 			 within-router view with statistics and time-lines on per convergence event
+                                 			 basis.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_54DBBB7A8EB94B81B2681BF891E3A37F">
+                              		  
+                              <p class="p">Measurements
+                                 			 against time-line/SLA and triggers specified EEM actions on excess.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_F04022781F5F42019AABFAD7ADB4F6FE">
+                              		  
+                              <p class="p">'On the router'
+                                 			 reports via CLI/XML interface.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_F4F373B3B8084E2D99304727F7F7B182">
+                              		  
+                              <p class="p">Each RCMD enabled
+                                 			 router provides a digest of convergence data.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                        </ul>
+                        <p class="p">The events that are
+                           		monitored and reported by RCMD are:
+                           	 
+                        </p>
+                        <ul class="ul">
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_8CB9ED64EC714BBB9D8921CD841EF518">
+                              		  
+                              <p class="p">OSPF and IS-IS SPF
+                                 			 events (default VRF only).
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_A393D687F59F40C8ACB5B516CC9196A4">
+                              		  
+                              <p class="p">Add/delete of
+                                 			 specific external or inter-area/level prefixes.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_36E0F6B793B3430783CC92ADEDA0FAF7">
+                              		  
+                              <p class="p">IGP flooding
+                                 			 propagation delays for LSA/LSP changes.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                        </ul>
+                        <p class="p">RCMD runs in two
+                           		modes:
+                           	 
+                        </p>
+                        <ul class="ul">
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_BB1A8283BBCA40C293B14CE2B9188175">
+                              		  
+                              <p class="p">
+                                 			 Monitoring—detecting events and measuring convergence.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                           <li class="li" id="concept_B475330101904631B14C625066A033C3__li_7C7FA2AFE765408697903BBF6DF338B2">
+                              		  
+                              <p class="p">
+                                 			 Diagnostics—additional (debug) information collection for 'abnormal' events.
+                                 		  
+                              </p>
+                              		
+                           </li>
+                        </ul>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title3" lang="en-US" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8">
+                     <h2 class="title topictitle2" id="ariaid-title3">Configuring Route Convergence Monitoring and Diagnostics</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__context_B37F6BD6197A4BA687283115952BC592">
+                           
+                           <p class="p">Perform these tasks to configure route convergence monitoring and diagnostics:</p>
+                           
+                           
+                        </section>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">SUMMARY STEPS</h3>
+                        <ol class="ol steps summary_steps">
+                           <li class="summary_indent"> 
+                              			 <span>
+                                 <span class="keyword kwd">configure</span> 
+                                 			  </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">router-convergence </span> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">collect-diagnostics</span><kbd class="ph sep"> </kbd><var>location</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">event-buffer-size</span><kbd class="ph sep"> </kbd><var>number</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">max-events-stored</span><kbd class="ph sep"> </kbd><var>number</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">monitoring-interval</span><kbd class="ph sep"> </kbd><var>minutes</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">node</span><kbd class="ph sep"> </kbd><var>node-name</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">protocol</span> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">priority</span> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">disable</span> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">leaf-network</span><kbd class="ph sep"> </kbd><var>number</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">threshold</span><kbd class="ph sep"> </kbd><var>value</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">storage-location</span> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">diagnostics</span><kbd class="ph sep"> </kbd><var>directory-path-name</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">diagnostics-size</span> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">reports</span><kbd class="ph sep"> </kbd><var>directory-path-name</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">reports-size</span> </span></li>
+                        </ol>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">DETAILED STEPS</h3>
+                        <table class="ol steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_37D147BB3C804951AFFAEC35B1D76871">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"> 
+                                       			 <span>
+                                          <span class="keyword kwd">configure</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code>
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span># configure</code></pre> 
+                                       		  </section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters <span class="ph">global configuration</span>
+                                          						 mode. 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_DE8200B077FB422F8A89B6EA8425B4A5">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">router-convergence </span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config)#router-convergence</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Enters configure Router Convergence Monitoring and Diagnostics (rcmd) configuration mode.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_07C0ACBE97D64A20A9236344C9CBEC6D">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">collect-diagnostics</span><kbd class="ph sep"> </kbd><var>location</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd)#collect-diagnostics 0/3/CPU0</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Configures to collect  diagnostics on specified node.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_C5B8C1EB0E844319A1108755485E4E93">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">event-buffer-size</span><kbd class="ph sep"> </kbd><var>number</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd)#event-buffer-size 100</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Sets event buffer size 9as number of events)  for storing event traces .</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_999D6BB166294EF1B44C3470B71672BB">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">max-events-stored</span><kbd class="ph sep"> </kbd><var>number</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd)#max-events-stored 10</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Sets maximum number of events to be stored in the server.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_0D1EDAF3EE5F4DE59597B67399D1025A">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">monitoring-interval</span><kbd class="ph sep"> </kbd><var>minutes</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd)#monitoring-interval 120</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Sets interval   (in minutes) to collect logs. </p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_64E160CDF88A4D63A4903C317C0B2B13">
+                                    <p><b>Step&nbsp;7</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">node</span><kbd class="ph sep"> </kbd><var>node-name</var> </span></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Configures parameters for a specified node.</p>
+                                    </section>
+                                    <section class="itemgroup stepresult">
+                                       <section class="p"><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd)#node</code></pre></section>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_7116D4866DC948109F76176ADC0D4EFC">
+                                    <p><b>Step&nbsp;8</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">protocol</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code>
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd)#protocol ISIS 
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-proto)#</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <section class="p">Specifies the protocol for which to configure RCMD parameters. 
+                                          <ul class="ul">
+                                             <li class="li" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__li_374C34FE044940058C909DB1C71C4CFB">
+                                                <p class="p">ISIS-Select ISIS to configure parameters related to ISIS protocol</p>
+                                             </li>
+                                             <li class="li" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__li_360D9C812BEF4791908586D753808D5E">
+                                                <p class="p">OSPF-Select OSPF to configure parameters related OSPF protocol</p>
+                                             </li>
+                                          </ul>
+                                       </section>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_944743C4B5AE471188B6989B07050990">
+                                    <p><b>Step&nbsp;9</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">priority</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code>
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-proto)#priority critical 
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-proto-prio)#</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <section class="p">Sets priority for monitoring of route convergence for the specified protocol. 
+                                          <ul class="ul">
+                                             <li class="li" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__li_34A746F889574DB5820285AFDDEC9149">
+                                                <p class="p">Critical-Set to monitor route convergence for critical priority routes</p>
+                                             </li>
+                                             <li class="li" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__li_4E971B7228994743A19A978CBEF5D7B2">
+                                                <p class="p">High-Set to monitor route convergence for high priority routes</p>
+                                             </li>
+                                             <li class="li" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__li_ACD278BB292E4BC682FF032BE367D3B9">
+                                                <p class="p">Medium-Set to monitor route convergence for medium priority routes</p>
+                                             </li>
+                                             <li class="li" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__li_FB05FE5978734E28AB554223B3615E89">
+                                                <p class="p">Low-Set to monitor route convergence for low priority routes </p>
+                                             </li>
+                                          </ul>
+                                       </section>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_16218C2A959F44B596E1CDA91D55C85F">
+                                    <p><b>Step&nbsp;10</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">disable</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-proto-prio)#disable </code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Disables the monitoring of route convergence for specified priority.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_162D15491D0E4E01ADACAFB91BD00D89">
+                                    <p><b>Step&nbsp;11</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">leaf-network</span><kbd class="ph sep"> </kbd><var>number</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-proto-prio)#leaf-network 100</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Enables leaf network monitoring. Specify a maximum number of leaf networks to be monitored. Range for maximum number is 10-100.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_7D8B24AAFD89437C849180E88BC4D4F1">
+                                    <p><b>Step&nbsp;12</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">threshold</span><kbd class="ph sep"> </kbd><var>value</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-proto-prio)#threshold 1000</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Specifies threshold value for convergence in milliseconds. Select a threshold value from the range. Range is 0-4294967295
+                                          milliseconds
+                                       </p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_0600CF441A6249FDB8C92A672404245B">
+                                    <p><b>Step&nbsp;13</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">storage-location</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd)#storage-location 
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-store)#</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Sets the absolute directory path for storing diagnostic reports.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_416AC9EDA4F8469EB4CA8056C6054BE5">
+                                    <p><b>Step&nbsp;14</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">diagnostics</span><kbd class="ph sep"> </kbd><var>directory-path-name</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-store)#diagnostics /disk0:/rcmd</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Specifies the absolute directory path for storing diagnostic reports. Set a directory-path-name. Example:  /disk0:/rcmd/ or
+                                          &lt;tftp-location&gt;/rcmd/
+                                       </p>
+                                    </section>
+                                    <section class="itemgroup stepresult"></section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_24131270713643E6A6B185C3261C3254">
+                                    <p><b>Step&nbsp;15</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">diagnostics-size</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-store)# diagnostics-size 8</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Specify a maximum size for the diagnostics directory. Set the size in %. Range is 5%-80%.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_165D60F0816E4DB1B56DF39556BB4B67">
+                                    <p><b>Step&nbsp;16</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">reports</span><kbd class="ph sep"> </kbd><var>directory-path-name</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-store)#reports /disck0:/rcmd</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Specifies the absolute directory path for storing reports. Set a directory-path-name. Example:  /disk0:/rcmd/ or &lt;tftp-location&gt;/rcmd/</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_5F66712D96DE4A5E9D4C0B68B97F81C8__step_BB6D49E6CA204E5BBB7E6F3CC9045621">
+                                    <p><b>Step&nbsp;17</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">reports-size</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-rcmd-store)#reports-size 8</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Specify a maximum size for the reports directory. Set the size in %. Range is 5%-80%.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title4" lang="en-US" id="concept_01B51180524647FFA833F650CF0EDD5B">
+                     <h2 class="title topictitle2" id="ariaid-title4">Route Convergence
+                        	 Monitoring and Diagnostics Prefix Monitoring
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p"> The Route Convergence
+                           		Monitoring and Diagnostics (RCMD) prefix monitoring feature enables convergence
+                           		monitoring for specific individual prefixes in Open Shortest Path First (OSPF)
+                           		and Intermediate System-to-Intermediate System (IS-IS) Interior Gateway
+                           		Protocols (IGP). In IGP, when the route information is created, the prefix is
+                           		verified against the configured prefix-list. If the prefix is found to be
+                           		monitored, it is marked for monitoring and information about each prefix change
+                           		event is captured. The RCMD prefix monitoring individually monitors specific
+                           		prefixes on each RCMD enabled router in the network. A maximum of 10 prefixes
+                           		can be monitored. Individual prefix monitoring compliments the probes enabled
+                           		at customer network edges to monitor connectivity and availability of specific
+                           		service end-points.
+                           	 
+                        </p>
+                        <p class="p">The RCMD prefix
+                           		monitoring for IS-IS prefixes is enabled by configuring the 
+                           		<span><span class="keyword kwd">prefix-list</span> </span>
+                           		command under Router IS-IS monitor-convergence configuration mode. The RCMD
+                           		prefix monitoring for OSPF prefixes is enabled by configuring the 
+                           		<span><span class="keyword kwd">prefix-list</span> </span>
+                           		command under Router OSPF monitor-convergence configuration mode.
+                           	 
+                        </p>
+                        <p class="p"> For individual prefix
+                           		monitoring, the prefixes are marked before those appear for the route
+                           		calculation so that the monitoring does not affect the convergence of OSPF or
+                           		ISIS routes.
+                           	 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic concept nested1" aria-labelledby="ariaid-title5" lang="en-US" id="concept_FBAED7DF4976474F9E95805D41EC3058">
+                     <h2 class="title topictitle2" id="ariaid-title5">Route Convergence
+                        	 Monitoring and Diagnostics OSPF Type 3/5/7 Link-state Advertisements
+                        	 Monitoring
+                     </h2>
+                     <section class="body conbody">
+                        <p class="p"> The Route Convergence
+                           		Monitoring and Diagnostics (RCMD) OSPF type 3/5/7 link-state advertisements
+                           		(LSA) monitoring feature flags and differentiates the LSAs during the
+                           		monitoring of LSAs. A change in route for type 3/5/7 LSAs has to be monitored.
+                           		During the route calculation, if the route source appears to be type 3/5/7 LSAs
+                           		and the route change is an add or delete action, then those prefixes have to be
+                           		monitored. RCMD monitors all deletion of available paths (a purge operation)
+                           		and addition of the first path (a restoration operation) for all type 3/5/7
+                           		LSAs. The OSPF type 3/5/7 LSAs are monitored and reported on a individual
+                           		prefix basis. However, a modify operation that involves a change in paths not
+                           		affecting reachability as a whole, is not monitored. Although all prefixes are
+                           		logged for reporting, the convergence tracking is rate-limited for the first 10
+                           		prefixes that are affected in an SPF run.
+                           	 
+                        </p>
+                        <p class="p"> The RCMD OSPF type
+                           		3/5/7 LSA monitoring is enabled by configuring the 
+                           		<span><span class="keyword kwd">track-external-routes</span> </span> and 
+                           		<span><span class="keyword kwd">track-summary-routes</span> </span> under Router OSPF
+                           		monitor-convergence configuration mode.
+                           	 
+                        </p>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title6" lang="en-US" id="task_A593559ABCBB4C328A6EAEC53E022B50">
+                     <h2 class="title topictitle2" id="ariaid-title6">Enabling RCMD
+                        	 Monitoring for IS-IS Prefixes
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_A593559ABCBB4C328A6EAEC53E022B50__context_607FB99240BA4064B8A5B1DE14E7B518"> 
+                           		
+                           <p class="p">Perform this task to
+                              		  enable individual prefix monitoring for IS-IS prefixes. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="section prereq p" id="task_A593559ABCBB4C328A6EAEC53E022B50__prereq_E8232A130414471F9B748A43FE01FDD0">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> 
+                           		
+                           <p class="p">To enable monitoring
+                              		  of individual prefixes, first configure a prefix-list using the 
+                              		  <span><span class="keyword kwd">{ipv4 | ipv6}
+                                    				prefix-list</span> </span> command. Then, use this prefix list with the 
+                              		  <span><span class="keyword kwd">prefix-list 
+                                    			 </span> </span> command. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">SUMMARY STEPS</h3>
+                        <ol class="ol steps summary_steps">
+                           <li class="summary_indent"> 
+                              			 <span>
+                                 <span class="keyword kwd">configure</span> 
+                                 			  </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">router isis</span> </span> 
+                              			 <span><var>instance-id</var> </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">address-family</span> </span> {<span><span class="keyword kwd">ipv4 | ipv6</span> </span>} [<span><span class="keyword kwd">unicast</span> </span><span class="ph"> | 
+                                 				<span><span class="keyword kwd">multicast</span> </span></span>]
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">monitor-convergence</span> </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">prefix-list</span> </span> 
+                              			 <span><var>prefix-list-name</var> </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"> Use the 
+                              			 <span>
+                                 <span class="keyword kwd">commit</span>
+                                  </span> or 
+                              			 <span>
+                                 <span class="keyword kwd">end</span>
+                                  </span> command. 
+                              		  
+                           </li>
+                        </ol>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">DETAILED STEPS</h3>
+                        <table class="ol steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_A593559ABCBB4C328A6EAEC53E022B50__step_36C98425B6A04038A967762384077E46">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"> 
+                                       			 <span>
+                                          <span class="keyword kwd">configure</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code>
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span># configure</code></pre> 
+                                       		  </section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters <span class="ph">global configuration</span>
+                                          						 mode. 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_A593559ABCBB4C328A6EAEC53E022B50__step_BE6229478566445483EA554188FA6B28">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">router isis</span> </span> 
+                                       			 <span><var>instance-id</var> </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config)#router isis isp</code></pre> 
+                                       		  </section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enables IS-IS
+                                          				routing for the specified routing instance, and places the router in router
+                                          				configuration mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_A593559ABCBB4C328A6EAEC53E022B50__step_369F9F03C1BD4F179EE2AD1168070233">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">address-family</span> </span> {<span><span class="keyword kwd">ipv4 | ipv6</span> </span>} [<span><span class="keyword kwd">unicast</span> </span><span class="ph"> | 
+                                          				<span><span class="keyword kwd">multicast</span> </span></span>]
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-isis)#address-family ipv6 unicast</code></pre> 
+                                       		  </section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enter the IS-IS
+                                          				address-family configuration mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_A593559ABCBB4C328A6EAEC53E022B50__step_97C589B0A4204934B91E5ED003FF63EC">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">monitor-convergence</span> </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-isis-af)#monitor-convergence</code></pre> 
+                                       		  </section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enables route
+                                          				convergence monitoring for IS-IS protocol. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_A593559ABCBB4C328A6EAEC53E022B50__step_F7CDD16841FB4BF795371E81117391E0">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">prefix-list</span> </span> 
+                                       			 <span><var>prefix-list-name</var> </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-isis-af-rcmd)#prefix-list isis_monitor</code></pre> 
+                                       		  </section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enables
+                                          				individual prefix monitoring for IS-IS prefixes. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_A593559ABCBB4C328A6EAEC53E022B50__step_2B4F93F42250408FA9AAF031547D43A8">
+                                    <p><b>Step&nbsp;6</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"> Use the 
+                                       			 <span>
+                                          <span class="keyword kwd">commit</span>
+                                           </span> or 
+                                       			 <span>
+                                          <span class="keyword kwd">end</span>
+                                           </span> command. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">
+                                          						<span>
+                                             							<span class="keyword kwd">commit</span>
+                                             						 </span>—Saves the configuration changes and remains within the configuration session.
+                                       </p> 
+                                       			 
+                                       <section class="p">
+                                          <span>
+                                             <span class="keyword kwd">end</span>
+                                              </span>—Prompts user to take one of these actions: 
+                                          			 
+                                          <ul class="ul">
+                                             
+                                             <li class="li" id="task_A593559ABCBB4C328A6EAEC53E022B50__d11e86"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">Yes</span>
+                                                       </span>— Saves configuration changes and exits the
+                                                   					 configuration session. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                             <li class="li" id="task_A593559ABCBB4C328A6EAEC53E022B50__d11e98"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">No</span>
+                                                       </span>—Exits the configuration session without
+                                                   					 committing the configuration changes. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                             <li class="li" id="task_A593559ABCBB4C328A6EAEC53E022B50__d11e110"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">Cancel</span>
+                                                       </span>—Remains in the configuration session,
+                                                   					 without committing the configuration changes. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                          </ul> 
+                                          			 
+                                       </section> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title7" lang="en-US" id="task_D7C2965B917B4C1D9F372CE3559DE0AF">
+                     <h2 class="title topictitle2" id="ariaid-title7">Enable RCMD
+                        	 Monitoring for OSPF Prefixes
+                     </h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__context_D646D5946CD74958B88309180D8994D6"> 
+                           		
+                           <p class="p">Perform this task to
+                              		  enable individual prefix monitoring for OSPF prefixes. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <section class="section prereq p" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__prereq_6A6D46BEECAE4239A2A2455BCE25699C">
+                           <section class="tasklabel">
+                              <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Before you begin</h3>
+                           </section> 
+                           		
+                           <p class="p">To enable monitoring
+                              		  of individual prefixes, first configure a prefix-list using the 
+                              		  <span><span class="keyword kwd">{ipv4 | ipv6}
+                                    				prefix-list</span> </span> command. Then, use this prefix list with the 
+                              		  <span><span class="keyword kwd">prefix-list</span> </span>
+                              		  command. 
+                              		
+                           </p> 
+                           	 
+                        </section>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">SUMMARY STEPS</h3>
+                        <ol class="ol steps summary_steps notable">
+                           <li class="summary_indent"> 
+                              			 <span>
+                                 <span class="keyword kwd">configure</span> 
+                                 			  </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">router ospf</span> </span> 
+                              			 <span><var>ospf-process-name</var> </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">monitor-convergence</span> </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">prefix-list</span> </span> 
+                              			 <span><var>prefix-list-name</var> </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"> Use the 
+                              			 <span>
+                                 <span class="keyword kwd">commit</span>
+                                  </span> or 
+                              			 <span>
+                                 <span class="keyword kwd">end</span>
+                                  </span> command. 
+                              		  
+                           </li>
+                        </ol>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">DETAILED STEPS</h3>
+                        <hr noshade>
+                        <table class="stepTable" border="0">
+                           <tbody>
+                              <tr class="li step" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__step_F5C5128346464C1B8EE925F4AC0BA85C">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> 
+                                       			 <span>
+                                          <span class="keyword kwd">configure</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code>
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span># configure</code></pre> 
+                                       		  </section>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters <span class="ph">global configuration</span>
+                                          						 mode. 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__step_61DE5263997841689BF75156D39E6002">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"><span><span class="keyword kwd">router ospf</span> </span> 
+                                       			 <span><var>ospf-process-name</var> </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config)#router ospf 1</code></pre> 
+                                       		  </section>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enables OSPF
+                                          				routing for the specified routing process and places the router in router
+                                          				configuration mode. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__step_2E2CBACF6EF04DCB8F56D3647DC2BB6D">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"><span><span class="keyword kwd">monitor-convergence</span> </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-ospf)#monitor-convergence</code></pre> 
+                                       		  </section>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enables OSPF
+                                          				route convergence monitoring. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__step_994757DA51C2491C830738C4E2E8FACB">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"><span><span class="keyword kwd">prefix-list</span> </span> 
+                                       			 <span><var>prefix-list-name</var> </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-ospf-af-rcmd)#prefix-list ospf_monitor</code></pre> 
+                                       		  </section>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enables
+                                          				individual prefix monitoring for OSPF prefixes. 
+                                          			 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__step_4B0E06C90695448498524C8013DBF734">
+                                 <td align="left" valign="top" border="0" width="10%">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" border="0">
+                                    <p class="ph cmd"> Use the 
+                                       			 <span>
+                                          <span class="keyword kwd">commit</span>
+                                           </span> or 
+                                       			 <span>
+                                          <span class="keyword kwd">end</span>
+                                           </span> command. 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">
+                                          						<span>
+                                             							<span class="keyword kwd">commit</span>
+                                             						 </span>—Saves the configuration changes and remains within the configuration session.
+                                       </p> 
+                                       			 
+                                       <section class="p">
+                                          <span>
+                                             <span class="keyword kwd">end</span>
+                                              </span>—Prompts user to take one of these actions: 
+                                          			 
+                                          <ul class="ul">
+                                             
+                                             <li class="li" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__d258e86"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">Yes</span>
+                                                       </span>— Saves configuration changes and exits the
+                                                   					 configuration session. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                             <li class="li" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__d258e98"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">No</span>
+                                                       </span>—Exits the configuration session without
+                                                   					 committing the configuration changes. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                             <li class="li" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__d258e110"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">Cancel</span>
+                                                       </span>—Remains in the configuration session,
+                                                   					 without committing the configuration changes. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                          </ul> 
+                                          			 
+                                       </section> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <hr noshade>
+                        <section class="example" id="task_D7C2965B917B4C1D9F372CE3559DE0AF__example_BB117C25E5494BBA9F34CB4D2C02258D">
+                           <h3 class="title sectiontitle">Enabling RCMD Monitoring for OSPF Prefixes: Example</h3>
+                           		This
+                           		example shows how to enable RCMD monitoring for individual OSPF prefixes:
+                           		<pre class="pre codeblock"><code>
+ipv6 prefix-list ospf_monitor
+ 10 permit 2001:db8::/32
+!
+router ospf 100
+ monitor-convergence
+  prefix-list ospf_monitor
+
+</code></pre>
+                           	 </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic task nested1" aria-labelledby="ariaid-title8" lang="en-US" id="task_C844A64B0DF249C9B98A17708CBE525D">
+                     <h2 class="title topictitle2" id="ariaid-title8">Enabling RCMD Monitoring for Type 3/5/7 OSPF LSAs</h2>
+                     <section class="body taskbody">
+                        <section class="section context" id="task_C844A64B0DF249C9B98A17708CBE525D__context_B2856C97A93541949B69685601845446">
+                           
+                           <p class="p">Perform this task to enable RCMD monitoring for type 3/5/7 OSPF LSAs.</p>
+                           
+                           
+                        </section>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">SUMMARY STEPS</h3>
+                        <ol class="ol steps summary_steps">
+                           <li class="summary_indent"> 
+                              			 <span>
+                                 <span class="keyword kwd">configure</span> 
+                                 			  </span> 
+                              		  
+                           </li>
+                           <li class="summary_indent"><span><span class="keyword kwd">router ospf</span> </span> <span><var>100</var> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">track-external-routes</span> </span></li>
+                           <li class="summary_indent"><span><span class="keyword kwd">track-summary-routes</span> </span></li>
+                           <li class="summary_indent"> Use the 
+                              			 <span>
+                                 <span class="keyword kwd">commit</span>
+                                  </span> or 
+                              			 <span>
+                                 <span class="keyword kwd">end</span>
+                                  </span> command. 
+                              		  
+                           </li>
+                        </ol>
+                        <h3 font-weight="bold" class="sectiontitle tasklabel summary_steps cB_Bold">DETAILED STEPS</h3>
+                        <table class="ol steps">
+                           <thead>
+                              <tr>
+                                 <th align="left">&nbsp;</th>
+                                 <th font-weight="bold" align="left">Command or Action</th>
+                                 <th font-weight="bold" align="left">Purpose</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr class="li step">
+                                 <td align="left" valign="top">
+                                    <p><b>Step&nbsp;1</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"> 
+                                       			 <span>
+                                          <span class="keyword kwd">configure</span> 
+                                          			  </span> 
+                                       		  
+                                    </p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section> 
+                                       			 <pre class="pre codeblock"><code>
+<span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span># configure</code></pre> 
+                                       		  </section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">Enters <span class="ph">global configuration</span>
+                                          						 mode. 
+                                       </p> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C844A64B0DF249C9B98A17708CBE525D__step_70815EF4810449398224A32FCF416ECA">
+                                    <p><b>Step&nbsp;2</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">router ospf</span> </span> <span><var>100</var> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config)#router ospf 100</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Enables OSPF routing for the specified routing process and places the router in router configuration mode.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C844A64B0DF249C9B98A17708CBE525D__step_5E09AFA565DC44498FCBB464230CAE2D">
+                                    <p><b>Step&nbsp;3</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">track-external-routes</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-ospf-af-rcmd)#track-external-routes</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Enables tracking of external (Type-3/5/7) LSAs prefix monitoring.</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C844A64B0DF249C9B98A17708CBE525D__step_522559DF25D84B1CBC597BCCE51F8DF4">
+                                    <p><b>Step&nbsp;4</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"><span><span class="keyword kwd">track-summary-routes</span> </span></p>
+                                    <section class="itemgroup stepxmp">
+                                       <section class="tasklabel">
+                                          <h3 font-weight="bold" class="sectiontitle tasklabel cB_Bold">Example:</h3>
+                                       </section><pre class="pre codeblock"><code><span class="ph">RP/0/<span class="ph">RSP0</span><span class="ph">/CPU0:router</span></span>(config-ospf-af-rcmd)#track-summary-routes</code></pre></section>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info">
+                                       <p class="p">Enables tracking of summary (inter-area) routes  monitoring</p>
+                                    </section>
+                                 </td>
+                              </tr>
+                              <tr class="li step">
+                                 <td align="left" valign="top" id="task_C844A64B0DF249C9B98A17708CBE525D__step_3BEAD009AD974EB7B5B39676D2F75E6D">
+                                    <p><b>Step&nbsp;5</b></p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--command">
+                                    <p class="ph cmd"> Use the 
+                                       			 <span>
+                                          <span class="keyword kwd">commit</span>
+                                           </span> or 
+                                       			 <span>
+                                          <span class="keyword kwd">end</span>
+                                           </span> command. 
+                                       		  
+                                    </p>
+                                 </td>
+                                 <td align="left" valign="top" class="step--purpose">
+                                    <section class="itemgroup info"> 
+                                       			 
+                                       <p class="p">
+                                          						<span>
+                                             							<span class="keyword kwd">commit</span>
+                                             						 </span>—Saves the configuration changes and remains within the configuration session.
+                                       </p> 
+                                       			 
+                                       <section class="p">
+                                          <span>
+                                             <span class="keyword kwd">end</span>
+                                              </span>—Prompts user to take one of these actions: 
+                                          			 
+                                          <ul class="ul">
+                                             
+                                             <li class="li" id="task_C844A64B0DF249C9B98A17708CBE525D__d11e86"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">Yes</span>
+                                                       </span>— Saves configuration changes and exits the
+                                                   					 configuration session. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                             <li class="li" id="task_C844A64B0DF249C9B98A17708CBE525D__d11e98"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">No</span>
+                                                       </span>—Exits the configuration session without
+                                                   					 committing the configuration changes. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                             <li class="li" id="task_C844A64B0DF249C9B98A17708CBE525D__d11e110"> 
+                                                				  
+                                                <p class="p">
+                                                   <span>
+                                                      <span class="keyword kwd">Cancel</span>
+                                                       </span>—Remains in the configuration session,
+                                                   					 without committing the configuration changes. 
+                                                   				  
+                                                </p> 
+                                                				
+                                             </li>
+                                             
+                                          </ul> 
+                                          			 
+                                       </section> 
+                                       		  
+                                    </section>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic reference nested1" aria-labelledby="ariaid-title9" lang="en-US" id="reference_7164E0C33C914FEE9F83F4108928ECAA">
+                     <h2 class="title topictitle2" id="ariaid-title9">Enabling RCMD Monitoring for IS-IS Prefixes: Example</h2>
+                     <section class="body refbody">
+                        <section class="section" id="reference_7164E0C33C914FEE9F83F4108928ECAA__section_3C177F855B8643F88E3A03A56C5F1146">
+                           
+                           
+                           <section class="p">This example shows how to monitor RCMD prefix monitoring for individual IS-IS prefixes:<pre class="pre codeblock"><code>
+ipv6 prefix-list isis_monitor
+ 10 permit 2001:db8::/32
+!
+router isis isp
+ address-family ipv6 unicast
+  monitor-convergence
+   prefix-list isis_monitor
+
+</code></pre></section>
+                           
+                           
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic reference nested1" aria-labelledby="ariaid-title10" lang="en-US" id="reference_3C0A8A6E960D431080F31B7280EE1593">
+                     <h2 class="title topictitle2" id="ariaid-title10">Enabling RCMD Monitoring for OSPF Prefixes: Example</h2>
+                     <section class="body refbody">
+                        <section class="section" id="reference_3C0A8A6E960D431080F31B7280EE1593__section_431CF4FA86E44580AC048F6FF5050096">
+                           
+                           
+                           <section class="p">This example shows how to enable RCMD monitoring for individual OSPF prefixes:<pre class="pre codeblock"><code>
+ipv6 prefix-list ospf_monitor
+ 10 permit 2001:db8::/32
+!
+router ospf 100
+ monitor-convergence
+  prefix-list ospf_monitor
+
+</code></pre></section>
+                           
+                           
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+                  <article class="topic reference nested1" aria-labelledby="ariaid-title11" lang="en-US" id="reference_9BF71CF686774C40AE0B24177F90504D">
+                     <h2 class="title topictitle2" id="ariaid-title11">Enabling RCMD Monitoring for Type 3/5/7 OSPF LSAs: Example</h2>
+                     <section class="body refbody">
+                        <section class="section" id="reference_9BF71CF686774C40AE0B24177F90504D__section_7E6BA6ABB84F4220906727F36B14CAD3">
+                           
+                           
+                           <section class="p">This example shows how to enable tracking of prefix monitoring for OSPF external LSAs and summary routes:<pre class="pre codeblock"><code>
+router ospf 100
+ monitor-convergence
+  track-external-routes
+  track-summary-routes
+
+</code></pre></section>
+                           
+                           
+                        </section>
+                     </section>
+                     <!-- minitoc start -->
+                     <nav role="navigation" class="related-links"></nav>
+                     <!-- minitoc end -->
+                  </article>
+               </article>
+            </article>
+         </main>
+      
+
+</div> 
+ 
+    </div>
+    <div class="col narrow-v2">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rightRailComponent noprint base-blowout">
+    <div class="eotPersonalization">
+        <section id="eotTDCampaign"></section>
+    </div>    
+    <div class="eot-feedback-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-feedback">
+  <h3>Was this Document Helpful?</h3>
+  <span class="eot-feedback-btnwrap">
+    <button class="eot-feedback-btn eot-feedback-btn-yes" aria-label="Was this Document Helpful?? Yes">Yes</button>
+    <button class="eot-feedback-btn eot-feedback-btn-no" aria-label="Was this Document Helpful?? No">No</button>
+  </span>
+  <span lang="en" class="eot-feedback-olwrap">
+    
+      <a href="javascript: void(0);" class="eot-feedback-ol" onclick="window.open('https://ciscocx.qualtrics.com/jfe/form/SV_be0fHnqDoKM7sto?Ref=' + location.href + '&resize=false', 'feedback', 'width=650, height=460, scrollbars=1, menubar=1, resizable=1'); return false;">
+      <img id="feedback_img" border="0" style="cursor: pointer;" title="Feedback" src="//www.cisco.com/c/dam/cdc/i/Feedback_OceanBlue.png" alt="Feedback">Feedback</a>
+    
+  </span>
+</div>
+
+
+</div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eot-vav">
+  <ul>
+  </ul>
+</div>
+    </div>
+			
+    <div class="letUsHelp">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eotLetUsHelp">
+    <h3>Contact Cisco</h3>
+    <ul>
+      <li><a id="eotLetUsHelpProdDocUrl" href="https://mycase.cloudapps.cisco.com/start?prodDocUrl=">Open a Support Case <img src="/etc/designs/cdc/fw/i/icon_lock_small.png" alt="login required"/></a></li>
+        <li>(Requires a <a href="//www.cisco.com/c/en/us/services/order-services.html">Cisco Service Contract</a>)</li>
+    </ul>
+</div>
+
+
+<script>
+    jQuery(document).ready(function() {
+        var getURL=jQuery("#eotLetUsHelpProdDocUrl").attr("href"), 
+            domInd = location.href.indexOf('cisco.com') ;
+        if ( domInd > -1 && domInd < location.href.search(/\w\/\w/) ) {
+            getURL += encodeURI(location.href);
+        }
+		jQuery("#eotLetUsHelpProdDocUrl").attr("href",getURL);
+    });
+</script>
+
+
+    </div>
+
+    <div id="eotRightRailMBox"><!--MBox-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IT:components/mbox/banner-mbox:V0.0.0 -->
+
+
+
+<div>
+    <div class="mboxDefault"></div>   
+    <script type="text/javascript">
+        var test="";
+        if(test!=undefined && test.trim().length>0){
+           mboxCreate('en-us_dg_support_bookchapters','type=default','');
+        }else{
+           mboxCreate('en-us_dg_support_bookchapters','type=default');
+        }
+       
+    </script>
+</div>
+<!--MBox--></div>
+			
+    <div class="showComponent">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+	<script type="text/javascript">
+			    var eottdatp = document.getElementsByClassName('eot-tdatp');
+			    if (eottdatp && eottdatp.style) {
+        			eottdatp.style.display="none";
+			    }
+        		  </script>
+  	
+
+
+    </div>
+			
+    <div></div>
+
+</div>
+
+
+    </div>
+</div>
+
+     <!--googleoff: index--><!--googleoff: snippet-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end: responsive fat footer re-use wrapper-->
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="module" src="/site/web-components/us/en/cdc-footer.js"></script>
+        <cdc-footer></cdc-footer>
+    
+
+<script type="text/javascript">
+    if(document.querySelector('#privacy-manager')!=null){
+        document.querySelector('#privacy-manager').href='#cookies';
+    }
+  </script>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fw-overlay"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/etc/designs/cdc/clientlibs/responsive/js/books.min.js"></script>
+
+<script src="/etc/designs/cdc/fw/m/books_metricsrule.js" type="text/javascript" async></script>
+    
+    
+
+    <!-- SiteCatalyst code version: H.24.4. -->
+    <noscript><img src="//cisco.112.2o7.net/b/ss/cisco-mobile/5/12345" width="2" height="2" border="0" alt=""/></noscript>
+
+</body>
+</html>

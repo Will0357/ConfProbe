@@ -1,0 +1,43 @@
+{
+  "run_id": "20260805T130557791524Z",
+  "status": "running",
+  "current_stage": "audit_probe_commands",
+  "started_at": "2026-08-05T13:05:57.792574+00:00",
+  "completed_at": null,
+  "elapsed_seconds": null,
+  "stages": [
+    {
+      "name": "load_probe_model",
+      "status": "completed",
+      "started_at": "2026-08-05T13:05:57.793706+00:00",
+      "completed_at": "2026-08-05T13:05:57.950431+00:00",
+      "elapsed_seconds": 0.15641330007929355,
+      "error": null
+    },
+    {
+      "name": "fetch_manuals",
+      "status": "completed",
+      "started_at": "2026-08-05T13:05:57.974196+00:00",
+      "completed_at": "2026-08-05T13:06:54.006349+00:00",
+      "elapsed_seconds": 56.032486199983396,
+      "error": null
+    },
+    {
+      "name": "build_manual_index",
+      "status": "completed",
+      "started_at": "2026-08-05T13:06:54.006349+00:00",
+      "completed_at": "2026-08-05T13:07:02.998661+00:00",
+      "elapsed_seconds": 8.992465400020592,
+      "error": null
+    },
+    {
+      "name": "audit_probe_commands",
+      "status": "running",
+      "started_at": "2026-08-05T13:07:03.167269+00:00",
+      "completed_at": null,
+      "elapsed_seconds": null,
+      "error": null
+    }
+  ],
+  "error": null
+}

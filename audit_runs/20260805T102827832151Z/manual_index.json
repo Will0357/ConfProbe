@@ -1,0 +1,77 @@
+[
+  {
+    "block_id": "M1:B0001",
+    "command_name": "segment routing command reference for cisco asr 9000 series routers",
+    "title": "Segment Routing Command Reference for Cisco ASR 9000 Series Routers",
+    "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k.html",
+    "document_title": "Segment Routing Command Reference for Cisco ASR 9000 Series Routers - Cisco",
+    "syntax_templates": [],
+    "modes": [],
+    "evidence": [
+      {
+        "evidence_id": "M1:B0001:title",
+        "block_id": "M1:B0001",
+        "kind": "title",
+        "text": "Segment Routing Command Reference for Cisco ASR 9000 Series Routers",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k.html"
+      },
+      {
+        "evidence_id": "M1:B0001:description",
+        "block_id": "M1:B0001",
+        "kind": "description",
+        "text": "Skip to content Skip to search Skip to footer Cisco.com Worldwide Products and Services Solutions Support Learn Explore Cisco How to Buy Partners Home Partner Program Support Tools Find a Cisco Partner Meet our Partners Become a Cisco Partner Support Product Support Routers Cisco ASR 9000 Series Aggregation Services Routers Command References Segment Routing Command Reference for Cisco ASR 9000 Series Routers Bias-Free Language Bias-Free Language The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. Learn more about how Cisco is using Inclusive Language. Search Find Matches in This Book Save Log in to Save Content Available Languages Download Download Options Book Title Segment Routing Command Reference for Cisco ASR 9000 Series Routers PDF - Complete Book (3.14 MB) View with Adobe Reader on a variety of devices Print Results Updated: December 17, 2025 Book Table of Contents Preface Segment Routing Commands Segment Routing Traffic Engineering Commands Index Notes Was this Document Helpful? Yes No Feedback Contact Cisco Open a Support Case (Requires a Cisco Service Contract ) This Document Applies to These Products ASR 9000 Series Aggregation Services Routers",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/segment-routing/command/reference/b-seg-routing-cr-asr9k.html"
+      }
+    ]
+  },
+  {
+    "block_id": "M2:B0001",
+    "command_name": "routing configuration guide for cisco asr 9000 series routers, ios xr release 7.9.x",
+    "title": "Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x",
+    "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x.html",
+    "document_title": "Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x - Cisco",
+    "syntax_templates": [],
+    "modes": [],
+    "evidence": [
+      {
+        "evidence_id": "M2:B0001:title",
+        "block_id": "M2:B0001",
+        "kind": "title",
+        "text": "Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x.html"
+      },
+      {
+        "evidence_id": "M2:B0001:description",
+        "block_id": "M2:B0001",
+        "kind": "description",
+        "text": "Skip to content Skip to search Skip to footer Cisco.com Worldwide Products and Services Solutions Support Learn Explore Cisco How to Buy Partners Home Partner Program Support Tools Find a Cisco Partner Meet our Partners Become a Cisco Partner Support Product Support Routers Cisco ASR 9000 Series Aggregation Services Routers Configuration Guides Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x Bias-Free Language Bias-Free Language The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. Learn more about how Cisco is using Inclusive Language. Search Find Matches in This Book Save Log in to Save Content Available Languages Download Download Options Book Title Routing Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 7.9.x PDF - Complete Book (11.43 MB) View with Adobe Reader on a variety of devices Print Results Updated: March 31, 2023 Book Table of Contents Preface Implementing BGP Implementing BGP Flowspec Implementing BFD Implementing EIGRP Implementing IS-IS Implementing OSPF Implementing IP Fast Reroute Loop-Free Alternate Implementing and Monitoring RIB Implementing RIP Implementing Routing Policy Implementing Static Routes Implementing RCMD Implementing UCMP Implementing Data Plane Security Enabling Flexible Algorithm in IP Networks Index Notes Was this Document Helpful? Yes No Feedback Contact Cisco Open a Support Case (Requires a Cisco Service Contract ) This Document Applies to These Products ASR 9000 Series Aggregation Services Routers",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k-r7-8/routing/configuration/guide/b-routing-cg-asr9000-79x.html"
+      }
+    ]
+  },
+  {
+    "block_id": "M3:B0001",
+    "command_name": "routing command reference for cisco asr 9000 series routers",
+    "title": "Routing Command Reference for Cisco ASR 9000 Series Routers",
+    "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000.html",
+    "document_title": "Routing Command Reference for Cisco ASR 9000 Series Routers - Cisco",
+    "syntax_templates": [],
+    "modes": [],
+    "evidence": [
+      {
+        "evidence_id": "M3:B0001:title",
+        "block_id": "M3:B0001",
+        "kind": "title",
+        "text": "Routing Command Reference for Cisco ASR 9000 Series Routers",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000.html"
+      },
+      {
+        "evidence_id": "M3:B0001:description",
+        "block_id": "M3:B0001",
+        "kind": "description",
+        "text": "Skip to content Skip to search Skip to footer Cisco.com Worldwide Products and Services Solutions Support Learn Explore Cisco How to Buy Partners Home Partner Program Support Tools Find a Cisco Partner Meet our Partners Become a Cisco Partner Support Product Support Routers Cisco ASR 9000 Series Aggregation Services Routers Command References Routing Command Reference for Cisco ASR 9000 Series Routers Bias-Free Language Bias-Free Language The documentation set for this product strives to use bias-free language. For the purposes of this documentation set, bias-free is defined as language that does not imply discrimination based on age, disability, gender, racial identity, ethnic identity, sexual orientation, socioeconomic status, and intersectionality. Exceptions may be present in the documentation due to language that is hardcoded in the user interfaces of the product software, language used based on RFP documentation, or language that is used by a referenced third-party product. Learn more about how Cisco is using Inclusive Language. Search Find Matches in This Book Save Log in to Save Content Available Languages Download Download Options Book Title Routing Command Reference for Cisco ASR 9000 Series Routers PDF - Complete Book (12.86 MB) View with Adobe Reader on a variety of devices Print Results Updated: June 9, 2026 Book Table of Contents Preface BGP Commands BGP Flowspec Commands BFD Commands EIGRP Commands IS-IS Commands OSPF Commands OSPFv3 Commands RIB Commands RIP Commands Routing Policy Language Commands Static Routing Commands RCMD Commands Locator/ID Separation Protocol Commands Index Notes Was this Document Helpful? Yes No Feedback Contact Cisco Open a Support Case (Requires a Cisco Service Contract ) This Document Applies to These Products ASR 9000 Series Aggregation Services Routers",
+        "url": "https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/routing/command/reference/b-routing-cr-asr9000.html"
+      }
+    ]
+  }
+]

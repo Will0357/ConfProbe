@@ -1,0 +1,4894 @@
+[
+  {
+    "coverage_id": "C00001",
+    "probe_group_id": "P00001",
+    "template": "<WORD> bit-position <0-255>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00001"
+    ]
+  },
+  {
+    "coverage_id": "C00002",
+    "probe_group_id": "P00002",
+    "template": "address-family ipv4 [unicast]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0001",
+      "M26:B0001"
+    ],
+    "finding_ids": [
+      "F00002"
+    ]
+  },
+  {
+    "coverage_id": "C00003",
+    "probe_group_id": "P00003",
+    "template": "adjacency stagger {<1-65535> <1-65535>|disable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0002"
+    ],
+    "finding_ids": [
+      "F00003"
+    ]
+  },
+  {
+    "coverage_id": "C00004",
+    "probe_group_id": "P00004",
+    "template": "adjacency-sid absolute <15000-1048575> [neighbor-address <A.B.C.D>|protected]",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0002"
+    ],
+    "finding_ids": [
+      "F00004",
+      "F00005"
+    ]
+  },
+  {
+    "coverage_id": "C00005",
+    "probe_group_id": "P00005",
+    "template": "adjacency-sid index <0-1048575> [neighbor-address <A.B.C.D>|protected]",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0002"
+    ],
+    "finding_ids": [
+      "F00006",
+      "F00007"
+    ]
+  },
+  {
+    "coverage_id": "C00006",
+    "probe_group_id": "P00006",
+    "template": "admin-weight <0-65535>",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00008"
+    ]
+  },
+  {
+    "coverage_id": "C00007",
+    "probe_group_id": "P00007",
+    "template": "advertise prefix route-policy <WORD>",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0007"
+    ],
+    "finding_ids": [
+      "F00009",
+      "F00010",
+      "F00011"
+    ]
+  },
+  {
+    "coverage_id": "C00008",
+    "probe_group_id": "P00008",
+    "template": "advertise-definition",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0003"
+    ],
+    "finding_ids": [
+      "F00012"
+    ]
+  },
+  {
+    "coverage_id": "C00009",
+    "probe_group_id": "P00009",
+    "template": "affinity exclude-any",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00013"
+    ]
+  },
+  {
+    "coverage_id": "C00010",
+    "probe_group_id": "P00010",
+    "template": "affinity exclude-any <WORD>",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00014"
+    ]
+  },
+  {
+    "coverage_id": "C00011",
+    "probe_group_id": "P00011",
+    "template": "affinity flex-algo",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0005"
+    ],
+    "finding_ids": [
+      "F00015"
+    ]
+  },
+  {
+    "coverage_id": "C00012",
+    "probe_group_id": "P00012",
+    "template": "affinity flex-algo <WORD>",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0005"
+    ],
+    "finding_ids": [
+      "F00016"
+    ]
+  },
+  {
+    "coverage_id": "C00013",
+    "probe_group_id": "P00013",
+    "template": "affinity include-all",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00017"
+    ]
+  },
+  {
+    "coverage_id": "C00014",
+    "probe_group_id": "P00014",
+    "template": "affinity include-all <WORD>",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00018"
+    ]
+  },
+  {
+    "coverage_id": "C00015",
+    "probe_group_id": "P00015",
+    "template": "affinity include-any",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00019"
+    ]
+  },
+  {
+    "coverage_id": "C00016",
+    "probe_group_id": "P00016",
+    "template": "affinity include-any <WORD>",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00020"
+    ]
+  },
+  {
+    "coverage_id": "C00017",
+    "probe_group_id": "P00017",
+    "template": "affinity-map",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00021"
+    ]
+  },
+  {
+    "coverage_id": "C00018",
+    "probe_group_id": "P00018",
+    "template": "affinity-map <WORD> bit-position <0-255>",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00022"
+    ]
+  },
+  {
+    "coverage_id": "C00019",
+    "probe_group_id": "P00019",
+    "template": "ag",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00023"
+    ]
+  },
+  {
+    "coverage_id": "C00020",
+    "probe_group_id": "P00020",
+    "template": "ag bit-position <0-255>",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00024"
+    ]
+  },
+  {
+    "coverage_id": "C00021",
+    "probe_group_id": "P00021",
+    "template": "ah",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00025"
+    ]
+  },
+  {
+    "coverage_id": "C00022",
+    "probe_group_id": "P00022",
+    "template": "ah bit-position <0-255>",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00026"
+    ]
+  },
+  {
+    "coverage_id": "C00023",
+    "probe_group_id": "P00023",
+    "template": "apply-group <WORD>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00027"
+    ]
+  },
+  {
+    "coverage_id": "C00024",
+    "probe_group_id": "P00024",
+    "template": "apply-group-append <WORD>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00028"
+    ]
+  },
+  {
+    "coverage_id": "C00025",
+    "probe_group_id": "P00025",
+    "template": "apply-group-remove <WORD>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00029"
+    ]
+  },
+  {
+    "coverage_id": "C00026",
+    "probe_group_id": "P00026",
+    "template": "apply-weight bandwidth [<1-4294967>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00030"
+    ]
+  },
+  {
+    "coverage_id": "C00027",
+    "probe_group_id": "P00027",
+    "template": "apply-weight default-weight <1-16777214>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00031"
+    ]
+  },
+  {
+    "coverage_id": "C00028",
+    "probe_group_id": "P00028",
+    "template": "area <0-4294967295>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0003",
+      "M26:B0002"
+    ],
+    "finding_ids": [
+      "F00032"
+    ]
+  },
+  {
+    "coverage_id": "C00029",
+    "probe_group_id": "P00029",
+    "template": "authentication",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00033"
+    ]
+  },
+  {
+    "coverage_id": "C00030",
+    "probe_group_id": "P00030",
+    "template": "authentication {keychain <WORD>|message-digest keychain <WORD>|null}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M22:B0002",
+      "M25:B0004",
+      "M26:B0003"
+    ],
+    "finding_ids": [
+      "F00036"
+    ]
+  },
+  {
+    "coverage_id": "C00031",
+    "probe_group_id": "P00031",
+    "template": "authentication message-digest",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0004",
+      "M26:B0003"
+    ],
+    "finding_ids": [
+      "F00037",
+      "F00038",
+      "F00037",
+      "F00038",
+      "F00039"
+    ]
+  },
+  {
+    "coverage_id": "C00032",
+    "probe_group_id": "P00032",
+    "template": "authentication-key {LINE|clear LINE|encrypted LINE}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00033",
+    "probe_group_id": "P00033",
+    "template": "auto-cost {disable|reference-bandwidth <1-4294967>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0006",
+      "M26:B0004"
+    ],
+    "finding_ids": [
+      "F00040",
+      "F00041"
+    ]
+  },
+  {
+    "coverage_id": "C00034",
+    "probe_group_id": "P00034",
+    "template": "aya bit-position <0-255>",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00042"
+    ]
+  },
+  {
+    "coverage_id": "C00035",
+    "probe_group_id": "P00035",
+    "template": "bfd fast-detect [disable|strict-mode]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M21:B0014"
+    ],
+    "finding_ids": [
+      "F00043"
+    ]
+  },
+  {
+    "coverage_id": "C00036",
+    "probe_group_id": "P00036",
+    "template": "bfd fast-detect [strict-mode]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M21:B0014"
+    ],
+    "finding_ids": [
+      "F00044",
+      "F00045"
+    ]
+  },
+  {
+    "coverage_id": "C00037",
+    "probe_group_id": "P00037",
+    "template": "bfd {minimum-interval <50-30000>|multiplier <3-50>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M21:B0002",
+      "M21:B0015"
+    ],
+    "finding_ids": [
+      "F00046",
+      "F00047",
+      "F00048"
+    ]
+  },
+  {
+    "coverage_id": "C00038",
+    "probe_group_id": "P00038",
+    "template": "capability {lls disable|opaque disable|type7 prefer}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00049"
+    ]
+  },
+  {
+    "coverage_id": "C00039",
+    "probe_group_id": "P00039",
+    "template": "capability {vrf-lite|opaque disable|lls disable|type7 prefer}",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0008",
+      "M26:B0005"
+    ],
+    "finding_ids": [
+      "F00050"
+    ]
+  },
+  {
+    "coverage_id": "C00040",
+    "probe_group_id": "P00040",
+    "template": "cost <1-65535>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0013",
+      "M26:B0010"
+    ],
+    "finding_ids": [
+      "F00051"
+    ]
+  },
+  {
+    "coverage_id": "C00041",
+    "probe_group_id": "P00041",
+    "template": "cost-fallback <1-65535> threshold <1-4294967>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0014"
+    ],
+    "finding_ids": [
+      "F00053",
+      "F00054"
+    ]
+  },
+  {
+    "coverage_id": "C00042",
+    "probe_group_id": "P00042",
+    "template": "cost-fallback anomaly delay {igp-metric {disable|increment <1-65534>|value <1-65535>|multiplier <1-255>}|te-metric {disable|multiplier <1-255>}}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0014",
+      "M25:B0014"
+    ],
+    "finding_ids": [
+      "F00056"
+    ]
+  },
+  {
+    "coverage_id": "C00043",
+    "probe_group_id": "P00043",
+    "template": "cost-fallback anomaly delay {igp-metric {disable|multiplier <1-255>}|te-metric {increment <1-4294967294>|value <1-4294967295>|disable|multiplier <1-255>}}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0014",
+      "M25:B0014"
+    ],
+    "finding_ids": [
+      "F00058"
+    ]
+  },
+  {
+    "coverage_id": "C00044",
+    "probe_group_id": "P00044",
+    "template": "cost-fallback anomaly delay {igp-metric {increment <1-65534>|value <1-65535>|multiplier <1-255>}|te-metric multiplier <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0014",
+      "M25:B0014"
+    ],
+    "finding_ids": [
+      "F00060",
+      "F00061"
+    ]
+  },
+  {
+    "coverage_id": "C00045",
+    "probe_group_id": "P00045",
+    "template": "cost-fallback anomaly delay igp-metric {increment <1-65534>|value <1-65535>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0014",
+      "M25:B0014"
+    ],
+    "finding_ids": [
+      "F00063"
+    ]
+  },
+  {
+    "coverage_id": "C00046",
+    "probe_group_id": "P00046",
+    "template": "cost-fallback anomaly delay te-metric {increment <1-4294967294>|value <1-4294967295>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0014",
+      "M25:B0014"
+    ],
+    "finding_ids": [
+      "F00064",
+      "F00064",
+      "F00064",
+      "F00064",
+      "F00064",
+      "F00064",
+      "F00065",
+      "F00066"
+    ]
+  },
+  {
+    "coverage_id": "C00047",
+    "probe_group_id": "P00047",
+    "template": "database-filter all out [disable|enable]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0015",
+      "M26:B0011"
+    ],
+    "finding_ids": [
+      "F00067"
+    ]
+  },
+  {
+    "coverage_id": "C00048",
+    "probe_group_id": "P00048",
+    "template": "dead-interval",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0016",
+      "M26:B0012"
+    ],
+    "finding_ids": [
+      "F00069"
+    ]
+  },
+  {
+    "coverage_id": "C00049",
+    "probe_group_id": "P00049",
+    "template": "dead-interval {<1-65535>|minimal hello-multiplier <3-20>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0016",
+      "M26:B0012"
+    ],
+    "finding_ids": [
+      "F00070",
+      "F00070",
+      "F00071"
+    ]
+  },
+  {
+    "coverage_id": "C00050",
+    "probe_group_id": "P00050",
+    "template": "default-cost <1-16777215>",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0017",
+      "M26:B0013"
+    ],
+    "finding_ids": [
+      "F00072",
+      "F00073"
+    ]
+  },
+  {
+    "coverage_id": "C00051",
+    "probe_group_id": "P00051",
+    "template": "default-information originate [always|metric-type <1-2>|metric <1-16777214>|route-policy <WORD>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M22:B0011",
+      "M25:B0018",
+      "M26:B0014"
+    ],
+    "finding_ids": [
+      "F00074",
+      "F00075",
+      "F00076"
+    ]
+  },
+  {
+    "coverage_id": "C00052",
+    "probe_group_id": "P00052",
+    "template": "default-metric <1-16777214>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0019",
+      "M26:B0015"
+    ],
+    "finding_ids": [
+      "F00077"
+    ]
+  },
+  {
+    "coverage_id": "C00053",
+    "probe_group_id": "P00053",
+    "template": "delay normalize interval <1-16777215> [offset <0-16777215>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00078"
+    ]
+  },
+  {
+    "coverage_id": "C00054",
+    "probe_group_id": "P00054",
+    "template": "demand-circuit",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0020",
+      "M26:B0016"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00055",
+    "probe_group_id": "P00055",
+    "template": "demand-circuit {disable|enable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0020",
+      "M26:B0016"
+    ],
+    "finding_ids": [
+      "F00080",
+      "F00080"
+    ]
+  },
+  {
+    "coverage_id": "C00056",
+    "probe_group_id": "P00056",
+    "template": "disable-dn-bit-check",
+    "semantic_view": "vrf",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00057",
+    "probe_group_id": "P00057",
+    "template": "distance <1-255>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0022"
+    ],
+    "finding_ids": [
+      "F00082"
+    ]
+  },
+  {
+    "coverage_id": "C00058",
+    "probe_group_id": "P00058",
+    "template": "distance <1-255> <A.B.C.D> <A.B.C.D> [<WORD>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0022"
+    ],
+    "finding_ids": [
+      "F00083",
+      "F00083",
+      "F00084"
+    ]
+  },
+  {
+    "coverage_id": "C00059",
+    "probe_group_id": "P00059",
+    "template": "distance ospf {external <1-255>|inter-area <1-255>|intra-area <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0023"
+    ],
+    "finding_ids": [
+      "F00085",
+      "F00086"
+    ]
+  },
+  {
+    "coverage_id": "C00060",
+    "probe_group_id": "P00060",
+    "template": "distribute bgp-ls [excl-external]",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0101"
+    ],
+    "finding_ids": [
+      "F00087"
+    ]
+  },
+  {
+    "coverage_id": "C00061",
+    "probe_group_id": "P00061",
+    "template": "distribute {link-state [throttle <1-3600>|instance-id <0-4294967295>|excl-external|allow-prefix route-policy <WORD>]|bgp-ls {throttle <1-3600>|instance-id <0-4294967295>|allow-prefix route-policy <WORD>}}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M2:B0010"
+    ],
+    "finding_ids": [
+      "F00088",
+      "F00089"
+    ]
+  },
+  {
+    "coverage_id": "C00062",
+    "probe_group_id": "P00062",
+    "template": "distribute link-state {disable|excl-nssa|excl-summary}",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M2:B0010"
+    ],
+    "finding_ids": [
+      "F00090",
+      "F00091"
+    ]
+  },
+  {
+    "coverage_id": "C00063",
+    "probe_group_id": "P00063",
+    "template": "distribute-list <WORD> in",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00064",
+    "probe_group_id": "P00064",
+    "template": "distribute-list {<WORD>|route-policy <WORD>} in",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0024"
+    ],
+    "finding_ids": [
+      "F00092"
+    ]
+  },
+  {
+    "coverage_id": "C00065",
+    "probe_group_id": "P00065",
+    "template": "distribute-list <WORD> out",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00066",
+    "probe_group_id": "P00066",
+    "template": "distribute-list <WORD> out bgp {<1-65535>. <0-65535>|<1-65535>|<65536-4294967295>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0024"
+    ],
+    "finding_ids": [
+      "F00093"
+    ]
+  },
+  {
+    "coverage_id": "C00067",
+    "probe_group_id": "P00067",
+    "template": "distribute-list <WORD> out {connected|ospf <WORD>|static|dagr}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0024"
+    ],
+    "finding_ids": [
+      "F00094"
+    ]
+  },
+  {
+    "coverage_id": "C00068",
+    "probe_group_id": "P00068",
+    "template": "distribute-list route-policy <WORD> in",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0024"
+    ],
+    "finding_ids": [
+      "F00095"
+    ]
+  },
+  {
+    "coverage_id": "C00069",
+    "probe_group_id": "P00069",
+    "template": "domain-id {secondary type|type} {0005 value <WORD>|8005 value <WORD>|0105 value <WORD>|0205 value <WORD>}",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0025",
+      "M26:B0020"
+    ],
+    "finding_ids": [
+      "F00096"
+    ]
+  },
+  {
+    "coverage_id": "C00070",
+    "probe_group_id": "P00070",
+    "template": "domain-tag <1-4294967295>",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0026"
+    ],
+    "finding_ids": [
+      "F00097"
+    ]
+  },
+  {
+    "coverage_id": "C00071",
+    "probe_group_id": "P00071",
+    "template": "exclude-group <WORD>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00098"
+    ]
+  },
+  {
+    "coverage_id": "C00072",
+    "probe_group_id": "P00072",
+    "template": "external-out",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00099"
+    ]
+  },
+  {
+    "coverage_id": "C00073",
+    "probe_group_id": "P00073",
+    "template": "external-out {disable|enable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00100"
+    ]
+  },
+  {
+    "coverage_id": "C00074",
+    "probe_group_id": "P00074",
+    "template": "fast-reroute disable",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00102",
+      "F00103",
+      "F00104"
+    ]
+  },
+  {
+    "coverage_id": "C00075",
+    "probe_group_id": "P00075",
+    "template": "fast-reroute per-link",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00106"
+    ]
+  },
+  {
+    "coverage_id": "C00076",
+    "probe_group_id": "P00076",
+    "template": "fast-reroute per-link {exclude|lfa-candidate} interface GigabitEthernet {0/0/0/0|<R/S/I/P/B or R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00108",
+      "F00109"
+    ]
+  },
+  {
+    "coverage_id": "C00077",
+    "probe_group_id": "P00077",
+    "template": "fast-reroute {per-link {exclude|lfa-candidate}|per-prefix {exclude|lfa-candidate}} interface GigabitEthernet {<R/S/I/P/B or R/S/I/P>|0/0/0/0}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00111"
+    ]
+  },
+  {
+    "coverage_id": "C00078",
+    "probe_group_id": "P00078",
+    "template": "fast-reroute per-link {exclude|lfa-candidate} interface MgmtEth {0/RP0/CPU0/0|<R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00113",
+      "F00114"
+    ]
+  },
+  {
+    "coverage_id": "C00079",
+    "probe_group_id": "P00079",
+    "template": "fast-reroute {per-link {exclude|lfa-candidate}|per-prefix {lfa-candidate|exclude}} interface MgmtEth {<R/S/I/P>|0/RP0/CPU0/0}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00116"
+    ]
+  },
+  {
+    "coverage_id": "C00080",
+    "probe_group_id": "P00080",
+    "template": "fast-reroute per-link {exclude|lfa-candidate} interface Serial <R/S/I/P>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00118",
+      "F00119"
+    ]
+  },
+  {
+    "coverage_id": "C00081",
+    "probe_group_id": "P00081",
+    "template": "fast-reroute {per-link {exclude|lfa-candidate}|per-prefix {lfa-candidate|exclude}} interface Serial <R/S/I/P>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00121"
+    ]
+  },
+  {
+    "coverage_id": "C00082",
+    "probe_group_id": "P00082",
+    "template": "fast-reroute per-link priority-limit {critical|high|medium}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00123"
+    ]
+  },
+  {
+    "coverage_id": "C00083",
+    "probe_group_id": "P00083",
+    "template": "fast-reroute per-link use-candidate-only",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00125"
+    ]
+  },
+  {
+    "coverage_id": "C00084",
+    "probe_group_id": "P00084",
+    "template": "fast-reroute per-link use-candidate-only [disable|enable]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00127",
+      "F00128"
+    ]
+  },
+  {
+    "coverage_id": "C00085",
+    "probe_group_id": "P00085",
+    "template": "fast-reroute {per-link use-candidate-only [enable|disable]|per-prefix use-candidate-only {enable|disable}}",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00130"
+    ]
+  },
+  {
+    "coverage_id": "C00086",
+    "probe_group_id": "P00086",
+    "template": "fast-reroute {per-link use-candidate-only {disable|enable}|per-prefix use-candidate-only [disable|enable]}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00132"
+    ]
+  },
+  {
+    "coverage_id": "C00087",
+    "probe_group_id": "P00087",
+    "template": "fast-reroute per-prefix",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00134"
+    ]
+  },
+  {
+    "coverage_id": "C00088",
+    "probe_group_id": "P00088",
+    "template": "fast-reroute per-prefix [load-sharing disable]",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00136"
+    ]
+  },
+  {
+    "coverage_id": "C00089",
+    "probe_group_id": "P00089",
+    "template": "fast-reroute per-prefix exclude interface GigabitEthernet {0/0/0/0|<R/S/I/P/B or R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0030"
+    ],
+    "finding_ids": [
+      "F00137"
+    ]
+  },
+  {
+    "coverage_id": "C00090",
+    "probe_group_id": "P00090",
+    "template": "fast-reroute per-prefix exclude interface MgmtEth {0/RP0/CPU0/0|<R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0030"
+    ],
+    "finding_ids": [
+      "F00138"
+    ]
+  },
+  {
+    "coverage_id": "C00091",
+    "probe_group_id": "P00091",
+    "template": "fast-reroute per-prefix exclude interface Serial <R/S/I/P>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0030"
+    ],
+    "finding_ids": [
+      "F00139"
+    ]
+  },
+  {
+    "coverage_id": "C00092",
+    "probe_group_id": "P00092",
+    "template": "fast-reroute per-prefix lfa-candidate interface GigabitEthernet {0/0/0/0|<R/S/I/P/B or R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0031"
+    ],
+    "finding_ids": [
+      "F00141",
+      "F00142"
+    ]
+  },
+  {
+    "coverage_id": "C00093",
+    "probe_group_id": "P00093",
+    "template": "fast-reroute per-prefix lfa-candidate interface MgmtEth {0/RP0/CPU0/0|<R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0031"
+    ],
+    "finding_ids": [
+      "F00144",
+      "F00145"
+    ]
+  },
+  {
+    "coverage_id": "C00094",
+    "probe_group_id": "P00094",
+    "template": "fast-reroute per-prefix lfa-candidate interface Serial <R/S/I/P>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0031"
+    ],
+    "finding_ids": [
+      "F00146",
+      "F00146",
+      "F00146",
+      "F00147",
+      "F00148"
+    ]
+  },
+  {
+    "coverage_id": "C00095",
+    "probe_group_id": "P00095",
+    "template": "fast-reroute per-prefix {load-sharing disable|srlg-protection weighted-global}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00150"
+    ]
+  },
+  {
+    "coverage_id": "C00096",
+    "probe_group_id": "P00096",
+    "template": "fast-reroute per-prefix priority-limit {high|medium|critical}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00152"
+    ]
+  },
+  {
+    "coverage_id": "C00097",
+    "probe_group_id": "P00097",
+    "template": "fast-reroute per-prefix remote-lfa {disable|maximum-cost <1-4294967295>|tunnel mpls-ldp}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0032"
+    ],
+    "finding_ids": [
+      "F00153",
+      "F00154"
+    ]
+  },
+  {
+    "coverage_id": "C00098",
+    "probe_group_id": "P00098",
+    "template": "fast-reroute per-prefix ti-lfa [disable|enable]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0022",
+      "M25:B0033"
+    ],
+    "finding_ids": [
+      "F00155",
+      "F00156",
+      "F00157",
+      "F00158"
+    ]
+  },
+  {
+    "coverage_id": "C00099",
+    "probe_group_id": "P00099",
+    "template": "fast-reroute per-prefix tiebreaker downstream {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00160",
+      "F00161"
+    ]
+  },
+  {
+    "coverage_id": "C00100",
+    "probe_group_id": "P00100",
+    "template": "fast-reroute per-prefix tiebreaker interface-disjoint {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00163",
+      "F00164"
+    ]
+  },
+  {
+    "coverage_id": "C00101",
+    "probe_group_id": "P00101",
+    "template": "fast-reroute per-prefix tiebreaker lc-disjoint {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00166",
+      "F00167"
+    ]
+  },
+  {
+    "coverage_id": "C00102",
+    "probe_group_id": "P00102",
+    "template": "fast-reroute per-prefix tiebreaker lowest-backup-metric {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00169",
+      "F00170"
+    ]
+  },
+  {
+    "coverage_id": "C00103",
+    "probe_group_id": "P00103",
+    "template": "fast-reroute per-prefix tiebreaker node-protecting {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00172",
+      "F00173"
+    ]
+  },
+  {
+    "coverage_id": "C00104",
+    "probe_group_id": "P00104",
+    "template": "fast-reroute per-prefix tiebreaker primary-path {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00175",
+      "F00176"
+    ]
+  },
+  {
+    "coverage_id": "C00105",
+    "probe_group_id": "P00105",
+    "template": "fast-reroute per-prefix tiebreaker secondary-path {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00178",
+      "F00179"
+    ]
+  },
+  {
+    "coverage_id": "C00106",
+    "probe_group_id": "P00106",
+    "template": "fast-reroute per-prefix tiebreaker srlg-disjoint {disable|index <1-255>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0028"
+    ],
+    "finding_ids": [
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00180",
+      "F00181",
+      "F00182"
+    ]
+  },
+  {
+    "coverage_id": "C00107",
+    "probe_group_id": "P00107",
+    "template": "fast-reroute per-prefix use-candidate-only",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0034"
+    ],
+    "finding_ids": [
+      "F00183"
+    ]
+  },
+  {
+    "coverage_id": "C00108",
+    "probe_group_id": "P00108",
+    "template": "fast-reroute per-prefix use-candidate-only [disable|enable]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0034"
+    ],
+    "finding_ids": [
+      "F00184",
+      "F00185",
+      "F00186",
+      "F00187"
+    ]
+  },
+  {
+    "coverage_id": "C00109",
+    "probe_group_id": "P00109",
+    "template": "flex-algo <128-255>",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0023"
+    ],
+    "finding_ids": [
+      "F00188",
+      "F00189"
+    ]
+  },
+  {
+    "coverage_id": "C00110",
+    "probe_group_id": "P00110",
+    "template": "flood-reduction",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0035",
+      "M26:B0022"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00111",
+    "probe_group_id": "P00111",
+    "template": "flood-reduction {disable|enable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0035",
+      "M26:B0022"
+    ],
+    "finding_ids": [
+      "F00191",
+      "F00191"
+    ]
+  },
+  {
+    "coverage_id": "C00112",
+    "probe_group_id": "P00112",
+    "template": "hello-interval <1-65535>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0036",
+      "M26:B0024"
+    ],
+    "finding_ids": [
+      "F00192"
+    ]
+  },
+  {
+    "coverage_id": "C00113",
+    "probe_group_id": "P00113",
+    "template": "ignore lsa mospf",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00114",
+    "probe_group_id": "P00114",
+    "template": "interface GigabitEthernet 0/0/0/0",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0038",
+      "M26:B0026",
+      "M2:B0013"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00115",
+    "probe_group_id": "P00115",
+    "template": "interface GigabitEthernet <R/S/I/P/B or R/S/I/P>",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0038",
+      "M26:B0026",
+      "M2:B0013"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00116",
+    "probe_group_id": "P00116",
+    "template": "interface Loopback <0-2147483647>",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0038",
+      "M26:B0026",
+      "M2:B0013"
+    ],
+    "finding_ids": [
+      "F00199"
+    ]
+  },
+  {
+    "coverage_id": "C00117",
+    "probe_group_id": "P00117",
+    "template": "interface MgmtEth 0/RP0/CPU0/0",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0038",
+      "M26:B0026",
+      "M2:B0013"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00118",
+    "probe_group_id": "P00118",
+    "template": "interface MgmtEth <R/S/I/P>",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0038",
+      "M26:B0026",
+      "M2:B0013"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00119",
+    "probe_group_id": "P00119",
+    "template": "interface Serial <R/S/I/P>",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0038",
+      "M26:B0026",
+      "M2:B0013"
+    ],
+    "finding_ids": [
+      "F00204",
+      "F00205",
+      "F00204",
+      "F00205",
+      "F00204",
+      "F00205",
+      "F00204",
+      "F00205",
+      "F00204",
+      "F00205",
+      "F00204",
+      "F00205"
+    ]
+  },
+  {
+    "coverage_id": "C00120",
+    "probe_group_id": "P00120",
+    "template": "link-down fast-detect",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0041"
+    ],
+    "finding_ids": [
+      "F00206",
+      "F00207"
+    ]
+  },
+  {
+    "coverage_id": "C00121",
+    "probe_group_id": "P00121",
+    "template": "link-down fast-detect [disable]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0041"
+    ],
+    "finding_ids": [
+      "F00208",
+      "F00209"
+    ]
+  },
+  {
+    "coverage_id": "C00122",
+    "probe_group_id": "P00122",
+    "template": "log adjacency changes {detail|disable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0039",
+      "M26:B0027"
+    ],
+    "finding_ids": [
+      "F00210",
+      "F00211"
+    ]
+  },
+  {
+    "coverage_id": "C00123",
+    "probe_group_id": "P00123",
+    "template": "loopback stub-network [disable|enable]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0040"
+    ],
+    "finding_ids": [
+      "F00212"
+    ]
+  },
+  {
+    "coverage_id": "C00124",
+    "probe_group_id": "P00124",
+    "template": "max-lsa <1-4294967294>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0043"
+    ],
+    "finding_ids": [
+      "F00214"
+    ]
+  },
+  {
+    "coverage_id": "C00125",
+    "probe_group_id": "P00125",
+    "template": "max-lsa <1-4294967294> {reset-time <2-71582788>|ignore-count <1-4294967294>|<1-100>|warning-only|ignore-time <1-35791394>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0043"
+    ],
+    "finding_ids": [
+      "F00215",
+      "F00215",
+      "F00216"
+    ]
+  },
+  {
+    "coverage_id": "C00126",
+    "probe_group_id": "P00126",
+    "template": "max-metric router-lsa [no-abr-off]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00219",
+      "F00220"
+    ]
+  },
+  {
+    "coverage_id": "C00127",
+    "probe_group_id": "P00127",
+    "template": "max-metric router-lsa [include-stub|on-switchover {wait-for-bgp|<5-86400>} [include-stub]|on-proc-restart {<5-86400>|wait-for-bgp} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {<5-86400>|wait-for-bgp} [include-stub]] external-lsa [summary-lsa|<1-16777215> include-stub|include-stub]",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00223",
+      "F00224"
+    ]
+  },
+  {
+    "coverage_id": "C00128",
+    "probe_group_id": "P00128",
+    "template": "max-metric router-lsa [on-proc-restart {wait-for-bgp|<5-86400>} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {wait-for-bgp|<5-86400>} [include-stub]|on-switchover {<5-86400>|wait-for-bgp} [include-stub]|include-stub] external-lsa [summary-lsa]",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00227",
+      "F00228"
+    ]
+  },
+  {
+    "coverage_id": "C00129",
+    "probe_group_id": "P00129",
+    "template": "max-metric router-lsa [on-proc-restart {wait-for-bgp|<5-86400>} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {wait-for-bgp|<5-86400>} [include-stub]|on-switchover {<5-86400>|wait-for-bgp} [include-stub]|include-stub] external-lsa {<1-16777215> [include-stub]|include-stub}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00231",
+      "F00232"
+    ]
+  },
+  {
+    "coverage_id": "C00130",
+    "probe_group_id": "P00130",
+    "template": "max-metric router-lsa [include-stub|on-switchover {wait-for-bgp|<5-86400>} [include-stub]|on-proc-restart {<5-86400>|wait-for-bgp} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {<5-86400>|wait-for-bgp} [include-stub]] external-lsa <1-16777215>",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00235",
+      "F00236"
+    ]
+  },
+  {
+    "coverage_id": "C00131",
+    "probe_group_id": "P00131",
+    "template": "max-metric router-lsa [on-proc-migration {wait-for-bgp|<5-86400>}|on-proc-restart {wait-for-bgp|<5-86400>}|on-startup {wait-for-bgp|<5-86400>}|on-switchover {<5-86400>|wait-for-bgp}] include-stub",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00239",
+      "F00240"
+    ]
+  },
+  {
+    "coverage_id": "C00132",
+    "probe_group_id": "P00132",
+    "template": "max-metric router-lsa [on-proc-restart {wait-for-bgp|<5-86400>} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {wait-for-bgp|<5-86400>} [include-stub]|on-switchover {<5-86400>|wait-for-bgp} [include-stub]|include-stub] summary-lsa [include-stub|<1-16777215> include-stub|external-lsa]",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00243",
+      "F00244"
+    ]
+  },
+  {
+    "coverage_id": "C00133",
+    "probe_group_id": "P00133",
+    "template": "max-metric router-lsa [include-stub|on-switchover {wait-for-bgp|<5-86400>} [include-stub]|on-proc-restart {<5-86400>|wait-for-bgp} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {<5-86400>|wait-for-bgp} [include-stub]] summary-lsa [external-lsa]",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00247",
+      "F00248"
+    ]
+  },
+  {
+    "coverage_id": "C00134",
+    "probe_group_id": "P00134",
+    "template": "max-metric router-lsa [include-stub|on-switchover {wait-for-bgp|<5-86400>} [include-stub]|on-proc-restart {<5-86400>|wait-for-bgp} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {<5-86400>|wait-for-bgp} [include-stub]] summary-lsa {<1-16777215> [include-stub]|include-stub}",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00251",
+      "F00252"
+    ]
+  },
+  {
+    "coverage_id": "C00135",
+    "probe_group_id": "P00135",
+    "template": "max-metric router-lsa [on-proc-restart {wait-for-bgp|<5-86400>} [include-stub]|on-proc-migration {wait-for-bgp|<5-86400>} [include-stub]|on-startup {wait-for-bgp|<5-86400>} [include-stub]|on-switchover {<5-86400>|wait-for-bgp} [include-stub]|include-stub] summary-lsa <1-16777215>",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00255",
+      "F00256"
+    ]
+  },
+  {
+    "coverage_id": "C00136",
+    "probe_group_id": "P00136",
+    "template": "max-metric router-lsa on-proc-migration <5-86400>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00259",
+      "F00260"
+    ]
+  },
+  {
+    "coverage_id": "C00137",
+    "probe_group_id": "P00137",
+    "template": "max-metric router-lsa on-proc-migration wait-for-bgp",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00263"
+    ]
+  },
+  {
+    "coverage_id": "C00138",
+    "probe_group_id": "P00138",
+    "template": "max-metric router-lsa on-proc-restart <5-86400>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00266",
+      "F00267"
+    ]
+  },
+  {
+    "coverage_id": "C00139",
+    "probe_group_id": "P00139",
+    "template": "max-metric router-lsa on-proc-restart wait-for-bgp",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00270"
+    ]
+  },
+  {
+    "coverage_id": "C00140",
+    "probe_group_id": "P00140",
+    "template": "max-metric router-lsa on-startup <5-86400>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00273",
+      "F00274"
+    ]
+  },
+  {
+    "coverage_id": "C00141",
+    "probe_group_id": "P00141",
+    "template": "max-metric router-lsa on-startup wait-for-bgp",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00277"
+    ]
+  },
+  {
+    "coverage_id": "C00142",
+    "probe_group_id": "P00142",
+    "template": "max-metric router-lsa on-switchover <5-86400>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00280",
+      "F00281"
+    ]
+  },
+  {
+    "coverage_id": "C00143",
+    "probe_group_id": "P00143",
+    "template": "max-metric router-lsa on-switchover wait-for-bgp",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0057",
+      "M25:B0044",
+      "M2:B0018"
+    ],
+    "finding_ids": [
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00282",
+      "F00283",
+      "F00284"
+    ]
+  },
+  {
+    "coverage_id": "C00144",
+    "probe_group_id": "P00144",
+    "template": "maximum interfaces <1-4294967295>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0045",
+      "M26:B0028"
+    ],
+    "finding_ids": [
+      "F00285"
+    ]
+  },
+  {
+    "coverage_id": "C00145",
+    "probe_group_id": "P00145",
+    "template": "maximum paths {<1-64>|per-prefix-distribution}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0046",
+      "M26:B0029"
+    ],
+    "finding_ids": [
+      "F00286"
+    ]
+  },
+  {
+    "coverage_id": "C00146",
+    "probe_group_id": "P00146",
+    "template": "maximum redistributed-prefixes <1-4294967295> [<1-100>|warning-only]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0047",
+      "M26:B0030"
+    ],
+    "finding_ids": [
+      "F00287",
+      "F00288",
+      "F00289"
+    ]
+  },
+  {
+    "coverage_id": "C00147",
+    "probe_group_id": "P00147",
+    "template": "message-digest-key <1-255> md5 {LINE|clear LINE|encrypted LINE}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00148",
+    "probe_group_id": "P00148",
+    "template": "metric-type {delay|te-metric}",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0036"
+    ],
+    "finding_ids": [
+      "F00290",
+      "F00291"
+    ]
+  },
+  {
+    "coverage_id": "C00149",
+    "probe_group_id": "P00149",
+    "template": "microloop avoidance [protected|segment-routing|rib-update-delay <1-600000>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0049"
+    ],
+    "finding_ids": [
+      "F00292",
+      "F00293"
+    ]
+  },
+  {
+    "coverage_id": "C00150",
+    "probe_group_id": "P00150",
+    "template": "microloop avoidance disable",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0049"
+    ],
+    "finding_ids": [
+      "F00294",
+      "F00295"
+    ]
+  },
+  {
+    "coverage_id": "C00151",
+    "probe_group_id": "P00151",
+    "template": "monitor-convergence",
+    "semantic_view": "router",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00152",
+    "probe_group_id": "P00152",
+    "template": "mpls ldp auto-config",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M23:B0066",
+      "M25:B0050"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00153",
+    "probe_group_id": "P00153",
+    "template": "mpls ldp {auto-config|sync|sync-igp-shortcuts}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0066",
+      "M25:B0050"
+    ],
+    "finding_ids": [
+      "F00297",
+      "F00297",
+      "F00298"
+    ]
+  },
+  {
+    "coverage_id": "C00154",
+    "probe_group_id": "P00154",
+    "template": "mpls ldp sync",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0051"
+    ],
+    "finding_ids": [
+      "F00299"
+    ]
+  },
+  {
+    "coverage_id": "C00155",
+    "probe_group_id": "P00155",
+    "template": "mpls ldp sync [disable]",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00156",
+    "probe_group_id": "P00156",
+    "template": "mpls ldp {sync [disable]|sync-igp-shortcuts disable}",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0051"
+    ],
+    "finding_ids": [
+      "F00300"
+    ]
+  },
+  {
+    "coverage_id": "C00157",
+    "probe_group_id": "P00157",
+    "template": "mpls ldp sync-igp-shortcuts",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00301"
+    ]
+  },
+  {
+    "coverage_id": "C00158",
+    "probe_group_id": "P00158",
+    "template": "mpls traffic-eng",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0052"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00159",
+    "probe_group_id": "P00159",
+    "template": "mpls traffic-eng {multicast-intact|ldp-sync-update|igp-intact|autoroute-exclude route-policy <WORD>}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0052",
+      "M25:B0054"
+    ],
+    "finding_ids": [
+      "F00303",
+      "F00303",
+      "F00304"
+    ]
+  },
+  {
+    "coverage_id": "C00160",
+    "probe_group_id": "P00160",
+    "template": "mpls traffic-eng router-id {Serial <R/S/I/P>|<A.B.C.D>|preconfigure Serial <R/S/I/P>|Loopback <0-2147483647>|Null <0-0>}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0056"
+    ],
+    "finding_ids": [
+      "F00305"
+    ]
+  },
+  {
+    "coverage_id": "C00161",
+    "probe_group_id": "P00161",
+    "template": "mpls traffic-eng router-id [preconfigure] GigabitEthernet {<R/S/I/P/B or R/S/I/P>|0/0/0/0}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0056"
+    ],
+    "finding_ids": [
+      "F00306"
+    ]
+  },
+  {
+    "coverage_id": "C00162",
+    "probe_group_id": "P00162",
+    "template": "mpls traffic-eng router-id [preconfigure] MgmtEth {<R/S/I/P>|0/RP0/CPU0/0}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0056"
+    ],
+    "finding_ids": [
+      "F00307"
+    ]
+  },
+  {
+    "coverage_id": "C00163",
+    "probe_group_id": "P00163",
+    "template": "mtu-ignore",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0057",
+      "M26:B0031"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00164",
+    "probe_group_id": "P00164",
+    "template": "mtu-ignore {disable|enable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0057",
+      "M26:B0031"
+    ],
+    "finding_ids": [
+      "F00309",
+      "F00309"
+    ]
+  },
+  {
+    "coverage_id": "C00165",
+    "probe_group_id": "P00165",
+    "template": "multi-area-interface GigabitEthernet 0/0/0/0",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00166",
+    "probe_group_id": "P00166",
+    "template": "multi-area-interface GigabitEthernet <R/S/I/P/B or R/S/I/P>",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00167",
+    "probe_group_id": "P00167",
+    "template": "multi-area-interface MgmtEth 0/RP0/CPU0/0",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00168",
+    "probe_group_id": "P00168",
+    "template": "multi-area-interface MgmtEth <R/S/I/P>",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00169",
+    "probe_group_id": "P00169",
+    "template": "multi-area-interface Serial <R/S/I/P>",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00170",
+    "probe_group_id": "P00170",
+    "template": "name <WORD>",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00310"
+    ]
+  },
+  {
+    "coverage_id": "C00171",
+    "probe_group_id": "P00171",
+    "template": "neighbor <A.B.C.D> [cost <1-65535>|database-filter all out|poll-interval <0-4294967295>]",
+    "semantic_view": "multi-area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0059",
+      "M26:B0032"
+    ],
+    "finding_ids": [
+      "F00313",
+      "F00314"
+    ]
+  },
+  {
+    "coverage_id": "C00172",
+    "probe_group_id": "P00172",
+    "template": "neighbor <A.B.C.D> [cost <1-65535>|database-filter all out|priority <0-255>|poll-interval <0-65535>]",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0059",
+      "M26:B0032"
+    ],
+    "finding_ids": [
+      "F00315",
+      "F00316",
+      "F00315",
+      "F00316",
+      "F00317"
+    ]
+  },
+  {
+    "coverage_id": "C00173",
+    "probe_group_id": "P00173",
+    "template": "network {broadcast|non-broadcast|point-to-multipoint non-broadcast|point-to-point}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0061",
+      "M26:B0033"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00174",
+    "probe_group_id": "P00174",
+    "template": "network point-to-multipoint",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0061",
+      "M26:B0033"
+    ],
+    "finding_ids": [
+      "F00319",
+      "F00319"
+    ]
+  },
+  {
+    "coverage_id": "C00175",
+    "probe_group_id": "P00175",
+    "template": "nsf cisco [enforce global]",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00176",
+    "probe_group_id": "P00176",
+    "template": "nsf {interval <90-3600>|lifetime <90-1800>|wait-time <1-120>|flush-delay-time <1-3600>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0062",
+      "M25:B0064"
+    ],
+    "finding_ids": [
+      "F00320"
+    ]
+  },
+  {
+    "coverage_id": "C00177",
+    "probe_group_id": "P00177",
+    "template": "nsf ietf [helper disable|strict-lsa-checking]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0062"
+    ],
+    "finding_ids": [
+      "F00321"
+    ]
+  },
+  {
+    "coverage_id": "C00178",
+    "probe_group_id": "P00178",
+    "template": "nsr",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00322"
+    ]
+  },
+  {
+    "coverage_id": "C00179",
+    "probe_group_id": "P00179",
+    "template": "nsr disable",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0066",
+      "M26:B0035"
+    ],
+    "finding_ids": [
+      "F00323"
+    ]
+  },
+  {
+    "coverage_id": "C00180",
+    "probe_group_id": "P00180",
+    "template": "nssa",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00181",
+    "probe_group_id": "P00181",
+    "template": "nssa [no-summary|no-redistribution] default-information-originate [metric <1-16777214> {no-redistribution|no-summary}|no-redistribution|metric-type <1-2> {no-redistribution|no-summary}|no-summary]",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": [
+      "F00326"
+    ]
+  },
+  {
+    "coverage_id": "C00182",
+    "probe_group_id": "P00182",
+    "template": "nssa [no-redistribution|no-summary] default-information-originate",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": [
+      "F00328"
+    ]
+  },
+  {
+    "coverage_id": "C00183",
+    "probe_group_id": "P00183",
+    "template": "nssa [no-summary|no-redistribution] default-information-originate {metric <1-16777214> [no-summary|no-redistribution]|no-summary|no-redistribution|metric-type <1-2> {no-summary|no-redistribution}}",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": [
+      "F00330"
+    ]
+  },
+  {
+    "coverage_id": "C00184",
+    "probe_group_id": "P00184",
+    "template": "nssa [no-redistribution|no-summary] default-information-originate metric <1-16777214>",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": [
+      "F00332"
+    ]
+  },
+  {
+    "coverage_id": "C00185",
+    "probe_group_id": "P00185",
+    "template": "nssa [no-redistribution|no-summary] default-information-originate {no-summary|metric-type <1-2> [no-summary|no-redistribution]|metric <1-16777214> {no-summary|no-redistribution}|no-redistribution}",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": [
+      "F00334"
+    ]
+  },
+  {
+    "coverage_id": "C00186",
+    "probe_group_id": "P00186",
+    "template": "nssa [no-redistribution|no-summary] default-information-originate metric-type <1-2>",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": [
+      "F00336"
+    ]
+  },
+  {
+    "coverage_id": "C00187",
+    "probe_group_id": "P00187",
+    "template": "nssa no-redistribution",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00188",
+    "probe_group_id": "P00188",
+    "template": "nssa no-summary",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00189",
+    "probe_group_id": "P00189",
+    "template": "nssa translate type7 always",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0067",
+      "M26:B0034"
+    ],
+    "finding_ids": [
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00339",
+      "F00340"
+    ]
+  },
+  {
+    "coverage_id": "C00190",
+    "probe_group_id": "P00190",
+    "template": "packet-size <576-10000>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0069",
+      "M26:B0037"
+    ],
+    "finding_ids": [
+      "F00341"
+    ]
+  },
+  {
+    "coverage_id": "C00191",
+    "probe_group_id": "P00191",
+    "template": "passive",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0070",
+      "M26:B0038"
+    ],
+    "finding_ids": [
+      "F00343"
+    ]
+  },
+  {
+    "coverage_id": "C00192",
+    "probe_group_id": "P00192",
+    "template": "passive {disable|enable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0070",
+      "M26:B0038"
+    ],
+    "finding_ids": [
+      "F00344",
+      "F00344",
+      "F00345"
+    ]
+  },
+  {
+    "coverage_id": "C00193",
+    "probe_group_id": "P00193",
+    "template": "prefix-list <WORD>",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00346"
+    ]
+  },
+  {
+    "coverage_id": "C00194",
+    "probe_group_id": "P00194",
+    "template": "prefix-metric",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00347"
+    ]
+  },
+  {
+    "coverage_id": "C00195",
+    "probe_group_id": "P00195",
+    "template": "prefix-sid [algorithm <128-255>|strict-spf] absolute <16000-1048575> [n-flag-clear|explicit-null]",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0060"
+    ],
+    "finding_ids": [
+      "F00348"
+    ]
+  },
+  {
+    "coverage_id": "C00196",
+    "probe_group_id": "P00196",
+    "template": "prefix-sid [algorithm <128-255>|strict-spf] index <0-1048575> [n-flag-clear|explicit-null]",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0060"
+    ],
+    "finding_ids": [
+      "F00349"
+    ]
+  },
+  {
+    "coverage_id": "C00197",
+    "probe_group_id": "P00197",
+    "template": "prefix-suppression",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0071"
+    ],
+    "finding_ids": [
+      "F00350"
+    ]
+  },
+  {
+    "coverage_id": "C00198",
+    "probe_group_id": "P00198",
+    "template": "prefix-suppression [secondary-address] disable",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0071"
+    ],
+    "finding_ids": [
+      "F00351"
+    ]
+  },
+  {
+    "coverage_id": "C00199",
+    "probe_group_id": "P00199",
+    "template": "prefix-suppression secondary-address",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0071"
+    ],
+    "finding_ids": [
+      "F00352"
+    ]
+  },
+  {
+    "coverage_id": "C00200",
+    "probe_group_id": "P00200",
+    "template": "priority <0-255>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0062",
+      "M25:B0072",
+      "M26:B0039"
+    ],
+    "finding_ids": [
+      "F00353",
+      "F00354"
+    ]
+  },
+  {
+    "coverage_id": "C00201",
+    "probe_group_id": "P00201",
+    "template": "protocol shutdown [host-mode|on-reload]",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0073",
+      "M26:B0040",
+      "M30:B0064"
+    ],
+    "finding_ids": [
+      "F00355",
+      "F00356"
+    ]
+  },
+  {
+    "coverage_id": "C00202",
+    "probe_group_id": "P00202",
+    "template": "queue {limit {high|low|medium} <1000-30000>|dispatch {spf-lsa-limit|rate-limited-lsa|flush-lsa|incoming} <30-3000>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0078"
+    ],
+    "finding_ids": [
+      "F00357",
+      "F00358"
+    ]
+  },
+  {
+    "coverage_id": "C00203",
+    "probe_group_id": "P00203",
+    "template": "range <A.B.C.D/prefix/mask> [advertise|not-advertise]",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0079",
+      "M26:B0041"
+    ],
+    "finding_ids": [
+      "F00359",
+      "F00360",
+      "F00361"
+    ]
+  },
+  {
+    "coverage_id": "C00204",
+    "probe_group_id": "P00204",
+    "template": "redistribute",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00362"
+    ]
+  },
+  {
+    "coverage_id": "C00205",
+    "probe_group_id": "P00205",
+    "template": "redistribute application <WORD>",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00206",
+    "probe_group_id": "P00206",
+    "template": "redistribute application <WORD> {tag <0-4294967295>|route-policy <WORD>|nssa-only|lsa-type summary}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00369"
+    ]
+  },
+  {
+    "coverage_id": "C00207",
+    "probe_group_id": "P00207",
+    "template": "redistribute application <WORD> metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00373"
+    ]
+  },
+  {
+    "coverage_id": "C00208",
+    "probe_group_id": "P00208",
+    "template": "redistribute application <WORD> metric-type {1|2}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00377"
+    ]
+  },
+  {
+    "coverage_id": "C00209",
+    "probe_group_id": "P00209",
+    "template": "redistribute bgp <1-65535>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00382"
+    ]
+  },
+  {
+    "coverage_id": "C00210",
+    "probe_group_id": "P00210",
+    "template": "redistribute bgp <1-65535> {lsa-type summary|preserve-med|preserve-bgp-default-info|tag <0-4294967295>|route-policy <WORD>|nssa-only}",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00387"
+    ]
+  },
+  {
+    "coverage_id": "C00211",
+    "probe_group_id": "P00211",
+    "template": "redistribute bgp <1-65535> {nssa-only|lsa-type summary|tag <0-4294967295>|preserve-med|route-policy <WORD>}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00392"
+    ]
+  },
+  {
+    "coverage_id": "C00212",
+    "probe_group_id": "P00212",
+    "template": "redistribute bgp <1-65535> metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00397"
+    ]
+  },
+  {
+    "coverage_id": "C00213",
+    "probe_group_id": "P00213",
+    "template": "redistribute bgp <1-65535> metric-type {2|1}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00402"
+    ]
+  },
+  {
+    "coverage_id": "C00214",
+    "probe_group_id": "P00214",
+    "template": "redistribute bgp <1-65535>. <0-65535>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00407"
+    ]
+  },
+  {
+    "coverage_id": "C00215",
+    "probe_group_id": "P00215",
+    "template": "redistribute bgp <1-65535>. <0-65535> {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|preserve-bgp-default-info|nssa-only|preserve-med}",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00412"
+    ]
+  },
+  {
+    "coverage_id": "C00216",
+    "probe_group_id": "P00216",
+    "template": "redistribute bgp <1-65535>. <0-65535> {tag <0-4294967295>|nssa-only|preserve-med|lsa-type summary|route-policy <WORD>}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00417"
+    ]
+  },
+  {
+    "coverage_id": "C00217",
+    "probe_group_id": "P00217",
+    "template": "redistribute bgp <1-65535>. <0-65535> metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00422"
+    ]
+  },
+  {
+    "coverage_id": "C00218",
+    "probe_group_id": "P00218",
+    "template": "redistribute bgp <1-65535>. <0-65535> metric-type {2|1}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0157",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00423",
+      "F00427"
+    ]
+  },
+  {
+    "coverage_id": "C00219",
+    "probe_group_id": "P00219",
+    "template": "redistribute connected",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00220",
+    "probe_group_id": "P00220",
+    "template": "redistribute connected {lsa-type summary|tag <0-4294967295>|nssa-only|route-policy <WORD>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00434"
+    ]
+  },
+  {
+    "coverage_id": "C00221",
+    "probe_group_id": "P00221",
+    "template": "redistribute connected metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00438"
+    ]
+  },
+  {
+    "coverage_id": "C00222",
+    "probe_group_id": "P00222",
+    "template": "redistribute connected metric-type {2|1}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00223",
+    "probe_group_id": "P00223",
+    "template": "redistribute dagr",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00224",
+    "probe_group_id": "P00224",
+    "template": "redistribute dagr {lsa-type summary|route-policy <WORD>|nssa-only|tag <0-4294967295>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00448"
+    ]
+  },
+  {
+    "coverage_id": "C00225",
+    "probe_group_id": "P00225",
+    "template": "redistribute dagr metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00452"
+    ]
+  },
+  {
+    "coverage_id": "C00226",
+    "probe_group_id": "P00226",
+    "template": "redistribute dagr metric-type {1|2}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00227",
+    "probe_group_id": "P00227",
+    "template": "redistribute eigrp <1-65535>",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M22:B0031",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00228",
+    "probe_group_id": "P00228",
+    "template": "redistribute eigrp <1-65535> {nssa-only|lsa-type summary|tag <0-4294967295>|route-policy <WORD>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M22:B0031",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00464"
+    ]
+  },
+  {
+    "coverage_id": "C00229",
+    "probe_group_id": "P00229",
+    "template": "redistribute eigrp <1-65535> match {external|internal}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M22:B0031",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00230",
+    "probe_group_id": "P00230",
+    "template": "redistribute eigrp <1-65535> metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M22:B0031",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00473"
+    ]
+  },
+  {
+    "coverage_id": "C00231",
+    "probe_group_id": "P00231",
+    "template": "redistribute eigrp <1-65535> metric-type {1|2}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M22:B0031",
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00474",
+      "F00474",
+      "F00474",
+      "F00474",
+      "F00474"
+    ]
+  },
+  {
+    "coverage_id": "C00232",
+    "probe_group_id": "P00232",
+    "template": "redistribute isis <WORD>",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00233",
+    "probe_group_id": "P00233",
+    "template": "redistribute isis <WORD> {level-1-2|lsa-type summary|level-2|level-1|tag <0-4294967295>|route-policy <WORD>|nssa-only}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00484"
+    ]
+  },
+  {
+    "coverage_id": "C00234",
+    "probe_group_id": "P00234",
+    "template": "redistribute isis <WORD> metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00488"
+    ]
+  },
+  {
+    "coverage_id": "C00235",
+    "probe_group_id": "P00235",
+    "template": "redistribute isis <WORD> metric-type {1|2}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00236",
+    "probe_group_id": "P00236",
+    "template": "redistribute mobile",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00237",
+    "probe_group_id": "P00237",
+    "template": "redistribute mobile {nssa-only|lsa-type summary|tag <0-4294967295>|route-policy <WORD>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00498"
+    ]
+  },
+  {
+    "coverage_id": "C00238",
+    "probe_group_id": "P00238",
+    "template": "redistribute mobile metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00502"
+    ]
+  },
+  {
+    "coverage_id": "C00239",
+    "probe_group_id": "P00239",
+    "template": "redistribute mobile metric-type {1|2}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00506"
+    ]
+  },
+  {
+    "coverage_id": "C00240",
+    "probe_group_id": "P00240",
+    "template": "redistribute ospf <WORD>",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00241",
+    "probe_group_id": "P00241",
+    "template": "redistribute ospf <WORD> lsa-type summary",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00513"
+    ]
+  },
+  {
+    "coverage_id": "C00242",
+    "probe_group_id": "P00242",
+    "template": "redistribute ospf <WORD> [route-policy <WORD>|metric-type {1|2}|lsa-type summary|nssa-only|metric {<1-16777214>|use-rib-metric}|tag <0-4294967295>] match external [nssa-external] metric-type",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00517"
+    ]
+  },
+  {
+    "coverage_id": "C00243",
+    "probe_group_id": "P00243",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match external",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00521"
+    ]
+  },
+  {
+    "coverage_id": "C00244",
+    "probe_group_id": "P00244",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match external 1",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00525"
+    ]
+  },
+  {
+    "coverage_id": "C00245",
+    "probe_group_id": "P00245",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match external [2|1] internal",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00529"
+    ]
+  },
+  {
+    "coverage_id": "C00246",
+    "probe_group_id": "P00246",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match external {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|2 {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|internal {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|nssa-only}|nssa-only}|1 {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|internal {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|nssa-only}|nssa-only}|internal {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|nssa-only}|nssa-only|nssa-external {lsa-type summary|route-policy <WORD>|tag <0-4294967295>|nssa-only}}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00533"
+    ]
+  },
+  {
+    "coverage_id": "C00247",
+    "probe_group_id": "P00247",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match external [2 [internal]|1 [internal]|internal|nssa-external] metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00537"
+    ]
+  },
+  {
+    "coverage_id": "C00248",
+    "probe_group_id": "P00248",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match external 2",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00541"
+    ]
+  },
+  {
+    "coverage_id": "C00249",
+    "probe_group_id": "P00249",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match external {metric-type|nssa-external [metric-type]}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00545"
+    ]
+  },
+  {
+    "coverage_id": "C00250",
+    "probe_group_id": "P00250",
+    "template": "redistribute ospf <WORD> [route-policy <WORD>|metric-type {1|2}|lsa-type summary|nssa-only|metric {<1-16777214>|use-rib-metric}|tag <0-4294967295>] match external nssa-external",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00549"
+    ]
+  },
+  {
+    "coverage_id": "C00251",
+    "probe_group_id": "P00251",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00553"
+    ]
+  },
+  {
+    "coverage_id": "C00252",
+    "probe_group_id": "P00252",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal external [nssa-external] metric-type",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00557"
+    ]
+  },
+  {
+    "coverage_id": "C00253",
+    "probe_group_id": "P00253",
+    "template": "redistribute ospf <WORD> [route-policy <WORD>|metric-type {1|2}|lsa-type summary|nssa-only|metric {<1-16777214>|use-rib-metric}|tag <0-4294967295>] match internal external",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00561"
+    ]
+  },
+  {
+    "coverage_id": "C00254",
+    "probe_group_id": "P00254",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal external 1",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00565"
+    ]
+  },
+  {
+    "coverage_id": "C00255",
+    "probe_group_id": "P00255",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal external {nssa-external {nssa-only|lsa-type summary|route-policy <WORD>|tag <0-4294967295>}|nssa-only|lsa-type summary|route-policy <WORD>|2 {nssa-only|lsa-type summary|route-policy <WORD>|tag <0-4294967295>}|tag <0-4294967295>|1 {nssa-only|lsa-type summary|route-policy <WORD>|tag <0-4294967295>}}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00569"
+    ]
+  },
+  {
+    "coverage_id": "C00256",
+    "probe_group_id": "P00256",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal external [nssa-external|2|1] metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00573"
+    ]
+  },
+  {
+    "coverage_id": "C00257",
+    "probe_group_id": "P00257",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal external 2",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00577"
+    ]
+  },
+  {
+    "coverage_id": "C00258",
+    "probe_group_id": "P00258",
+    "template": "redistribute ospf <WORD> [route-policy <WORD>|metric-type {1|2}|lsa-type summary|nssa-only|metric {<1-16777214>|use-rib-metric}|tag <0-4294967295>] match internal external {metric-type|nssa-external [metric-type]}",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00581"
+    ]
+  },
+  {
+    "coverage_id": "C00259",
+    "probe_group_id": "P00259",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal external nssa-external",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00585"
+    ]
+  },
+  {
+    "coverage_id": "C00260",
+    "probe_group_id": "P00260",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal {tag <0-4294967295>|route-policy <WORD>|nssa-only|lsa-type summary}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00589"
+    ]
+  },
+  {
+    "coverage_id": "C00261",
+    "probe_group_id": "P00261",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00593"
+    ]
+  },
+  {
+    "coverage_id": "C00262",
+    "probe_group_id": "P00262",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal metric-type {1|2}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00597"
+    ]
+  },
+  {
+    "coverage_id": "C00263",
+    "probe_group_id": "P00263",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal nssa-external [external] metric-type",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00601"
+    ]
+  },
+  {
+    "coverage_id": "C00264",
+    "probe_group_id": "P00264",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal nssa-external 1",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00605"
+    ]
+  },
+  {
+    "coverage_id": "C00265",
+    "probe_group_id": "P00265",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal nssa-external {1 {route-policy <WORD>|tag <0-4294967295>|lsa-type summary|nssa-only}|external {route-policy <WORD>|tag <0-4294967295>|lsa-type summary|nssa-only}|route-policy <WORD>|tag <0-4294967295>|lsa-type summary|2 {route-policy <WORD>|tag <0-4294967295>|lsa-type summary|nssa-only}|nssa-only}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00609"
+    ]
+  },
+  {
+    "coverage_id": "C00266",
+    "probe_group_id": "P00266",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal nssa-external [1|external|2] metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00613"
+    ]
+  },
+  {
+    "coverage_id": "C00267",
+    "probe_group_id": "P00267",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal nssa-external 2",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00617"
+    ]
+  },
+  {
+    "coverage_id": "C00268",
+    "probe_group_id": "P00268",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match internal nssa-external external",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00621"
+    ]
+  },
+  {
+    "coverage_id": "C00269",
+    "probe_group_id": "P00269",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match nssa-external",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00625"
+    ]
+  },
+  {
+    "coverage_id": "C00270",
+    "probe_group_id": "P00270",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match nssa-external 1",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00629"
+    ]
+  },
+  {
+    "coverage_id": "C00271",
+    "probe_group_id": "P00271",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match nssa-external [2|1] internal",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00633"
+    ]
+  },
+  {
+    "coverage_id": "C00272",
+    "probe_group_id": "P00272",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match nssa-external {internal {route-policy <WORD>|tag <0-4294967295>|nssa-only|lsa-type summary}|route-policy <WORD>|2 {internal {route-policy <WORD>|tag <0-4294967295>|nssa-only|lsa-type summary}|route-policy <WORD>|tag <0-4294967295>|nssa-only|lsa-type summary}|tag <0-4294967295>|external {route-policy <WORD>|tag <0-4294967295>|nssa-only|lsa-type summary}|1 {internal {route-policy <WORD>|tag <0-4294967295>|nssa-only|lsa-type summary}|route-policy <WORD>|tag <0-4294967295>|nssa-only|lsa-type summary}|nssa-only|lsa-type summary}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00637"
+    ]
+  },
+  {
+    "coverage_id": "C00273",
+    "probe_group_id": "P00273",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match nssa-external [internal|2 [internal]|external|1 [internal]] metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00641"
+    ]
+  },
+  {
+    "coverage_id": "C00274",
+    "probe_group_id": "P00274",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match nssa-external 2",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00645"
+    ]
+  },
+  {
+    "coverage_id": "C00275",
+    "probe_group_id": "P00275",
+    "template": "redistribute ospf <WORD> [metric-type {1|2}|metric {<1-16777214>|use-rib-metric}|nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>] match nssa-external {metric-type|external [metric-type]}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00649"
+    ]
+  },
+  {
+    "coverage_id": "C00276",
+    "probe_group_id": "P00276",
+    "template": "redistribute ospf <WORD> metric <1-16777214>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00653"
+    ]
+  },
+  {
+    "coverage_id": "C00277",
+    "probe_group_id": "P00277",
+    "template": "redistribute ospf <WORD> metric use-rib-metric",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00278",
+    "probe_group_id": "P00278",
+    "template": "redistribute ospf <WORD> metric-type 1",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00279",
+    "probe_group_id": "P00279",
+    "template": "redistribute ospf <WORD> metric-type 2",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00280",
+    "probe_group_id": "P00280",
+    "template": "redistribute ospf <WORD> nssa-only",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00666"
+    ]
+  },
+  {
+    "coverage_id": "C00281",
+    "probe_group_id": "P00281",
+    "template": "redistribute ospf <WORD> route-policy <WORD>",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00282",
+    "probe_group_id": "P00282",
+    "template": "redistribute ospf <WORD> tag <0-4294967295>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00673"
+    ]
+  },
+  {
+    "coverage_id": "C00283",
+    "probe_group_id": "P00283",
+    "template": "redistribute rip",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042",
+      "M29:B0021"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00284",
+    "probe_group_id": "P00284",
+    "template": "redistribute rip {route-policy <WORD>|tag <0-4294967295>|nssa-only|lsa-type summary}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042",
+      "M29:B0021"
+    ],
+    "finding_ids": [
+      "F00682"
+    ]
+  },
+  {
+    "coverage_id": "C00285",
+    "probe_group_id": "P00285",
+    "template": "redistribute rip metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042",
+      "M29:B0021"
+    ],
+    "finding_ids": [
+      "F00687"
+    ]
+  },
+  {
+    "coverage_id": "C00286",
+    "probe_group_id": "P00286",
+    "template": "redistribute rip metric-type {2|1}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042",
+      "M29:B0021"
+    ],
+    "finding_ids": [
+      "F00690",
+      "F00690",
+      "F00690",
+      "F00690"
+    ]
+  },
+  {
+    "coverage_id": "C00287",
+    "probe_group_id": "P00287",
+    "template": "redistribute static",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00288",
+    "probe_group_id": "P00288",
+    "template": "redistribute static {nssa-only|route-policy <WORD>|lsa-type summary|tag <0-4294967295>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00698"
+    ]
+  },
+  {
+    "coverage_id": "C00289",
+    "probe_group_id": "P00289",
+    "template": "redistribute static metric {use-rib-metric|<1-16777214>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00702"
+    ]
+  },
+  {
+    "coverage_id": "C00290",
+    "probe_group_id": "P00290",
+    "template": "redistribute static metric-type {2|1}",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00291",
+    "probe_group_id": "P00291",
+    "template": "redistribute subscriber",
+    "semantic_view": "mixed",
+    "status": "verified",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00292",
+    "probe_group_id": "P00292",
+    "template": "redistribute subscriber {nssa-only|lsa-type summary|tag <0-4294967295>|route-policy <WORD>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00712"
+    ]
+  },
+  {
+    "coverage_id": "C00293",
+    "probe_group_id": "P00293",
+    "template": "redistribute subscriber metric {<1-16777214>|use-rib-metric}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00716"
+    ]
+  },
+  {
+    "coverage_id": "C00294",
+    "probe_group_id": "P00294",
+    "template": "redistribute subscriber metric-type {1|2}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0080",
+      "M26:B0042"
+    ],
+    "finding_ids": [
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00717",
+      "F00718",
+      "F00719",
+      "F00720"
+    ]
+  },
+  {
+    "coverage_id": "C00295",
+    "probe_group_id": "P00295",
+    "template": "retransmit-interval <1-65535>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0081",
+      "M26:B0043"
+    ],
+    "finding_ids": [
+      "F00721"
+    ]
+  },
+  {
+    "coverage_id": "C00296",
+    "probe_group_id": "P00296",
+    "template": "route-policy <WORD> {in|out}",
+    "semantic_view": "area",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00297",
+    "probe_group_id": "P00297",
+    "template": "router ospf <WORD>",
+    "semantic_view": "global",
+    "status": "verified",
+    "matched_block_ids": [],
+    "finding_ids": []
+  },
+  {
+    "coverage_id": "C00298",
+    "probe_group_id": "P00298",
+    "template": "router ospf <WORD> affinity-map",
+    "semantic_view": "global",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0084"
+    ],
+    "finding_ids": [
+      "F00722"
+    ]
+  },
+  {
+    "coverage_id": "C00299",
+    "probe_group_id": "P00299",
+    "template": "router ospf <WORD> affinity-map <WORD> bit-position <0-255>",
+    "semantic_view": "global",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0084"
+    ],
+    "finding_ids": [
+      "F00723"
+    ]
+  },
+  {
+    "coverage_id": "C00300",
+    "probe_group_id": "P00300",
+    "template": "router-id <A.B.C.D>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0083",
+      "M26:B0044"
+    ],
+    "finding_ids": [
+      "F00724",
+      "F00725"
+    ]
+  },
+  {
+    "coverage_id": "C00301",
+    "probe_group_id": "P00301",
+    "template": "security ttl [disable|hops <1-254>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0085"
+    ],
+    "finding_ids": [
+      "F00727"
+    ]
+  },
+  {
+    "coverage_id": "C00302",
+    "probe_group_id": "P00302",
+    "template": "security ttl [hops <1-254>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0085"
+    ],
+    "finding_ids": [
+      "F00728",
+      "F00728",
+      "F00729",
+      "F00730"
+    ]
+  },
+  {
+    "coverage_id": "C00303",
+    "probe_group_id": "P00303",
+    "template": "segment-routing {forwarding {disable|mpls}|disable|mpls|protected-adjacency-sid-delay <30-3600>|global-block <16000-1048575> <16000-1048575>}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00731"
+    ]
+  },
+  {
+    "coverage_id": "C00304",
+    "probe_group_id": "P00304",
+    "template": "segment-routing {forwarding {disable|mpls}|disable|mpls}",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00732"
+    ]
+  },
+  {
+    "coverage_id": "C00305",
+    "probe_group_id": "P00305",
+    "template": "segment-routing forwarding {disable|mpls}",
+    "semantic_view": "interface",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00733"
+    ]
+  },
+  {
+    "coverage_id": "C00306",
+    "probe_group_id": "P00306",
+    "template": "segment-routing prefix-sid-map {receive disable|advertise-local}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M1:B0073"
+    ],
+    "finding_ids": [
+      "F00734"
+    ]
+  },
+  {
+    "coverage_id": "C00307",
+    "probe_group_id": "P00307",
+    "template": "segment-routing sr-prefer [prefix-list <WORD>]",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0086"
+    ],
+    "finding_ids": [
+      "F00735"
+    ]
+  },
+  {
+    "coverage_id": "C00308",
+    "probe_group_id": "P00308",
+    "template": "sham-link <A.B.C.D> <A.B.C.D>",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0087",
+      "M26:B0046"
+    ],
+    "finding_ids": [
+      "F00736"
+    ]
+  },
+  {
+    "coverage_id": "C00309",
+    "probe_group_id": "P00309",
+    "template": "snmp {trap|context <WORD>}",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0105",
+      "M26:B0062"
+    ],
+    "finding_ids": [
+      "F00737"
+    ]
+  },
+  {
+    "coverage_id": "C00310",
+    "probe_group_id": "P00310",
+    "template": "snmp {trap rate-limit <2-60> <0-300>|context <WORD>}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0106",
+      "M26:B0063"
+    ],
+    "finding_ids": [
+      "F00738",
+      "F00739"
+    ]
+  },
+  {
+    "coverage_id": "C00311",
+    "probe_group_id": "P00311",
+    "template": "spf prefix-priority route-policy <WORD>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0107",
+      "M26:B0064"
+    ],
+    "finding_ids": [
+      "F00740"
+    ]
+  },
+  {
+    "coverage_id": "C00312",
+    "probe_group_id": "P00312",
+    "template": "srlg",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00741"
+    ]
+  },
+  {
+    "coverage_id": "C00313",
+    "probe_group_id": "P00313",
+    "template": "srlg exclude-any",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00742"
+    ]
+  },
+  {
+    "coverage_id": "C00314",
+    "probe_group_id": "P00314",
+    "template": "srlg exclude-any <WORD>",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00743"
+    ]
+  },
+  {
+    "coverage_id": "C00315",
+    "probe_group_id": "P00315",
+    "template": "stub",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00744"
+    ]
+  },
+  {
+    "coverage_id": "C00316",
+    "probe_group_id": "P00316",
+    "template": "stub no-summary",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0108",
+      "M26:B0065"
+    ],
+    "finding_ids": [
+      "F00745"
+    ]
+  },
+  {
+    "coverage_id": "C00317",
+    "probe_group_id": "P00317",
+    "template": "summary-in",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00746"
+    ]
+  },
+  {
+    "coverage_id": "C00318",
+    "probe_group_id": "P00318",
+    "template": "summary-in {disable|enable}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00747"
+    ]
+  },
+  {
+    "coverage_id": "C00319",
+    "probe_group_id": "P00319",
+    "template": "summary-prefix <A.B.C.D/prefix/mask> [not-advertise|tag <0-4294967295>]",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0109",
+      "M26:B0067"
+    ],
+    "finding_ids": [
+      "F00748",
+      "F00749",
+      "F00750"
+    ]
+  },
+  {
+    "coverage_id": "C00320",
+    "probe_group_id": "P00320",
+    "template": "te-metric flex-algo <1-2147483647>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00751"
+    ]
+  },
+  {
+    "coverage_id": "C00321",
+    "probe_group_id": "P00321",
+    "template": "timers {pacing flood <5-100>|graceful-shutdown {initial delay|retain routes} <0-90>}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M26:B0069",
+      "M2:B0056"
+    ],
+    "finding_ids": [
+      "F00753",
+      "F00754"
+    ]
+  },
+  {
+    "coverage_id": "C00322",
+    "probe_group_id": "P00322",
+    "template": "timers lsa {min-arrival <0-600000>|group-pacing <10-1800>|refresh <1800-2700>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0111",
+      "M2:B0056"
+    ],
+    "finding_ids": [
+      "F00756",
+      "F00757"
+    ]
+  },
+  {
+    "coverage_id": "C00323",
+    "probe_group_id": "P00323",
+    "template": "timers pacing flood <5-100>",
+    "semantic_view": "vrf",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M26:B0069",
+      "M2:B0056"
+    ],
+    "finding_ids": [
+      "F00759",
+      "F00760"
+    ]
+  },
+  {
+    "coverage_id": "C00324",
+    "probe_group_id": "P00324",
+    "template": "timers throttle {lsa all <0-600000> <1-600000> <1-600000>|spf <1-600000> <1-600000>|fast-reroute <50-600000>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0112",
+      "M26:B0072",
+      "M2:B0056"
+    ],
+    "finding_ids": [
+      "F00761",
+      "F00761",
+      "F00761",
+      "F00761",
+      "F00762",
+      "F00763"
+    ]
+  },
+  {
+    "coverage_id": "C00325",
+    "probe_group_id": "P00325",
+    "template": "trace size <WORD> {0|1024|512|16384|4096|2048|32768|65536|256|8192}",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M26:B0074"
+    ],
+    "finding_ids": [
+      "F00764",
+      "F00765"
+    ]
+  },
+  {
+    "coverage_id": "C00326",
+    "probe_group_id": "P00326",
+    "template": "track-external-routes",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M27:B0017"
+    ],
+    "finding_ids": [
+      "F00766"
+    ]
+  },
+  {
+    "coverage_id": "C00327",
+    "probe_group_id": "P00327",
+    "template": "track-ip-frr",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00767"
+    ]
+  },
+  {
+    "coverage_id": "C00328",
+    "probe_group_id": "P00328",
+    "template": "track-summary-routes",
+    "semantic_view": "unknown",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M27:B0018"
+    ],
+    "finding_ids": [
+      "F00768"
+    ]
+  },
+  {
+    "coverage_id": "C00329",
+    "probe_group_id": "P00329",
+    "template": "transmit-delay <1-65535>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0114",
+      "M26:B0075"
+    ],
+    "finding_ids": [
+      "F00769"
+    ]
+  },
+  {
+    "coverage_id": "C00330",
+    "probe_group_id": "P00330",
+    "template": "ucmp",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00770"
+    ]
+  },
+  {
+    "coverage_id": "C00331",
+    "probe_group_id": "P00331",
+    "template": "ucmp {prefix-list <WORD>|delay-interval <1-5000>|variance <101-10000>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [],
+    "finding_ids": [
+      "F00771"
+    ]
+  },
+  {
+    "coverage_id": "C00332",
+    "probe_group_id": "P00332",
+    "template": "ucmp exclude interface GigabitEthernet {0/0/0/0|<R/S/I/P/B or R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0129"
+    ],
+    "finding_ids": [
+      "F00772",
+      "F00773"
+    ]
+  },
+  {
+    "coverage_id": "C00333",
+    "probe_group_id": "P00333",
+    "template": "ucmp exclude interface MgmtEth {0/RP0/CPU0/0|<R/S/I/P>}",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0129"
+    ],
+    "finding_ids": [
+      "F00774",
+      "F00775"
+    ]
+  },
+  {
+    "coverage_id": "C00334",
+    "probe_group_id": "P00334",
+    "template": "ucmp exclude interface Serial <R/S/I/P>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M23:B0129"
+    ],
+    "finding_ids": [
+      "F00776",
+      "F00777"
+    ]
+  },
+  {
+    "coverage_id": "C00335",
+    "probe_group_id": "P00335",
+    "template": "virtual-link <A.B.C.D>",
+    "semantic_view": "area",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0115",
+      "M26:B0076"
+    ],
+    "finding_ids": [
+      "F00778"
+    ]
+  },
+  {
+    "coverage_id": "C00336",
+    "probe_group_id": "P00336",
+    "template": "vrf <WORD>",
+    "semantic_view": "router",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M25:B0116",
+      "M26:B0077"
+    ],
+    "finding_ids": [
+      "F00779"
+    ]
+  },
+  {
+    "coverage_id": "C00337",
+    "probe_group_id": "P00337",
+    "template": "weight <1-16777214>",
+    "semantic_view": "mixed",
+    "status": "unresolved",
+    "matched_block_ids": [
+      "M19:B0261"
+    ],
+    "finding_ids": [
+      "F00780",
+      "F00781",
+      "F00782",
+      "F00783",
+      "F00784"
+    ]
+  }
+]

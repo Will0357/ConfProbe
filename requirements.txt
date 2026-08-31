@@ -1,0 +1,13 @@
+networkx
+matplotlib
+numpy
+eve-ng
+netmiko
+rstr
+pyvis
+scipy
+pydot
+graphviz
+httpx
+beautifulsoup4
+playwright

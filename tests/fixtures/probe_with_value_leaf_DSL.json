@@ -1,0 +1,36 @@
+{
+  "node_id": 0,
+  "node_type": "ROOT",
+  "children": [
+    {
+      "node_id": 1,
+      "node_type": "view_node",
+      "view_name": "[config-ospf]",
+      "cmd_aggregatedTemplate": "router ospf <WORD>",
+      "cmd_templates": ["router ospf <WORD>"],
+      "children": [
+        {
+          "node_id": 2,
+          "node_type": "terminal_node",
+          "cmd_aggregatedTemplate": "<WORD>",
+          "cmd_templates": ["<WORD>"],
+          "children": []
+        },
+        {
+          "node_id": 3,
+          "node_type": "terminal_node",
+          "cmd_aggregatedTemplate": "authentication",
+          "cmd_templates": ["authentication"],
+          "children": []
+        },
+        {
+          "node_id": 4,
+          "node_type": "terminal_node",
+          "cmd_aggregatedTemplate": "passive",
+          "cmd_templates": ["passive"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}
