@@ -53,14 +53,15 @@ COMMAND = 'domain'
 COMMAND = 'fhrp'
 COMMAND = 'flow'
 COMMAND = 'frame-relay'
-COMMAND = 'ip'
+# COMMAND = 'ip' ？
+COMMAND = 'ipv6'
 
 
 # COMMAND = 'interface'
 # COMMAND = 'decnet'
-# COMMAND = 'dlsw'
+# COMMAND = 'dlsw' ？
 
-# COMMAND = 'access-list'
+# COMMAND = 'access-list' 
 # COMMAND = 'router eigrp'
 # COMMAND = 'router isis'
 # COMMAND = 'router iso-igrp'
@@ -287,6 +288,14 @@ class DeviceModel:
     def process_complete_cmd(self, cmd: str):
         self.conn.write_channel(cmd)    
 
+    def complete_pending_command(self) -> str:
+        """Submit the current CLI input and return the device response."""
+        return self.send_command('', cmd_verify=False)
+
+    def detect_terminal_error(self, echo: str) -> bool:
+        """Return whether completing an otherwise help-valid command failed."""
+        return self.detect_error(echo)
+
     def clear_input(self, input_text: str = ''):
         """Clear the current CLI input line."""
         self.conn.write_channel('\x08' * len(input_text))
@@ -468,6 +477,17 @@ class CiscoModel(DeviceModel):
         if 'The command you have entered is available in the IOS.sh.' in echo:
             return True
         return bool(re.search(r'% (?:Unrecognized|Invalid|Unknown|Ambiguous)', echo))
+
+    def detect_terminal_error(self, echo: str) -> bool:
+        """Recognize IOS semantic errors emitted only after pressing Enter."""
+        echo = self._clean_async_output(echo)
+        if self.detect_error(echo):
+            return True
+
+        return bool(re.search(
+            r'(?mi)^\s*%\s+.*\b(?:not\s+allowed|only|must|cannot|failed)\b',
+            echo,
+        ))
 
     def get_view(self) -> str:
 

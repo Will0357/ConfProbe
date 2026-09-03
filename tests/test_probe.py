@@ -166,6 +166,12 @@ class ViewRollbackTest(unittest.TestCase):
             def if_send(self, templ):
                 return True
 
+            def complete_pending_command(self):
+                return ''
+
+            def detect_terminal_error(self, echo):
+                return False
+
             def process_complete_cmd(self, cmd):
                 self.completed.append(cmd)
 
@@ -207,6 +213,89 @@ class ViewRollbackTest(unittest.TestCase):
         )
         self.assertEqual(['interface range '], image.completed)
         image.conn.write_channel.assert_called_once_with('bgp-policy accounting ')
+
+
+class TerminalErrorTest(unittest.TestCase):
+    def test_terminal_error_removes_the_prefix_before_its_successors_are_probed(self):
+        class TerminalErrorImage:
+            END = '<cr>'
+            vendor = 'Test'
+
+            def __init__(self):
+                self.conn = Mock()
+                self.last_template = ''
+                self.searches = []
+
+            def get_view(self):
+                return '[config]'
+
+            def search_command(self, command):
+                self.searches.append(command)
+                return command
+
+            def detect_error(self, echo):
+                return False
+
+            def echo2dict(self, echo, templ):
+                self.last_template = templ
+                branches = {
+                    'root ': {
+                        'bad': 'Rejected only after Enter',
+                        'good': 'Healthy branch',
+                    },
+                    'root bad ': {
+                        'END': self.END,
+                        'tail': 'Must not be probed',
+                    },
+                    'root good ': {'END': self.END},
+                }
+                return echo, dict(branches[templ])
+
+            def if_send(self, templ):
+                return True
+
+            def complete_pending_command(self):
+                if self.last_template == 'root bad ':
+                    return '% match-all/match-any are allowed on named ACLs only\n'
+                return ''
+
+            def detect_terminal_error(self, echo):
+                return echo.startswith('% ')
+
+            def process_complete_cmd(self, command):
+                pass
+
+            def restore_input(self, command, branch_input):
+                pass
+
+            def recover_prompt(self):
+                return True
+
+            def get_instance(self, branch, desc, space):
+                return branch, branch, space
+
+        image = TerminalErrorImage()
+        model = object.__new__(ConfProbe)
+        model.img = image
+        model.file_name = 'terminal-error'
+
+        with tempfile.TemporaryDirectory() as directory:
+            previous_directory = os.getcwd()
+            try:
+                os.chdir(directory)
+                with patch.object(probe, 'COMMAND', 'root'), patch.object(
+                    probe, 'PRODUCT', 'terminal-error-test'
+                ), patch.object(probe, 'MGEND', False), patch('builtins.print'):
+                    model.probe_graph()
+            finally:
+                os.chdir(previous_directory)
+
+        labels = [data['label'] for _, data in model.G.nodes(data=True)]
+        self.assertNotIn('bad', labels)
+        self.assertNotIn('tail', labels)
+        self.assertIn('good', labels)
+        self.assertEqual(1, model.count['terminal_error'])
+        self.assertNotIn('tail ', image.searches)
 
 
 class ParseFailureRecoveryTest(unittest.TestCase):

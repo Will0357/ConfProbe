@@ -10,4 +10,4 @@ pydot
 graphviz
 httpx
 beautifulsoup4
-playwright
+

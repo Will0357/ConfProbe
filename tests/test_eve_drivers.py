@@ -110,6 +110,11 @@ class CiscoEchoParsingTest(unittest.TestCase):
 
         self.assertTrue(self.ios_model().detect_error(echo))
 
+    def test_terminal_only_named_acl_error_is_detected(self):
+        echo = '% match-all/match-any are allowed on named ACLs only\n'
+
+        self.assertTrue(self.ios_model().detect_terminal_error(echo))
+
     def test_removing_bgp_process_clears_the_pending_command_before_undoing(self):
         model = self.ios_model()
         model.conn = Mock()

@@ -8,4 +8,5 @@ logs/
 .env/
 .vscode/
 graphs/
-src/
+docs/
+tests/

@@ -385,6 +385,26 @@ class ConfProbe():
 
             if self.img.if_send(state.templ):
                 try:
+                    terminal_echo = self.img.complete_pending_command()
+                    if self.img.detect_terminal_error(terminal_echo):
+                        error_line = next(
+                            (
+                                line.strip() for line in terminal_echo.splitlines()
+                                if line.lstrip().startswith('%') or 'Error:' in line
+                            ),
+                            'terminal command rejected',
+                        )
+                        parent = next(iter(self.G.predecessors(state.curr)), None)
+                        if parent is not None:
+                            self.G.nodes[parent]['error'] = f'{label(state.curr)} ({error_line})'
+                        self.G.remove_node(state.curr)
+                        count['terminal_error'] += 1
+                        write_file(
+                            f'(! Terminal error: {state.cmd} {{{error_line}}}\n',
+                            state.level,
+                        )
+                        return state, None, True, composition_children
+
                     current_view = self.img.get_view()
                 except (ReadTimeout, OSError, ValueError) as exc:
                     message = f"{type(exc).__name__}: {exc}".splitlines()[0]
@@ -709,7 +729,7 @@ class ConfProbe():
             
             if 'END' in branches.keys():    
                 state, succ_end, isolate, composition_children = _process_terminal(state, branches)
-                if self.G.nodes.get(state.curr, {}).get('probe_failed'):
+                if state.curr not in self.G or self.G.nodes[state.curr].get('probe_failed'):
                     return False
 
             successors, state, curr_removed = _probe_successors(
